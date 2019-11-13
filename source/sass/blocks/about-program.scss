@@ -1,0 +1,30 @@
+.about-program {
+  margin-bottom: 56px;
+}
+
+.about-program__title {
+  width: 327px;
+  margin: 0 auto 24px;
+}
+
+.about-program__description {
+  width: 720px;
+  margin: 0 auto;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  /* or 29px */
+  color: $black;
+}
+
+.about-program__wrapper {
+  padding: 48px 248px 96px 248px;
+  background: url("../../img/watercolor_Bg.png") no-repeat;
+  background-position: center 0;
+}
+
+.about-program__img {
+  margin: 0 auto;
+}

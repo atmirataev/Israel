@@ -1,0 +1,68 @@
+.order {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 167px;
+    height: 226px;
+    position: absolute;
+    top: 20px;
+    left: -14px;
+    background: url("../..//img/backpack.png") no-repeat;
+    transform: rotate(15deg);
+  }
+
+  &::after {
+    content: "";
+    width: 818px;
+    height: 594px;
+    position: absolute;
+    right: 100px;
+    top: -210px;
+    background: url("../../img/girl-flag-bg.png") no-repeat;
+  }
+}
+
+.order__title {
+  margin-left: 210px;
+  margin-top: 210px;
+}
+
+.order__text {
+  width: 400px;
+  margin-left: 210px;
+  margin-bottom: 64px;
+  font-size: 17px;
+  line-height: 170%;
+}
+
+.order__user-tel {
+  width: 261px;
+  margin-left: 210px;
+  padding: 19px 145px 20px 40px;
+  border: 2px solid #E3E3E3;
+  box-sizing: border-box;
+  border-radius: 80px;
+
+  &::placeholder {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    opacity: 0.5;
+  }
+}
+
+.order__submit {
+  position: absolute;
+  padding: 19px 40px 20px;
+  width: 216px;
+  left: 380px;
+  top: 203px;
+  background: $gradient;
+  border-radius: 80px;
+  text-transform: uppercase;
+  color: #ffffff;
+  z-index: 5;
+
+}

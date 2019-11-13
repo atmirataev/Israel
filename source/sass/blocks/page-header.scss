@@ -2,10 +2,10 @@
   padding-top: 32px;
   padding-bottom: 826px;
   position: relative;
-  background-image: url("../../img/bg.png");
+  background-image: url("../../img/mask.png");
   background-repeat: no-repeat;
   background-position: center 0;
-  z-index: 22;
+  box-sizing: border-box;
 
   &::after {
     position: absolute;
@@ -54,13 +54,13 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  color: #484848;
+  color: $black;
 }
 
 .page-header__item--tel {
-  color: #484848;
+  color: $black;
 }
 
 .page-header__item--call {
-  border-bottom: 1px dashed #484848;
+  border-bottom: 1px dashed $black;
 }

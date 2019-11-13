@@ -26,54 +26,113 @@
     </a>
   </header>
   <main>
-    <h1 class="page-header__title">Учёба, путешествие и карьера для еврейской молодёжи</h1>
+    <h1 class="site-title">Учёба, путешествие и карьера для еврейской молодёжи</h1>
     <section class="about-program">
-      <h2 class="about-program__title">О программе</h2>
+      <h2 class="section-titles about-program__title">О программе</h2>
       <p class="about-program__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства
         Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения
         программ предусмотрен грант от 4200 до 8400$.</p>
-      <img src="img/photo.png" srcset="img/photo2x.png" width="870" height="460" alt="О программе">
+      <div class="about-program__wrapper">
+        <img class="about-program__img" src="img/photo.png" srcset="img/photo2x.png" width="870" height="460" alt="О программе">
+      </div>
     </section>
     <section class="programs">
-      <h2 class="programs__title">Программы</h2>
+      <h2 class="section-titles programs__title">Программы</h2>
       <input class="visually-hidden" id="program-type-1" name="programs__types" type="radio">
       <input class="visually-hidden" id="program-type-2" name="programs__types" type="radio">
       <input class="visually-hidden" id="program-type-3" name="programs__types" type="radio">
       <input class="visually-hidden" id="program-type-4" name="programs__types" type="radio">
       <input class="visually-hidden" id="program-type-5" name="programs__types" type="radio">
       <div class="programs__control">
-        <label for="grogram-type-1">Общие</label>
-        <label for="grogram-type-2">Академические</label>
-        <label for="grogram-type-3">Стажировки</label>
-        <label for="grogram-type-4">Волонтерство</label>
-        <label for="grogram-type-5">Религиозные</label>
+        <label class="programs__label programs__label--common" for="grogram-type-1">
+          <svg width="28" height="33" viewBox="0 0 28 33" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="28" height="33" fill="url(#pattern0)"></rect>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.0357143 0.030303)"></use>
+              </pattern>
+              <image id="image0" width="28" height="33" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAACv0lEQVRIibWWzUtVURTFfy9eRjzLIgixwkhwZCAElRSWRKMKCooKippFo2jQqCYSjSSkgfMg0oTAjDKjgTmSHPkXZBGJNKjny+jLXA3eunm4Pe2el2443HPW3nut83XvvjlJVGHdfl6NzpQU29q1YO2x+dUITgSCEysteMpCn9xkLDNHLvIM3wMNwBGPnwJTwJaVOMMrXtG7AHtn7Mpyb+kqSZ8lzUlqDfBWY58d80+uPNAEnAFqgLkKm/AT6ABqgVngEHDUvq9utcAQ8BJYXYEjD/wAHuQk9QJnM5/B/1lfHhgIBJ8AH4ACMA+UgNPABuA15RUUUiRfgIPADqAI9APrgVX2bWZhRwaSvR314Xem9rxOUsm+5iXOptkxJeeEvk77RsNL06IFawqCR4zdzXAh7jp2JMCaAt6W9C3tt+O5x/s8npO0KYPgJsfKuZhL5v7rtWgIZtMhadj9mxnEknbTOcPmSKyhkiCSbjvgl58fJdVECNY4J+S4HcakE2olTQYzuxghlrQLQf6kOZf80nQ7uFSFWNKSm92d9qUD6yRNBTO8XIXY5SB/SqnXJB3c48BvwSoLEWIFSTMpjp7FBBuDme2W9Nj9rgjBLuc8NkdijZUEB4NgUgn1GcTqUxMmmPRgWnCXHfOStgYkz4z3ZRDsc+xQgG01p6zxR3DM4PUUyTpJRft2LiG20zFF54S+G/aNSeV6eB7Y66/5fqAXWOtqMQMk/yBDwOgi1eKA+wLuAHWuFl+BjfbtBc7nJN0DzmWoZcth93OStgHHgTVUrvjfgcPACcoV/xrlvwMoV/EuyhV/AHhhnrTlzfMo5oUu+gK0BVibsWJWnhjBSz786QCbNnYpK0/sf+kboBE46fFD4C2wPTNDxAqRdMwrmnWTscwcsYJIGteCjcfmVyO4JxDcE5ufjzlA2yvgVtCPst8jemBjKPAxHwAAAABJRU5ErkJggg=="></image>
+            </defs>
+          </svg>
+          Общие
+        </label>
+        <label class="programs__label programs__label--academic programs__current-label" for="grogram-type-2">
+          <svg width="36" height="35" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="36" height="35" fill="url(#pattern0)"></rect>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.0277778 0.0285714)"></use>
+              </pattern>
+              <image id="image0" width="36" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAADhklEQVRYhcWXXYgWVRjHf7tZSOmu0UZYWJZZedFFISpBYrCGXngZLF7sWtBNXsV2YUJCdpGVfWwhhBIIkVYWdKMhkSwKfSJ9LBjIWoh9LKUkLUjGtr8u5hn27OvMuzPvu0t/eDgz5zzP//nPmWfOOdOh0ibmATvjegcw0Rab2o49qp51Cmejr2XOVgPXqCcSIXvCcpwInzkXtFTdmyT+Wu1NxnujL8feiJkTQduSRL+rW5r4blH/SPy3zaagR9TTCfkL6oIKcQvCN8fp4GpZ0Er1WEJ4UF1RZ/rDVkRsjmPBXVnQYnUoIfhe3dCCkEbbGFw5hiJXU0GD6uUIuKhunQUhjbY1uI1cg0WCNqonE/Wvqt01knSqHTX8uyNHjpOhAdTdycAhtafmE29Wf1U/a2G2etQPkvy7O4HzycJ9PbCk4iK/AfgKeAdYDHzTwkaxBFiU3J/Pld6vHkmUvq8uL3mqe2I8x+fqQzVnZnkDx5HQcEVRb1ZHw+my+qJ6XYzdpL6ekJxRB2oK6Q7O/MMZjZylXxlmxbkvSfyb+orZ6qw6rj5pvSJGfUz9K+HdV8RRFrwpgn5wOo7XFIH6sPpFwjES7aYi/86SYrsx2kFgZdL/ILAHuKNCwS4DDgJHgdXAp8CdwK6GHNNQJiiHwEhcHwe+BJ4AzgDPAgsLYhaSHdhGgT7gF6Af6I24G8Kvo46gvP8asqUA4BNgDbA97ndEgoEkbiD6non7p8lm5e0C7lqC/k6uJ6O9OdrngduBA2TTvh84HLY/+g6Ez64GrrIcUygpxFVReK+pt8X1GwV+a9XhpGCHo69ZkR8O31VF42VBneqY+o/ZJ14mKLfHw2b64pYF11jkqCwItS+C80XspQoJm9lV6nfB1VfmNxPJe8nreLkNMUvNthjNtoxS3ypkHwXRRfUptauGkC6z806OQzPFVCG9z+mYVN9S+9W7zI4Q88N6oq8/fCaTuO1VHqKKoHVB+K66U53wSlwKa8SE+qZ6dxUxKvNK1oginCJbgYeAdcB64F6yM02+eJ4LGyFbSIeBCzVyVBL0Z7Rd0V4APgzLcW20l+okL8QMU7hIPRrTP6Y+UHXqW7WZHD4OMT9H+68Fvy6zac12+26yc/M54FbgObK9b33br6UJmgmaH+1PZBvstw39c4JmRZ0fD9aS7eKr4/7q/0vQOPAjcAtTZ55xslc4Z/gPID+hqYhSLi0AAAAASUVORK5CYII="></image>
+            </defs>
+          </svg>
+          Академические
+        </label>
+        <label class="programs__label programs__label--internship" for="grogram-type-3">
+          <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="32" height="25" fill="url(#pattern0)"></rect>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.03125 0.04)"></use>
+              </pattern>
+              <image id="image0" width="32" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAACKklEQVRIic2WO2uUQRSGn91svCUpRNAIsfBSBYKKgkYtREHipRD0B+gP0FKwEWy8VUH8BYKVYBfBwiBo4RLcFIqKQkAwKCoRDNHNbjaPxczq55I1k5gNvnCYy3c45+WdM3M+VBKsR32oltXqPFZRS2p/SuycSgIeAwdSHDOYBHqAb39zyicG2xfH3UBuHusEpoCulMCFOPYBJ2KARqzOzI9G39km8fJAWybONeB9E9+nwHBOPQI8SGHbApzLqSMEaZ8Bz4E1LU5aJtTGIaCC+sqAg4k3YilsbcxpHpiOzKabcl561HPV8kA1Li4DW5YheRcwGOdl1KJ/4qq6sQWyd6rn1U+ZXF9RR+LiY+ZDRb2tnozntdikq9TD6i31cyb+hDqrTubUUWAHcAxYEY9ie0ayKeAJUATeAGPAB8JLVwUE2gm3ZwOwFdgM9AN7414d48AV4BHwAqihjkZWAxnmx6MCE86NmqEvlNUf/u4Rc6GqDqlnoiKo3fVvhQy7jsx8KFoHsB/YBewBNkV12oCVTYrsJfCO8K6UCH3kS4PPul+zjAKnEs/1UvS/byjW9epg3LuXGKN3LgVS8T2OO4GbhBroi3u1hQZbDIFhYAboBk43fLu7HARKQC+hJgoEBQBeE25KywkAvI32z0j9IWkZ/gsC7XE+vox5x+JYKBAeFYCzhG642LpIxQywrb7IqReA6y1O2gx3CsANwlUaIDSUBT8mC0SeoEIRuPgTccLXkgGjCnIAAAAASUVORK5CYII="></image>
+            </defs>
+          </svg>
+          Стажировки
+        </label>
+        <label class="programs__label programs__label--volunteering" for="grogram-type-4">
+          <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="32" height="29" fill="url(#pattern0)"></rect>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.03125 0.0344828)"></use>
+              </pattern>
+              <image id="image0" width="32" height="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAADH0lEQVRIibWVTYiVVRjHf3dmlOwDpw9hhgacrAzLJkoFK8WkRRFRELUSd4oSBGGtWrQLInQV1FbCMpvAXLRxMFtYUBlUE2UQxK1k0HF0/EqZHH8uzvM2h9f7Xq/NOw8c3nv/53me8z/P10GlhrVS/VQdU79XXwt8QN2lNtUf1TfLtnUcvlq97NXypXq0Au+ui0BDPRKOP1KH1OfViezAz9SH1KczQpvqIrAkHJ4q4YvVn9QPS/iLoT9cYD3MTqbj2yjhTWCohf6t8Z36D5llBFB/iFt9cg29oSw1L9SVAtTl6lQ43t1G50zo7Mv36iCAuka9FAfsKe2tUM/H3udl27oIoD6aRWJvYEvVf1rdfC4IoK5SL8aBI6bBlBOacwKYpuJxZ+TjdvoNdZad2FL6gOeAU8BwO8W5ItCxFIPoRmCAmQExDxgDzs05A9OMbnq1/K0+E7map94Va2GdNdNQfwfuBs4Cl4JXA+gFJoEDwDrgjtibAv4AvgG+A34FfgYmMvuOpaGOh/MHgd8CvyecdmW6k4DMzPOynAj7I8AIsKcjBs48kXdmoVkW2Dn1FfV+0xverfap69TN6gfqYfVCixS+3kkKiFyr3pdtPBXYwQ5z2WN6gh9Qt2QkWukOqP3F/6rnuAjz+DUCuAg4TaqLZmA9wGXSU91P6qiVwBrgWeDe0BsGNlYR6I3viTaHvwG8FQQmAusHFsRvSXV0W8luEpgPvASMdtFaCqOJiv3CkcBCYEmsBdl+d/g5A3wB7ABWk6L7auisr4pA0XK/tCHwHrCblIY+4BbSzaaBC8BJ4DgpjRczuyeBbfH7QFUR7gxsv7r2/w6ZbN2gblVHswIdUedXEdhXaqlD6sum9/16Dn5M3a6OZ76a6ra8C4o6GMvCtCi+e4FHgMdjQZp8X5OGzlHgWIS4C7gdGASWA+tJdVHIt8D7wC7yiameDGYb1Icj5McC6w2mGyMqp70++VN91zS4Kt+Cg8ATLYrsPKmtzmbYzcAqYGnccpBU1TcB/5I64y/gMDAKfEXqlEppqIPAOxGuadIgGQPeBg61M65DrgBpm+RzjvOtmwAAAABJRU5ErkJggg=="></image>
+            </defs>
+          </svg>
+          Волонтерство
+        </label>
+        <label class="programs__label programs__label--religious" for="grogram-type-5">
+          <svg width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="23" height="25" fill="url(#pattern0)"></rect>
+            <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0" transform="scale(0.0434783 0.04)"></use>
+              </pattern>
+              <image id="image0" width="23" height="25" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAACiklEQVRIibWVS0hVURSGP49PlIqCHGhBEgQNGlRYBhk2iMAspSgICsNBg6IHFT2gQYNGgbOgxzQKGlRC0jAKLIpwEBklRRSCDyITsnyVf4P7b9wd9V4buOCw1v+vtf6z17777IukJknNkpC0XNIpSSXGRyVtcbxC0ukot0fSAcdV7is0PiapGkkjylggJWmjsSQ9c3zBuC7Khb5zjlf75ZLUVgAcBBaRsUdAEdBtfALocnwfGAXeGO8HShy3AeNADzAGHAc6E6ARaHLRWqABqADygB1AnXPVzlUZN7kXYL1rK7y4BqAeSZPReJei0fMcv3Ku1bhxhm254rhGUmnoS4ABpmzYfjzivtn/sB+zHwImUrkJQKEvYR5tPsTDyklSL8i3/x1xYRvyUguaBApT9UkkniTAn0go7HVBVFQeiQH8tC+LRMOiRoFixxMJ0BuJv7avtR8EaoAlTJ39L8Bmizw0t9X+I7DMcR+SrvnorJOUOO73EdtuPCjpiePH0TEsl1Tk+Lt7zhsfiQXanbxjfNG4RdNtSNIm59vNNRv3GVehzMfy1USFC4aNzxoj6Za5MxF301yn8S7jp5IIRXtNdhmvkvTL3HNJtZr6evdJ2impx/idexZKGjW3JhZHUpsTD4zzo5Fns6tRf7e5y4GLxRNJL1zwUtJS85Xeig/OdUg6LKnY+Q2SBpy7Hen9Ix5ecDda2XVl/giQdNJc+CGrJd2LaltTWtPEw9MiqTe1BeFH70/xbyXVz6Qzm3h4ditzND+nBN97qm3Z+nOJx0+4sw/Nted/bsV++565NuQSX0Dm4ioDKs2tNC4HSrN25xitQ9ntRrb+ghwr7wIWk7luh4ERT1PiqT9la/4LNbWF2dlbc1EAAAAASUVORK5CYII="></image>
+            </defs>
+          </svg>
+          Религиозные
+        </label>
       </div>
       <ul class="programs__list">
         <li class="programs__item">
-          <h2 class="programs_item--title">Общие</h2>
+          <h3 class="section-titles programs_item--title">Общие</h3>
           <p class="programs__item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
             voluptates assumenda consectetur ex dolores consequatur obcaecati tempore laudantium nisi reiciendis optio,
             ut dolorum, vitae odio ipsa laboriosam! Quia nisi quam ex reiciendis eaque? Vel voluptate eos id quo quos
             fugiat ut. Suscipit perferendis quos, molestiae exercitationem ad unde voluptas. Explicabo.</p>
         </li>
-        <li class="programs__item">
-          <h2 class="programs_item--title">Академические</h2>
+        <li class="programs__item programs__item--current">
+          <h3 class="section-titles programs_item--title">Академические</h3>
           <p class="programs__item--description">Провести семестр или год за рубежом, знакомясь с различными культурами
             и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
-            религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования. Может
-            быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.
+          </p>
+          <p class="programs__item--description">
+            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
             законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в
             удивительной университетской среде.</p>
         </li>
         <li class="programs__item">
-          <h2 class="programs_item--title">Стажировки</h2>
+          <h3 class="section-titles programs_item--title">Стажировки</h3>
           <p class="programs__item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos dolore
             fuga, distinctio repudiandae harum quia optio maiores, soluta ad tempora alias a suscipit quas est,
             assumenda non iste quae? Cum ullam architecto pariatur dicta aspernatur laboriosam ipsam est porro corporis,
             voluptatem, illo iste, corrupti soluta quisquam iusto! Cumque, reiciendis.</p>
         </li>
         <li class="programs__item">
-          <h2 class="programs_item--title">Волонтерство</h2>
+          <h3 class="section-titles programs_item--title">Волонтерство</h3>
           <p class="programs__item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             culpa optio, repellendus ullam tempora vel repellat! Similique quisquam consequuntur, sapiente officiis
             eligendi ducimus nostrum inventore, consequatur nam molestiae ratione assumenda suscipit ullam, quam vitae
@@ -81,7 +140,7 @@
             aliquid id nemo quae.</p>
         </li>
         <li class="programs__item">
-          <h2 class="programs_item--title">Религиозные</h2>
+          <h3 class="section-titles programs_item--title">Религиозные</h3>
           <p class="programs__item--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptatem
             velit in minima! Ducimus numquam officiis, similique quidem ipsum autem voluptatibus et maiores earum
             tempore temporibus ratione voluptas praesentium animi laboriosam explicabo ea sequi reiciendis totam eveniet
@@ -90,14 +149,14 @@
       </ul>
     </section>
     <section class="order">
-      <h2 class="order__title">Хочу поехать!</h2>
-      <p class="oreder__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+      <h2 class="section-titles order__title">Хочу поехать!</h2>
+      <p class="order__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
       <input type="tel" class="order__user-tel" placeholder="Телефон">
-      <button type="submit">Перезвоните мне</button>
+      <button class="order__submit" type="submit">Перезвоните мне</button>
     </section>
     <section class="conditions">
-      <h2 class="conditions_title">Как поехать</h2>
+      <h2 class="section-titles conditions_title">Как поехать</h2>
       <p class="conditions__details">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
         получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
       <p class="conditions__text">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:</p>
@@ -113,7 +172,7 @@
         принять участие в программе «Маса», оплатив её полную стоимость.</p>
     </section>
     <section class="life-in-Israel">
-      <h2 class="life-in-Israel__title"></h2>
+      <h2 class="section-titles life-in-Israel__title"></h2>
       <ul class="life-in-Israel__list">
         <li class="life-in-Israel__item"><img src="" alt="">
           <p>Экскурсии по Израилю и знакомство с его историей</p>
@@ -134,12 +193,12 @@
       </ul>
     </section>
     <section class="gallery">
-      <h2 class="gallery__title">#masaisrael</h2>
+      <h2 class="section-titles gallery__title">#masaisrael</h2>
       <p class="gallery__text"></p>
       <a href="" class="gallery__button">Смотреть фото</a>
     </section>
     <section class="questions">
-      <h2 class="questions__title">Частые вопросы</h2>
+      <h2 class="section-titles questions__title">Частые вопросы</h2>
       <ul class="questions__list">
         <li class="questions__item">
           <p class="questions__text">Кто организатор? Какие сроки у программы?</p>
@@ -175,7 +234,7 @@
       </ul>
     </section>
     <section class="comments">
-      <h2 class="comments__title">Отзывы</h2>
+      <h2 class="section-titles comments__title">Отзывы</h2>
       <b>Ольга Михайлова</b>
       <p>Программа: Арт-Тель, февраль-сетнябрь 2017</p>
       <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура». Мне очень
@@ -186,7 +245,7 @@
       <a href="">Читать подробнее</a>
     </section>
     <section class="contact-us">
-      <h2 class="contact-us__title">Узнать подробности</h2>
+      <h2 class="section-titles contact-us__title">Узнать подробности</h2>
       <p class="contact-us__location">Ваш город: Новосибирск</p>
       <img src="" alt="Аватар куратора">
       <p class="contact-us__curator">Ваш куратор: Анна Горелик</p>

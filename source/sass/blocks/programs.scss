@@ -1,0 +1,95 @@
+.programs {
+  padding-top: 104px;
+  padding-left: 210px;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("../../img/sketch.png") no-repeat;
+  background-position: top right;
+
+}
+
+.programs__title {
+  width: 100%;
+  margin: 0 0 83px;
+
+}
+
+.programs__control {
+  width: 230px;
+  margin-right: 64px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.programs__label {
+  width: 210px;
+  padding: 25px 41px 24px 72px;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.programs__control svg {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  fill: #000000;
+}
+
+.programs__current-label {
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 19px;
+  background: $gradient;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: -18px;
+    top: -8px;
+    background-color: #fff;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: -18px;
+    bottom: -8px;
+    background-color: #fff;
+    transform: rotate(135deg);
+  }
+}
+
+.programs__list {
+  width: 600px;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__item {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.programs_item--title {
+  text-transform: none;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.programs__item--description {
+  line-height: 26px;
+}
