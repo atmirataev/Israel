@@ -1,0 +1,57 @@
+.page-header {
+  padding-top: 32px;
+  padding-bottom: 826px;
+  position: relative;
+  background-image: url("../../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  z-index: 22;
+
+  &::after {
+    position: absolute;
+    left: 515px;
+    top: 169px;
+    content: "";
+    width: 381px;
+    height: 609px;
+    background: url("../../img/photo_girl.png") no-repeat;
+    z-index: 1;
+  }
+
+  // &::before {
+  //   content: "";
+  //   width: 1366px;
+  //   height: 906px;
+  //   position: absolute;
+  //   background: url("../../img/bg.png") no-repeat;
+  //   background-position: center 0;
+  //   z-index: -1;
+  // }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
+.page-header__nav {
+  width: $desktop-width;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 1018px;
+    height: 340px;
+    position: absolute;
+    background: url("../../img/Израиль.png") no-repeat;
+  }
+}
+
+.page-header__list {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
