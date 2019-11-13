@@ -31,7 +31,7 @@
 
 .page-header__logo {
   position: absolute;
-  top: 0;
+  top: 32px;
   left: 50%;
 }
 
@@ -54,4 +54,13 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+  color: #484848;
+}
+
+.page-header__item--tel {
+  color: #484848;
+}
+
+.page-header__item--call {
+  border-bottom: 1px dashed #484848;
 }
