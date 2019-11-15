@@ -1,66 +1,194 @@
-.page-header {
-  padding-top: 32px;
-  padding-bottom: 826px;
-  position: relative;
-  background-image: url("../../img/mask.png");
-  background-repeat: no-repeat;
-  background-position: center 0;
-  box-sizing: border-box;
+  .page-header {
+    padding-top: 45px;
+    padding-bottom: 826px;
+    position: relative;
+    background-image: url("../../img/bg.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    box-sizing: border-box;
 
-  &::after {
-    position: absolute;
-    left: 515px;
-    top: 169px;
-    content: "";
-    width: 381px;
-    height: 609px;
-    background: url("../../img/photo_girl.png") no-repeat;
-    z-index: 1;
+    &::before {
+      content: "";
+      width: 17px;
+      height: 26px;
+      position: absolute;
+      left: 49.5%;
+      top: 653px;
+      background: url("../../img/mouse.svg") no-repeat;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      width: 498px;
+      height: 800px;
+      position: absolute;
+      top: -20px;
+      left: 31.6%;
+      background: url("../../img/girl.png") no-repeat;
+      background-size: 498px auto;
+
+    }
   }
 
-  // &::before {
-  //   content: "";
-  //   width: 1366px;
-  //   height: 906px;
-  //   position: absolute;
-  //   background: url("../../img/bg.png") no-repeat;
-  //   background-position: center 0;
-  //   z-index: -1;
-  // }
-}
-
-.page-header__logo {
-  position: absolute;
-  top: 32px;
-  left: 50%;
-}
-
-.page-header__nav {
-  width: $desktop-width;
-  margin: 0 auto;
-  position: relative;
-
-  &::after {
-    content: "";
-    width: 1018px;
-    height: 340px;
+  .page-header__logo {
     position: absolute;
-    background: url("../../img/Израиль.png") no-repeat;
+    top: 32px;
+    left: 44.8%;
   }
-}
 
-.page-header__list {
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  color: $black;
-}
+  .page-header__nav {
+    min-width: $desktop-width;
+    padding-left: 110px;
+    padding-right: 117px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
 
-.page-header__item--tel {
-  color: $black;
-}
+    &::before {
+      content: "";
+      width: 0;
+      height: 55px;
+      position: absolute;
+      top: 658px;
+      left: 50%;
+      border: 1px solid #fff;
+      z-index: 5;
+    }
 
-.page-header__item--call {
-  border-bottom: 1px dashed $black;
-}
+    &::after {
+      content: "";
+      width: 1018px;
+      height: 340px;
+      top: 116px;
+      left: 12.7%;
+      position: absolute;
+      background: url("../../img/Израиль.png") no-repeat;
+      background-position: center 0;
+    }
+  }
+
+  .page-header__list {
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: $black;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      top: 594px;
+      left: 48%;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      width: 74px;
+      height: 74px;
+      position: absolute;
+      top: 583px;
+      left: 47%;
+      border-radius: 50%;
+      border: 1px dashed #fff;
+      z-index: 5;
+    }
+  }
+
+  .page-header__item--tel a {
+    color: $black;
+  }
+
+  .page-header__item--call {
+    border-bottom: 1px dashed $black;
+  }
+
+  @media (max-width: $tablet-width) {
+    .page-header {
+      min-width: $mobile-width;
+      padding: 20px 0 575px;
+      background-image: url("../../img/bgbg.png");
+      background-position-y: 33px;
+
+      &::before {
+        width: 17px;
+        height: 26px;
+        left: 151px;
+        top: 440px;
+      }
+
+      &::after {
+        width: 320px;
+        height: 500px;
+        left: 0;
+        top: 33px;
+        background-size: 320px auto;
+      }
+    }
+
+    .page-header__logo {
+      width: 120px;
+      height: 42px;
+      top: 20px;
+      left: 16px;
+    }
+
+    .page-header__nav {
+      min-width: $mobile-width;
+      padding: 0;
+      padding-right: 9px;
+
+      &::before {
+        top: 471px;
+      }
+
+      &::after {
+        width: 345px;
+        height: 126px;
+        top: 145px;
+        left: -13px;
+        background-size: 345px 126px;
+        background-position: center 0;
+      }
+    }
+
+    .page-header__list {
+      width: 130px;
+      flex-direction: column;
+
+      &::before {
+        top: 405px;
+        left: -38%;
+      }
+
+      &::after {
+        top: 395px;
+        left: -46%;
+      }
+    }
+
+    .page-header__item {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: right;
+      text-align: right;
+
+      &--tel {
+        margin-bottom: 8px;
+      }
+
+      &--call {
+        width: 108px;
+        margin-left: auto;
+      }
+    }
+  }

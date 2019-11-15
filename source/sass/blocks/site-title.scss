@@ -8,4 +8,18 @@
   line-height: 29px;
   color: #fff;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 539px;
+  left: 37.5%;
+  text-align: center;
+}
+
+@media(max-width: $tablet-width) {
+  .site-title {
+    width: 288px;
+    left: 16px;
+    top: 335px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

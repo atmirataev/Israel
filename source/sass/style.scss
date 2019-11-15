@@ -1,11 +1,11 @@
-@import "../../node_modules/normalize-scss/sass/normalize";
+@import "_normalize.scss";
 @import "blocks/variables.scss";
 @import "scaffolding";
 @import "blocks/visually-hidden";
-@import "blocks/container";
 @import "blocks/page-header";
-@import "blocks/section-titles.scss";
 @import "blocks/site-title";
-@import "blocks/about-program";
-@import "blocks/programs";
-@import "blocks/order";
+// @import "blocks/container";
+// @import "blocks/section-titles.scss";
+// @import "blocks/about-program";
+// @import "blocks/programs";
+// @import "blocks/order";
