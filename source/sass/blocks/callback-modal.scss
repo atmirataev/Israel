@@ -1,38 +1,11 @@
 .callback-modal {
-  width: 480px;
   padding: 58px 72px 40px 48px;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #fff;
-  border-radius: 8px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -325px;
-  margin-left: -240px;
-  box-sizing: border-box;
-  z-index: 10;
-}
 
-.callback-modal__title {
-  font-size: 28px;
-  line-height: 34px;
-  margin: 0;
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
-  text-transform: none;
 }
 
 .callback-modal__form {
   display: flex;
   flex-wrap: wrap;
-}
-
-.callback-modal__text {
-  width: 359px;
-  line-height: 170%;
-  margin: 0;
-  margin-bottom: 32px;
 }
 
 .callback-modal__input {
@@ -57,22 +30,6 @@
   }
 }
 
-.callback-modal__submit {
-  width: 264px;
-  margin: 0 0 16px 61px;
-  padding: 18px 0 19px 0;
-  border: 1px solid transparent;
-  border-radius: 80px;
-  text-align: center;
-  background: $gradient;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 20px;
-  font-variant: small-caps;
-  color: #fff;
-}
-
 .callback-modal__checkbox-label {
   width: 240px;
   margin-left: 84px;
@@ -93,39 +50,11 @@
   }
 }
 
-.callback-modal__close {
-  position: absolute;
-  width: 18px;
-  height: 17px;
-  top: 32px;
-  right: 32px;
-  border: 0;
-  font-size: 0;
-  cursor: pointer;
-  background: url("../../img/закрыть.svg")
-}
-
 @media (max-width: $tablet-width) {
   .callback-modal {
     min-width: $mobile-width;
     padding: 0;
     padding-top: 174px;
-  }
-
-  .callback-modal__title {
-    margin: 0 auto 13px;
-    font-size: 24px;
-    line-height: 29ox;
-  }
-
-  .callback-modal__text {
-    width: 287px;
-    margin: 0 auto 32px;
-    padding-left: 25px;
-    font-size: 14px;
-    line-height: 160%;
-    text-align: center;
-    box-sizing: border-box;
   }
 
   .callback-modal__input {
@@ -138,21 +67,11 @@
     }
   }
 
-  .callback-modal__submit {
-    margin: 0 auto 16px;
-    padding-top: 20px;
-  }
-
   .callback-modal__checkbox-label {
     padding-left: 48px;
 
     &::before {
       left: 25px;
     }
-  }
-
-  .callback-modal__close {
-    top: 30px;
-    right: 105px;
   }
 }

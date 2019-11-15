@@ -1,12 +1,14 @@
 @import "_normalize.scss";
 @import "blocks/variables.scss";
 @import "scaffolding";
-@import "blocks/visually-hidden";
 @import "blocks/page-header";
 @import "blocks/site-title";
 @import "blocks/section-titles.scss";
+@import "blocks/modal";
 @import "blocks/callback-modal.scss";
-@import "blocks/hidden"
+@import "blocks/succes-modal";
+@import "blocks/hidden";
+@import "blocks/visually-hidden";
 // @import "blocks/container";
 // @import "blocks/about-program";
 // @import "blocks/programs";

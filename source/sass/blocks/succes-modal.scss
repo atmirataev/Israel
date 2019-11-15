@@ -1,0 +1,49 @@
+.success-modal {
+  padding: 216px 60px 112px;
+
+  &::before {
+    content: "";
+    width: 71px;
+    height: 64px;
+    position: absolute;
+    top: 120px;
+    left: 206px;
+    background-image: url("../../img/Ok checkmark.svg");
+  }
+}
+
+.success-modal__title {
+  margin: 0 auto 17px;
+}
+
+.success-modal__text {
+  text-align: center;
+}
+
+.succees-modal__main-btn {
+  margin: 0 auto;
+}
+
+@media(max-width: $tablet-width) {
+  .success-modal {
+    min-width: $mobile-width;
+    padding: 302px 0 200px;
+
+    &::before {
+      top: 206px;
+    }
+  }
+
+  .success-modal__title {
+    margin-bottom: 12px;
+  }
+
+  .success-modal__text {
+    padding: 0;
+  }
+
+  .success-modal__close {
+    top: 31px;
+    right: 104px;
+  }
+}
