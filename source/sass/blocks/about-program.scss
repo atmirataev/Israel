@@ -15,16 +15,94 @@
   font-weight: normal;
   font-size: 17px;
   line-height: 170%;
-  /* or 29px */
   color: $black;
+  text-align: center;
 }
 
 .about-program__wrapper {
   padding: 48px 248px 96px 248px;
-  background: url("../../img/watercolor_Bg.png") no-repeat;
+  background: url("../img/watercolor_Bg.png") no-repeat;
   background-position: center 0;
 }
 
 .about-program__img {
   margin: 0 auto;
+  position: relative;
+}
+
+.about-program__img-mob {
+  display: none;
+}
+
+.about-program__play-btn {
+  content: "";
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  top: 77%;
+  left: 46.5%;
+}
+
+.about-program__play-btn-mob {
+  display: none;
+}
+
+@media(max-width: $tablet-width-max) {
+  .about-program__wrapper {
+    padding: 48px 124px 96px 124px;
+  }
+
+  .about-program__play-btn {
+    top: 80%;
+    left: 44%;
+  }
+}
+
+@media(max-width: $mobile-width-max) {
+  .about-program {
+    min-width: $mobile-width;
+  }
+
+  .about-program__title {
+    width: 288px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+
+  .about-program__description {
+    width: 288px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: left;
+    margin-bottom: 55px;
+  }
+
+  .about-program__wrapper {
+    padding: 78px 0 0;
+    margin-top: -78px;
+    background-size: contain;
+  }
+
+  .about-program__img {
+    display: none;
+  }
+
+  .about-program__img-mob {
+    display: block;
+  }
+
+  .about-program__play-btn {
+    display: none;
+  }
+
+  .about-program__play-btn-mob {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 87.5%;
+    left: 37.1%;
+  }
 }

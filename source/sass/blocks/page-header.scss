@@ -114,13 +114,13 @@
   @media (max-width: $mobile-width-max) {
     .page-header {
       min-width: $mobile-width;
-      padding: 20px 0 575px;
+      padding: 20px 0 570px;
       background-image: url("../img/bgbg.png");
       background-position-y: 33px;
 
       &::before {
-        left: 40%;
-        top: 404px;
+        left: 38%;
+        top: 415px;
       }
 
       &::after {
