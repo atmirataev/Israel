@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $mobile-width-max) {
   .callback-modal {
     min-width: $mobile-width;
     padding: 0;

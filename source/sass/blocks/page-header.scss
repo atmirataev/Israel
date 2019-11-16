@@ -9,12 +9,12 @@
 
     &::before {
       content: "";
-      width: 17px;
-      height: 26px;
+      width: 76px;
+      height: 131px;
       position: absolute;
-      left: 49.5%;
-      top: 653px;
-      background: url("../img/mouse.svg") no-repeat;
+      left: 47.2%;
+      top: 628px;
+      background: url("../img/подсказка скролл вниз.svg") no-repeat;
       z-index: 5;
     }
 
@@ -45,17 +45,6 @@
     margin: 0 auto;
     position: relative;
 
-    &::before {
-      content: "";
-      width: 0;
-      height: 55px;
-      position: absolute;
-      top: 658px;
-      left: 50%;
-      border: 1px solid #fff;
-      z-index: 5;
-    }
-
     &::after {
       content: "";
       width: 1018px;
@@ -79,29 +68,6 @@
     color: $black;
     position: relative;
 
-    &::before {
-      content: "";
-      width: 52px;
-      height: 52px;
-      position: absolute;
-      top: 594px;
-      left: 48%;
-      border-radius: 50%;
-      border: 1px solid #fff;
-      z-index: 5;
-    }
-
-    &::after {
-      content: "";
-      width: 74px;
-      height: 74px;
-      position: absolute;
-      top: 583px;
-      left: 47%;
-      border-radius: 50%;
-      border: 1px dashed #fff;
-      z-index: 5;
-    }
   }
 
   .page-header__item--tel a {
@@ -118,7 +84,7 @@
       margin: 0 auto;
 
       &::before {
-        left: 49%;
+        left: 47%;
       }
 
       &::after {
@@ -153,10 +119,8 @@
       background-position-y: 33px;
 
       &::before {
-        width: 17px;
-        height: 26px;
-        left: 151px;
-        top: 440px;
+        left: 40%;
+        top: 404px;
       }
 
       &::after {

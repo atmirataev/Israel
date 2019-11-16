@@ -24,7 +24,7 @@
   margin: 0 auto;
 }
 
-@media(max-width: $tablet-width) {
+@media(max-width: $mobile-width-max) {
   .success-modal {
     min-width: $mobile-width;
     padding: 302px 0 200px;
