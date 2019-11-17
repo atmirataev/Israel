@@ -20,7 +20,7 @@
 }
 
 .about-program__wrapper {
-  padding: 48px 248px 96px 248px;
+  padding: 48px 0 96px;
   background: url("../img/watercolor_Bg.png") no-repeat;
   background-position: center 0;
 }
@@ -28,6 +28,8 @@
 .about-program__img {
   margin: 0 auto;
   position: relative;
+  text-align: center;
+  display: block;
 }
 
 .about-program__img-mob {
@@ -39,8 +41,9 @@
   width: 96px;
   height: 96px;
   position: absolute;
-  top: 57.5%;
-  left: 46.5%;
+  top: 77%;
+  left: 50%;
+  margin-left: -48px;
 }
 
 .about-program__play-btn-mob {
@@ -54,7 +57,6 @@
 
   .about-program__play-btn {
     top: 80%;
-    left: 44%;
   }
 }
 
@@ -92,6 +94,8 @@
 
   .about-program__img-mob {
     display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .about-program__play-btn {
@@ -103,6 +107,7 @@
     display: block;
     position: absolute;
     top: 87.5%;
-    left: 37.1%;
+    left: 50%;
+    margin-left: -40px;
   }
 }
