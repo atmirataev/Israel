@@ -1,77 +1,71 @@
 .programs {
-  padding-top: 104px;
-  padding-left: 210px;
+  min-width: $desktop-width;
+  padding-top: 40px;
+  margin: 0 auto;
+  background: url("../img/sketch_Bg.png") no-repeat;
+  background-position: top right;
+}
+
+.programs__container {
   display: flex;
   flex-wrap: wrap;
-  background: url("../../img/sketch.png") no-repeat;
-  background-position: top right;
-
 }
 
 .programs__title {
   width: 100%;
-  margin: 0 0 83px;
+  margin: 0 0 75px;
+  padding-left: 36px;
 
 }
 
 .programs__control {
   width: 230px;
   margin-right: 64px;
+  padding-left: 39px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .programs__label {
-  width: 210px;
+  width: 228px;
   padding: 25px 41px 24px 72px;
   position: relative;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
-}
+  box-sizing: border-box;
 
-.programs__control svg {
-  position: absolute;
-  top: 16px;
-  left: 20px;
-  fill: #000000;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 20px;
+  }
+
+  &--academic::before {
+    width: 36px;
+    height: 35px;
+    background-image: url("../img/noun_582688_cc.png");
+  }
+
+
 }
 
 .programs__current-label {
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
-  background: $gradient;
-  position: relative;
+  background: url("../../img/Rectangle.png");
+  z-index: 0;
 
-  &::before {
-    content: "";
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    right: -18px;
-    top: -8px;
-    background-color: #fff;
-    transform: rotate(45deg);
-  }
 
-  &::after {
-    content: "";
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    right: -18px;
-    bottom: -8px;
-    background-color: #fff;
-    transform: rotate(135deg);
-  }
 }
 
 .programs__list {
   width: 600px;
   margin: 0;
-  padding: 0;
+  padding: 12px 0 0;
 }
 
 .programs__item {
@@ -91,5 +85,8 @@
 }
 
 .programs__item--description {
-  line-height: 26px;
+  width: 550px;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170%;
 }
