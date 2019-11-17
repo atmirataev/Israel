@@ -4,15 +4,16 @@
   box-sizing: border-box;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $tablet-width-max) {
   .container {
     width: $tablet-width;
     padding: 0 50px;
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $mobile-width-max) {
   .container {
     width: $mobile-width;
+    padding: 0;
   }
 }

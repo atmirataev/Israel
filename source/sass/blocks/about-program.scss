@@ -1,5 +1,5 @@
 .about-program {
-  margin-bottom: 56px;
+  margin-bottom: 65px;
 }
 
 .about-program__title {
@@ -23,11 +23,11 @@
   padding: 48px 0 96px;
   background: url("../img/watercolor_Bg.png") no-repeat;
   background-position: center 0;
+  position: relative;
 }
 
 .about-program__img {
   margin: 0 auto;
-  position: relative;
   text-align: center;
   display: block;
 }
@@ -41,7 +41,7 @@
   width: 96px;
   height: 96px;
   position: absolute;
-  top: 77%;
+  top: 38%;
   left: 50%;
   margin-left: -48px;
 }
@@ -55,8 +55,12 @@
     padding: 48px 124px 96px 124px;
   }
 
+  .about-program__title {
+    width: 247px;
+  }
+
   .about-program__play-btn {
-    top: 80%;
+    top: 33%;
   }
 }
 
@@ -106,7 +110,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: 87.5%;
+    top: 51.5%;
     left: 50%;
     margin-left: -40px;
   }

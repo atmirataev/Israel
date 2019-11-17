@@ -1,5 +1,5 @@
 .programs {
-  min-width: $desktop-width;
+  width: 100%;
   padding-top: 40px;
   margin: 0 auto;
   background: url("../img/sketch_Bg.png") no-repeat;
@@ -28,7 +28,8 @@
 
 .programs__label {
   width: 228px;
-  padding: 25px 41px 24px 72px;
+  padding: 16px 41px 31px 72px;
+  margin-bottom: 3px;
   position: relative;
   font-style: normal;
   font-weight: normal;
@@ -48,18 +49,14 @@
     height: 35px;
     background-image: url("../img/noun_582688_cc.png");
   }
-
-
 }
 
 .programs__current-label {
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
-  background: url("../../img/Rectangle.png");
+  background: url("../../img/Rectangle.png") no-repeat;
   z-index: 0;
-
-
 }
 
 .programs__list {
@@ -89,4 +86,94 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 170%;
+}
+
+@media (max-width: $tablet-width-max) {
+  .programs__list {
+    width: 438px;
+  }
+
+  .programs__title {
+    margin-bottom: 45px;
+  }
+
+  .programs__item--description {
+    font-size: 15px;
+    width: 438px;
+  }
+
+  .programs__control {
+    padding: 0;
+    margin: 0;
+  }
+
+  .programs__current-label {
+    padding-top: 23px;
+  }
+}
+
+@media(max-width: $mobile-width-max) {
+  .programs {
+    padding-top: 14px;
+  }
+
+  .programs__item--description {
+    width: 228px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+
+  .programs_item--title {
+    width: 205px;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    background-image: none;
+  }
+
+  .programs__control {
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+
+  .programs__label {
+    width: 49px;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 15px 0 14px 0;
+    margin-right: 12px;
+    opacity: 0.87;
+    vertical-align: middle;
+    box-sizing: content-box;
+
+    &--common {
+      padding-left: 9px;
+    }
+  }
+
+  .programs__current-label {
+    width: 181px;
+    box-sizing: border-box;
+    background: $gradient;
+    font-weight: 500;
+    font-size: 16.1788px;
+    line-height: 19px;
+    font-variant: small-caps;
+    border-radius: 60px;
+    padding: 15px 12px 14px 52px;
+
+    &::before {
+      top: 7px;
+      left: 11 px;
+    }
+  }
+
+  .programs__title {
+    width: 288px;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
 }

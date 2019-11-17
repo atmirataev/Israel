@@ -7,3 +7,17 @@
   text-transform: uppercase;
   color: $blue;
 }
+
+@media(max-width: $tablet-width-max) {
+  .section-titles {
+    font-size: 30px;
+    line-height: 39px;
+  }
+}
+
+@media(max-width: $mobile-width-max) {
+  .section-titles {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+  }
+}
