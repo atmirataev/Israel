@@ -118,9 +118,14 @@
   }
 
   .programs__item--description {
-    width: 228px;
+    width: 288px;
     font-size: 14px;
     line-height: 160%;
+    margin: 0 0 15px;
+
+    &:last-of-type {
+      margin: 0;
+    }
   }
 
   .programs_item--title {
@@ -129,15 +134,20 @@
     line-height: 29px;
     letter-spacing: -0.02em;
     background-image: none;
+    margin-bottom: 17px;
   }
 
   .programs__control {
+    width: 100%;
     flex-wrap: nowrap;
     margin-bottom: 20px;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
   }
 
   .programs__label {
-    width: 49px;
+    width: 100%;
     font-size: 15px;
     line-height: 18px;
     margin: 0;
@@ -165,7 +175,7 @@
 
     &::before {
       top: 7px;
-      left: 11 px;
+      left: 11px;
     }
   }
 
@@ -176,4 +186,13 @@
     margin: 0 auto;
     margin-bottom: 16px;
   }
+
+  .programs__item {
+    padding: 0 16px;
+
+    &--title {
+      margin-bottom: 17px;
+    }
+  }
+
 }
