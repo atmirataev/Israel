@@ -73,6 +73,9 @@
 }
 
 @media (max-width: $tablet-width-max) {
+  .order {
+    margin-bottom: 115px;
+  }
 
   .order__title,
   .order__text,
@@ -111,6 +114,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     padding-top: 80px;
+    margin-bottom: 387px;
 
     &::before {
       width: 120px;

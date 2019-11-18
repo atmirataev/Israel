@@ -4,20 +4,34 @@
   background-size: 1366px 1028px;
   position: relative;
 
+  &::before {
+    content: "";
+    width: 581px;
+    height: 707px;
+    position: absolute;
+    left: 12px;
+    top: 0;
+    background: url("../../img/img_как-поехать.png") no-repeat;
+    background-position-x: left;
+  }
+
   &::after {
     content: "";
     width: 337px;
     height: 354px;
     position: absolute;
-    left: 1029px;
+    right: 0;
     top: 214px;
-    background: url("../../img/stamp.png") no-repeat;
+    background: url("../img/stamp.png") no-repeat;
     background-position-x: right;
   }
 }
 
-.conditions__content {
+.conditions__container {
+  width: 532px;
   padding-left: 106px;
+  margin-left: auto;
+  position: relative;
 }
 
 .conditions__img {
@@ -106,5 +120,136 @@
     left: -3px;
     top: 2px;
     background: $gradient;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .conditions {
+    background-size: 768px 514px;
+
+    &::before {
+      background-size: 290px 348px;
+      top: 100px;
+    }
+
+    &::after {
+      background-size: 168px 177px;
+    }
+  }
+
+  .conditions__title {
+    font-size: 30px;
+  }
+
+  .conditions__details,
+  .conditions__list,
+  .conditions__ps {
+    font-size: 13px;
+  }
+
+  .conditions__text {
+    font-size: 15px;
+  }
+
+  .conditions__details {
+    margin-bottom: 25px;
+  }
+
+  .conditions__text {
+    margin-bottom: 17px;
+    padding-left: 66px;
+  }
+
+  .conditions__list {
+    padding-left: 112px;
+  }
+
+  .conditions__item {
+    margin-bottom: 30px;
+
+    &::before {
+      left: 60px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width-max) {
+  .conditions {
+    width: 100%;
+    background-image: none;
+
+    &::before {
+      background: none;
+      width: 0;
+      height: 0;
+    }
+
+    &::after {
+      width: 264px;
+      height: 199px;
+      top: 277px;
+      right: 47px;
+    }
+  }
+
+  .conditions__title {
+    width: 288px;
+    margin: 0 auto 26px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .conditions__details,
+  .conditions__list,
+  .conditions__ps {
+    width: 100%;
+    padding: 0 17px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.87;
+  }
+
+  .conditions__text {
+    width: 100%;
+    padding: 0 17px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 22px;
+  }
+
+  .conditions__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .conditions__item {
+    padding-left: 43px;
+    margin-bottom: 38px;
+
+    &::before {
+      left: 8px;
+    }
+  }
+
+  .conditions__ps {
+    width: 320px;
+    padding-left: 24px;
+
+    &::before {
+      width: 4px;
+      height: 85px;
+      left: 9px;
+      top: 0px;
+    }
   }
 }
