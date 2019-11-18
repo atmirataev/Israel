@@ -1,6 +1,7 @@
 @import "_normalize.scss";
 @import "blocks/variables.scss";
 @import "scaffolding";
+@import "blocks/container";
 @import "blocks/page-header";
 @import "blocks/site-title";
 @import "blocks/section-titles.scss";
@@ -11,5 +12,4 @@
 @import "blocks/visually-hidden";
 @import "blocks/about-program";
 @import "blocks/programs";
-@import "blocks/container";
 @import "blocks/order";

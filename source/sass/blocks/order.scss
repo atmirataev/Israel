@@ -7,10 +7,9 @@
     width: 167px;
     height: 226px;
     position: absolute;
-    top: 20px;
-    left: -14px;
+    top: 158px;
+    left: 0px;
     background: url("../..//img/backpack.png") no-repeat;
-    transform: rotate(15deg);
   }
 
   &::after {
@@ -21,6 +20,7 @@
     right: 0px;
     top: 23px;
     background: url("../../img/girl-flag-bg.png") no-repeat;
+    z-index: -1;
   }
 }
 
@@ -39,7 +39,7 @@
 .order__user-tel {
   width: 312px;
   margin-left: 210px;
-  padding: 25px 145px 20px 38px;
+  padding: 20px 145px 20px 38px;
   border: 2px solid #E3E3E3;
   box-sizing: border-box;
   border-radius: 80px;
@@ -68,4 +68,94 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   color: #ffffff;
   z-index: 5;
+  border: none;
+}
+
+@media (max-width: $tablet-width-max) {
+
+  .order__title,
+  .order__text,
+  .order__user-tel {
+    margin-left: 110px;
+  }
+
+  .order__text {
+    margin-bottom: 125px;
+  }
+
+  .order__submit {
+    left: 370px;
+  }
+
+  .order {
+    padding-top: 90px;
+
+
+    &::before {
+      top: 78px;
+    }
+
+    &::after {
+      width: 500px;
+      height: 370px;
+      top: 68px;
+      background-size: 500px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .order {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 80px;
+
+    &::before {
+      width: 120px;
+      height: 162px;
+      top: 34px;
+      left: -12px;
+      background-size: 120px 162px;
+    }
+
+    &::after {
+      width: 424px;
+      height: 308px;
+      top: 370px;
+      left: 50%;
+      margin-left: -212px;
+      background-size: cover;
+    }
+  }
+
+  .order__title {
+    width: 286px;
+    margin: 0 auto 23px;
+    text-align: center;
+  }
+
+  .order__text {
+    width: 100%;
+    margin: 0 0 28px;
+    padding: 0 1em;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.87;
+  }
+
+  .order__user-tel {
+    width: 287px;
+    margin: 0 auto 9px;
+    padding: 20px 145px 18px 38px;
+    flex-grow: 1;
+  }
+
+  .order__submit {
+    width: 264px;
+    position: static;
+    margin: 0 auto;
+    flex-grow: 0;
+  }
 }

@@ -73,7 +73,7 @@
   }
 }
 
-.programs_item--title {
+.programs__item_title {
   text-transform: none;
   font-size: 28px;
   line-height: 34px;
@@ -81,7 +81,7 @@
   margin-bottom: 24px;
 }
 
-.programs__item--description {
+.programs__item_description {
   width: 550px;
   font-weight: normal;
   font-size: 15px;
@@ -97,7 +97,7 @@
     margin-bottom: 45px;
   }
 
-  .programs__item--description {
+  .programs__item_description {
     font-size: 15px;
     width: 438px;
   }
@@ -117,8 +117,12 @@
     padding-top: 14px;
   }
 
-  .programs__item--description {
-    width: 288px;
+  .programs__container {
+    width: 100%;
+  }
+
+  .programs__item_description {
+    width: 100%;
     font-size: 14px;
     line-height: 160%;
     margin: 0 0 15px;
@@ -128,13 +132,14 @@
     }
   }
 
-  .programs_item--title {
+  .programs__item_title {
     width: 205px;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: -0.02em;
     background-image: none;
     margin-bottom: 17px;
+    font-weight: bold;
   }
 
   .programs__control {
@@ -187,12 +192,17 @@
     margin-bottom: 16px;
   }
 
+  .programs__list {
+    width: 100%;
+  }
+
   .programs__item {
-    padding: 0 16px;
+    width: 100%;
+    padding: 20px 1em 0 1em;
+    box-sizing: border-box;
 
     &--title {
       margin-bottom: 17px;
     }
   }
-
 }
