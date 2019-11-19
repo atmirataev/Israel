@@ -10,7 +10,7 @@
     position: absolute;
     top: 158px;
     left: 0px;
-    background: url("../..//img/backpack.png") no-repeat;
+    background: url("../img/backpack.png") no-repeat;
   }
 
   &::after {
@@ -20,7 +20,7 @@
     position: absolute;
     right: 0px;
     top: 23px;
-    background: url("../../img/girl-flag-bg.png") no-repeat;
+    background: url("../img/girl-flag-bg.png") no-repeat;
     z-index: -1;
   }
 }
