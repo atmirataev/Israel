@@ -1,14 +1,19 @@
 .life-in-Israel__title {
-  width: 430px;
-  margin: 0 auto;
+  width: 415px;
+  margin: 0 auto 25px;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.02em;
 }
 
-.life-in-Israel__text {
-  width: 720px;
+.life-in-Israel__container {
+  width: 1152px;
   margin: 0 auto;
+}
+
+.life-in-Israel__text {
+  width: 725px;
+  margin: 0 auto -19px;
   font-weight: normal;
   font-size: 17px;
   line-height: 170%;
@@ -18,15 +23,41 @@
 
 .life-in-Israel__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style: none;
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.life-in-Israel__img {}
+.life-in-Israel__left-side {
+  width: 482px;
+}
+
+.life-in-Israel__right-side {
+  width: 657px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 66px;
+  justify-content: space-between;
+  margin-left: 13px;
+}
+
+.life-in-Israel__item {
+  align-items: center;
+  position: relative;
+}
 
 .life-in-Israel__features {
+  margin: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+  text-align: left;
   position: absolute;
+  bottom: 45px;
+  left: 35px;
 }
