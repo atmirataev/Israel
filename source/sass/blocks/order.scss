@@ -125,12 +125,13 @@
     }
 
     &::after {
-      width: 424px;
+      width: 320px;
       height: 308px;
       top: 370px;
       left: 50%;
-      margin-left: -212px;
-      background-size: cover;
+      margin-left: -160px;
+      background-size: auto;
+      background-image: url("../img/girl-flag-bg\ copy.png");
     }
   }
 
@@ -148,6 +149,7 @@
     font-size: 16px;
     line-height: 160%;
     opacity: 0.87;
+    box-sizing: border-box;
   }
 
   .order__user-tel {
