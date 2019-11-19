@@ -1,0 +1,32 @@
+.life-in-Israel__title {
+  width: 430px;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+}
+
+.life-in-Israel__text {
+  width: 720px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 170%;
+  text-align: right;
+  opacity: 0.87;
+}
+
+.life-in-Israel__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.life-in-Israel__img {}
+
+.life-in-Israel__features {
+  position: absolute;
+}
