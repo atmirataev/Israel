@@ -25,7 +25,7 @@
 }
 
 .life-in-Israel__container {
-  width: 1152px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .life-in-Israel__list {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   list-style: none;
@@ -50,27 +50,27 @@
   justify-content: center;
 }
 
-.life-in-Israel__left-side {
-  width: 482px;
-}
+// .life-in-Israel__left-side {
+//   width: 482px;
+// }
 
-.life-in-Israel__right-side {
-  width: 657px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 66px;
-  justify-content: space-between;
-  margin-left: 13px;
-}
+// .life-in-Israel__right-side {
+//   width: 657px;
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding-top: 66px;
+//   justify-content: space-between;
+//   margin-left: 13px;
+// }
 
 .life-in-Israel__item {
+  width: 100%;
   position: relative;
 }
 
 .life-in-Israel__features {
   margin: 0;
   font-family: "Raleway", "Arial", sans-serif;
-  font-weight: 800;
   font-size: 21px;
   line-height: 25px;
   color: #FFFFFF;
@@ -84,5 +84,64 @@
 @media(max-width: $tablet-width-max) {
   .life-in-Israel__container img {
     width: auto;
+  }
+}
+
+@media(max-width: $mobile-width-max) {
+  .life-in-Israel {
+    background: none;
+
+    &::after {
+      background: none;
+    }
+  }
+
+  .life-in-Israel__title {
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 23px;
+  }
+
+  .life-in-Israel__text {
+    width: 100%;
+    text-align: left;
+    padding: 0 15px;
+    box-sizing: border-box;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.87;
+    margin-bottom: 32px;
+  }
+
+  .life-in-Israel__img {
+    display: block;
+    margin: 0 auto;
+    width: 265px;
+    height: 397px;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  .life-in-Israel__features {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    width: 256px;
+    bottom: 22px;
+    left: 50%;
+    margin-left: -128px;
+  }
+
+  .life-in-Israel__img_specific-position {
+    object-position: -96px;
+  }
+
+  .life-in-Israel__pagination {
+    width: 64px;
+    height: 8px;
+    bottom: 0;
   }
 }

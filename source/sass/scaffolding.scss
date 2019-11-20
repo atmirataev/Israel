@@ -43,7 +43,6 @@ body {
   line-height: 24px;
   color: $black;
   box-sizing: border-box;
-  position: relative;
 }
 
 a {
@@ -53,10 +52,4 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-@media(max-width: $mobile-width) {
-  body {
-    width: $mobile-width;
-  }
 }

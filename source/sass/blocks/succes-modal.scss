@@ -1,5 +1,6 @@
 .success-modal {
   padding: 216px 60px 112px;
+  position: fixed;
 
   &::before {
     content: "";

@@ -1,6 +1,11 @@
 .callback-modal {
+  width: 480px;
   padding: 58px 72px 40px 48px;
-
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -240px;
+  margin-top: -270px;
 }
 
 .callback-modal__form {

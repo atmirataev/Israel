@@ -7,16 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Проект "Израиль"</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="swiper/css/swiper.min.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="page-header__nav">
       <ul class="page-header__list">
-        <li class="page-header__item page-header__item--tel">
+        <li class="page-header__item page-header__item_tel">
           <a href="tel:(972) 2 – 621 – 6581">+ (972) 2 – 621 – 6581</a>
         </li>
-        <li class="page-header__item page-header__item--call">
+        <li class="page-header__item page-header__item_call">
           <a href="#">Заказать звонок</a>
         </li>
       </ul>
@@ -54,27 +55,89 @@
     <section class="programs">
       <div class="container programs__container">
         <h2 class="section-titles programs__title">Программы</h2>
-        <input class="visually-hidden" id="program-type-1" name="programs__types" type="radio">
-        <input class="visually-hidden" id="program-type-2" name="programs__types" type="radio">
-        <input class="visually-hidden" id="program-type-3" name="programs__types" type="radio">
-        <input class="visually-hidden" id="program-type-4" name="programs__types" type="radio">
-        <input class="visually-hidden" id="program-type-5" name="programs__types" type="radio">
         <div class="programs__control">
-          <label class="programs__label programs__label--common" for="program-type-1">
+          <button class="programs__btn programs__btn_common">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="#fff" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect x="4" y="2" width="28" height="33" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0" transform="scale(0.0357143 0.030303)" />
+                </pattern>
+                <image id="image0" width="28" height="33"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAhCAYAAADK6cvnAAACgElEQVRIib2Wz0tUURTHP9lkxExZCCFiCA24UhCCVApLok0UFBHVImonrly1qo24FJEW7oVCc2VKmNHChhaCK/+CDESRFjX5g8rM2+J+X3N6zozvDb35wmHe+95zvt/zLve9M1AZRhRVQTfgFN3VMFwyhktJm92R0VeFE5cYVmVyTeHEJYJ+GawYbkVc//82qwE2gV2g3fDt4jaVcyBSQBa4B9SqOIxfQA+QAbaAK8B1rX1XZIBZ4D1wpITPDvASYJzCqUs6xlPAFHBfnbwGPgNpYA/YAO4CJ4GPeoJ0qPtt4DJwFsgDk8AJ/BZvA6fNjkwFRTl1MBASq5OpA1qKbFWAFuVsqMZiQGs5S7aax84afl7cWBmzAGPKnTdc1ui2hgsmtfBW9xd0vwvURzCsV65TLdJy0t6HRtNNDzCn68EIZgEGVTMnjUCvsVTBsBJ+6/cL/nWJilrVWI3hcgUZYNl09iiGWYCHpn5ZmmUxQuHEVYrgZB84M+uANdNhXwVmfaZ+jf2vyT8YVeIPCk8ZftHLIQ18C2mMlkpuNp2dB2Z0PRTDcEg1M9II9JqLJU+bZEIFDRHMGkINY5qeDief08Ie0GT4N+InIhhOKHfWcE3SdPL4iwWRT0Iix/EfZAe0lTFrU05eNRZPtbYAfk49ADq1eBE/ro6ps+AAoM5zFJ8Wl3TtgGf4k1mDn5WntNYpL55TvXn44hBwBrgJHKX4xP8JXAVu4Sf+Ywqfux38yczgZ9076YSRks6rImslkcdvc5fhusTl4whFRS9+W9YNty6uNwlDgE8yuK1w4hLDDZlsKZy4RLFI4dQtJm0G0GEMO+IWH67AcBX/Z/cD/h2OhT993f+vTKFcIwAAAABJRU5ErkJggg==" />
+              </defs>
+            </svg>
             Общие
-          </label>
-          <label class="programs__label programs__label--academic programs__current-label" for="program-type-2">
+          </button>
+          <button class="programs__btn programs__btn_academic">
+            <svg width="44" height="43" viewBox="0 0 44 43" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g filter="url(#filter0_d)">
+                <rect x="4" y="3" width="36" height="35" fill="url(#pattern0)" />
+              </g>
+              <defs>
+                <filter id="filter0_d" x="0" y="0" width="44" height="43" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="1" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0" transform="scale(0.0277778 0.0285714)" />
+                </pattern>
+                <image id="image0" width="36" height="35"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAjCAYAAAD8BaggAAADhklEQVRYhcWXXYgWVRjHf7tZSOmu0UZYWJZZedFFISpBYrCGXngZLF7sWtBNXsV2YUJCdpGVfWwhhBIIkVYWdKMhkSwKfSJ9LBjIWoh9LKUkLUjGtr8u5hn27OvMuzPvu0t/eDgz5zzP//nPmWfOOdOh0ibmATvjegcw0Rab2o49qp51Cmejr2XOVgPXqCcSIXvCcpwInzkXtFTdmyT+Wu1NxnujL8feiJkTQduSRL+rW5r4blH/SPy3zaagR9TTCfkL6oIKcQvCN8fp4GpZ0Er1WEJ4UF1RZ/rDVkRsjmPBXVnQYnUoIfhe3dCCkEbbGFw5hiJXU0GD6uUIuKhunQUhjbY1uI1cg0WCNqonE/Wvqt01knSqHTX8uyNHjpOhAdTdycAhtafmE29Wf1U/a2G2etQPkvy7O4HzycJ9PbCk4iK/AfgKeAdYDHzTwkaxBFiU3J/Pld6vHkmUvq8uL3mqe2I8x+fqQzVnZnkDx5HQcEVRb1ZHw+my+qJ6XYzdpL6ekJxRB2oK6Q7O/MMZjZylXxlmxbkvSfyb+orZ6qw6rj5pvSJGfUz9K+HdV8RRFrwpgn5wOo7XFIH6sPpFwjES7aYi/86SYrsx2kFgZdL/ILAHuKNCwS4DDgJHgdXAp8CdwK6GHNNQJiiHwEhcHwe+BJ4AzgDPAgsLYhaSHdhGgT7gF6Af6I24G8Kvo46gvP8asqUA4BNgDbA97ndEgoEkbiD6non7p8lm5e0C7lqC/k6uJ6O9OdrngduBA2TTvh84HLY/+g6Ez64GrrIcUygpxFVReK+pt8X1GwV+a9XhpGCHo69ZkR8O31VF42VBneqY+o/ZJ14mKLfHw2b64pYF11jkqCwItS+C80XspQoJm9lV6nfB1VfmNxPJe8nreLkNMUvNthjNtoxS3ypkHwXRRfUptauGkC6z806OQzPFVCG9z+mYVN9S+9W7zI4Q88N6oq8/fCaTuO1VHqKKoHVB+K66U53wSlwKa8SE+qZ6dxUxKvNK1oginCJbgYeAdcB64F6yM02+eJ4LGyFbSIeBCzVyVBL0Z7Rd0V4APgzLcW20l+okL8QMU7hIPRrTP6Y+UHXqW7WZHD4OMT9H+68Fvy6zac12+26yc/M54FbgObK9b33br6UJmgmaH+1PZBvstw39c4JmRZ0fD9aS7eKr4/7q/0vQOPAjcAtTZ55xslc4Z/gPID+hqYhSLi0AAAAASUVORK5CYII=" />
+              </defs>
+            </svg>
             Академические
-          </label>
-          <label class="programs__label programs__label--internship" for="program-type-3">
+          </button>
+          <button class="programs__btn programs__btn_internship">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect x="2" y="5" width="32" height="25" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0" transform="scale(0.03125 0.04)" />
+                </pattern>
+                <image id="image0" width="32" height="25"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAZCAYAAABQDyyRAAAB/klEQVRIidXWzYuNcRQH8M/cueNlBiXlpVh4WakJUUM2ouRtofgD2MuOslE2WEpWlrJTdmOhTIqFSWYWhKgpZSI0ygzm7boWv/M0j+ne5rnXnZFvnX7Pc37n+Z7T+Z1zfg/FsB4PMI6pOWQSA9hTkLsQHqHaoHzDilYFUAnSnQVsuzAW9nMGUI61G8fQVsNmae75cNj+qsNXQnuO5yre17F9gj44qPH0tkrOtOEpduEZnqOzTsStwrhU1PulgvUqotk3z47zWBk+qyVMhHKivn3LkfmqkI6givvYtADOl+Nm+ByDfn8WxhWsmwfHy3AWn3K+vjKTgY+5jUncwnHpvJrFEhzADXzO8Y9IrTzahkFsxxEswiVsy5F8x2MpU28whA8YlUZvFR1S96zBZmyURvHu0GUYxmU8xAtRA4NBcihneDQyMKJ2/1akdhrHTzN3RC3bKfTiVGQE1mZ72SQkjdAMvSFd2CuN4B5siOy0Y7HaeIl30lwZkO6RL7NsVuVfsgycqEM4GxfD/p5UrKtxLXR3C3JsVSMDRfEj1h24HkTdoas0StZMAH2Yls7x5Ky9OwsRwICUwp74vhr611KnzHsA8Dbkr1FqBcl/H0BHPA8voN+hWMtlaajAaek2bLYuimIaW/KK8/7dL9nt7OfxnHQXdGpimDSIkpSFflz4DWW406ArksvgAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
             Стажировки
-          </label>
-          <label class="programs__label programs__label--volunteering" for="program-type-4">
+          </button>
+          <button class="programs__btn programs__btn_volunteering">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect x="2" y="3" width="32" height="29" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0" transform="scale(0.03125 0.0344828)" />
+                </pattern>
+                <image id="image0" width="32" height="29"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAC60lEQVRIicXXTYiVVRgH8N84Y2gp+dFAQ4KjkWKKUk3Ql5i4UEIKQmkR7hQlEERduXAnhNgqqE2LiL4nUBduFD8WKqgF1kQZCDFqDDqN32aY423xnON95+3eOzN4x/5wOJfnfDz/85zn/J/30hx04Tv04QdsSfYZ+By9+BHbm+RvCF7CPVRK7Qj+qGNvbZbzFpxJG3+JhXgLAwWHe7AIKwqE1jaLwOy04ZWSfSZ+whcl+6o0vzsb2h6QwGDqW0r2XhGNMqam/s4D+h2C0+JU3w4zb6Hq1bzdTAILxIkq+KrBnOtpzt5mOs94DXeTg29KYy/gVhrbNxbOM15WjcTuZJuDv4zhyct4EX8nhweEMBUJPRR04ZKqDnzdaHL5+TQLT+JNoQ/dw8z9f5Ej8KgoHFkgxov7u/kwSKwQylUuGhfwRoHQrNQeb6bzFpzF07gh3nK2T8FVHMQSPJHG7uB3nMAp/Iqfhcrl9aNCvzjxAnHS8ZgndL4YkSu47L+Ryq0fR/EJ3hkNgVwinyrY5iXbTWzEs6KGt4oMX4J1+Azf43YNQltHSuBCWjC3YFuebIdHuEebKMHzsb5AohZmoKO4sBZy2ewfxnE7rom86C3seU9cYYe40i5RL1bimTSvG2vqEZiS+j8bON+GHYnAQLJ1YGL6XRHJOa207ioewWr0jKuzeV40UGc8b1QRz3J2ahML461pn+s4hA/E9+NUbEpzltaLQH5yvzQg8JGo/+0iMSeLkw2KpLwsakK/KFAZy7A5/T5I7ST8NNn2Y3EDEiPFBGxAj2qCHkiEaxLYa+iTOor3RH0fDV7BLlWtqYhkzRHQhpwHfYWF7anfjefxamqE8h3Hb0JDLooQj8N0dApRWyryIuMkPhZ/VIYoZla3d/GcCPnFZMuvYY2IyjX1lbBWO4cPhXDVRIsQm9drjN0Sz+pGwTZJfPXMSafsFFn9GP4RL+O8UMceHFNfkO4T6MROEa5BcS19eF/c/ZjiXw4X3+LTbxDoAAAAAElFTkSuQmCC" />
+              </defs>
+            </svg>
             Волонтерство
-          </label>
-          <label class="programs__label programs__label--religious" for="program-type-5">
+          </button>
+          <button class="programs__btn programs__btn_religious">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path d="M6 5H29V30H6V5Z" fill="url(#pattern0)" />
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0" transform="scale(0.0434783 0.04)" />
+                </pattern>
+                <image id="image0" width="23" height="25"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAZCAYAAADaILXQAAACa0lEQVRIibWWX2iNcRjHP+fd8SdrZOVcHJSTUi5coDMU4kKKYRGliHbhgoaQP+ViF67U7pQ/t6Jc4JTlUtSItAuZWCRa2aTNysG2M3tdPN9f79PbHLbsqdPzfJ8/3/f353mf9wA0AQcwWQicAGYKHwHWy14EnHSxXcA+2QXVTRNuAYoAP4HYOWNglXAMPJZ9TniDi4W6M7KX6uExUMoC+4E5SroPTAe6hY8BXbLvAEPAS+G9bhclYAToAYaBo0BnBOzQ0QAsBxqBPJABtrqVFhUrCDepFmClcvNaXCOwBWDMba/VbT0j+7libcKB0B/LRdmrgVmhLgI+k0hZesT5+qW/SQ9LDwKVVKziHtgfMYUyFeRh5USpB9RIjzpfOIZMakFjJH096mKBPIqAX44onHXWJeUcGcB36VpHGhY1BMyQXYmAT478hfQ66QGsA+pJev8jsFYk9+TbKP0OWCC7F+CyVrnCbatPCZuFB4CHsh+QtGEO6+sY+Kqas8KHPUG7gjeFzws3O7LwGwTWKN4uX5hPvcIFsIv6IkdeCWXh0+7Irst3yvmuydcpvF34kctht5xhjiwBfsj3BLuDVuE9wDZsjsTAa9XMxi40BpaRkpICd4Vr3Jb/9Lvk6rvlu5AmBrvMp0p4BsyTf76O4q1iHcAhkpZrwEZIDNwYj9g/4JZb2RWSKXhcvnCRReC2y22rRuylGet/fwTh0vtS/ldovE5UdmKt+SFF+Ea72jQZ0vEkzOyD/1owkakY3tqe/0Veh73itVjXACwWzmFfnUlLB9X7/Gq14uxfyLuAudi4LWN/Q+qwr34EvK9W/Bt09sNjLKtzQQAAAABJRU5ErkJggg==" />
+              </defs>
+            </svg>
             Религиозные
-          </label>
+          </button>
         </div>
         <ul class="programs__list">
           <li class="programs__item">
@@ -82,10 +145,11 @@
             <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
               voluptates assumenda consectetur ex dolores consequatur obcaecati tempore laudantium nisi reiciendis
               optio,
-              ut dolorum, vitae odio ipsa laboriosam! Quia nisi quam ex reiciendis eaque? Vel voluptate eos id quo quos
+              ut dolorum, vitae odio ipsa laboriosam! Quia nisi quam ex reiciendis eaque? Vel voluptate eos id quo
+              quos
               fugiat ut. Suscipit perferendis quos, molestiae exercitationem ad unde voluptas. Explicabo.</p>
           </li>
-          <li class="programs__item programs__item--current">
+          <li class="programs__item">
             <h3 class="section-titles programs__item_title">Академические</h3>
             <p class="programs__item_description">Провести семестр или год за рубежом, знакомясь с различными
               культурами
@@ -93,8 +157,10 @@
               религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.
             </p>
             <p class="programs__item_description">
-              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это
+              Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной
+              религии,
+              законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все
+              это
               в
               удивительной университетской среде.</p>
           </li>
@@ -111,8 +177,10 @@
             <h3 class="section-titles programs__item_title">Волонтерство</h3>
             <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
               culpa optio, repellendus ullam tempora vel repellat! Similique quisquam consequuntur, sapiente officiis
-              eligendi ducimus nostrum inventore, consequatur nam molestiae ratione assumenda suscipit ullam, quam vitae
-              perferendis recusandae culpa nemo. Possimus molestiae, iste quia voluptatibus cupiditate tenetur sapiente
+              eligendi ducimus nostrum inventore, consequatur nam molestiae ratione assumenda suscipit ullam, quam
+              vitae
+              perferendis recusandae culpa nemo. Possimus molestiae, iste quia voluptatibus cupiditate tenetur
+              sapiente
               aliquid id nemo quae.</p>
           </li>
           <li class="programs__item">
@@ -130,8 +198,10 @@
       <h2 class="section-titles order__title">Хочу поехать!</h2>
       <p class="order__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
-      <input type="tel" class="order__user-tel" placeholder="телефон">
-      <button class="order__submit" type="submit">перезвоните мне</button>
+      <form action="">
+        <input type="tel" class="order__user-tel" placeholder="телефон">
+        <button class="order__submit callback--btn" type="submit">перезвоните мне</button>
+      </form>
     </section>
     <section class="conditions">
       <div class="conditions__container">
@@ -152,43 +222,40 @@
       </div>
     </section>
     <section class="life-in-Israel">
-      <div class="life-in-Israel__container">
-        <h2 class="section-titles life-in-Israel__title">Жизнь в израиле</h2>
-        <p class="life-in-Israel__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
-          стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
-        <ul class="life-in-Israel__list">
-          <div class="life-in-Israel__left-side">
-            <li class="life-in-Israel__item">
-              <img class="life-in-Israel__img" src="img/1img.png" srcset="img/1img2x.png 2x" width="482" height="732"
-                alt="Здание синагоги">
-              <p class="life-in-Israel__features">Экскурсии по Израилю <br> и знакомство с его историей</p>
-            </li>
-          </div>
-          <div class="life-in-Israel__right-side">
-            <li class="life-in-Israel__item">
-              <img class="life-in-Israel__img" src="img/2img.png" srcset="img/2img2x.png 2x" width="211" height="318"
-                alt="Студент">
-              <p class="life-in-Israel__features">Изучение иврита</p>
-            </li>
-            <li class="life-in-Israel__item">
-              <img class="life-in-Israel__img" src="img/3img.png" srcset="img/3img2x.png 2x" width="411" height="318"
-                alt="Студенты">
-              <p class="life-in-Israel__features">Обучение современным <br> навыкам и профессиям</p>
-            </li>
-            <li class="life-in-Israel__item">
-              <img class="life-in-Israel__img" src="img/4img.png" srcset="img/4img2x.png 2x" width="411" height="318"
-                alt="Студенты">
-              <p class="life-in-Israel__features">Совместные творческие проекты <br> с израильской молодёжью</p>
-            </li>
-            <li class="life-in-Israel__item">
-              <img class="life-in-Israel__img" src="img/5img.png" srcset="img/5img2x.png 2x" width="214" height="318"
-                alt="Человек">
-              <p class="life-in-Israel__features">Развитие лидерства</p>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </section> -->
+      <h2 class="section-titles life-in-Israel__title">Жизнь в израиле</h2>
+      <p class="life-in-Israel__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
+        стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
+      <ul class="swiper-container life-in-Israel__list">
+        <div class="swiper-wrapper">
+          <li class="swiper-slide life-in-Israel__item">
+            <img class="life-in-Israel__img" src="img/1img.png" srcset="img/1img2x.png 2x" width="482" height="732"
+              alt="Здание синагоги">
+            <p class="life-in-Israel__features">Экскурсии по Израилю <br> и знакомство с его историей</p>
+          </li>
+          <li class="swiper-slide life-in-Israel__item">
+            <img class="life-in-Israel__img" src="img/2img.png" srcset="img/2img2x.png 2x" width="211" height="318"
+              alt="Студент">
+            <p class="life-in-Israel__features">Изучение иврита</p>
+          </li>
+          <li class="swiper-slide life-in-Israel__item">
+            <img class="life-in-Israel__img" src="img/3img.png" srcset="img/3img2x.png 2x" width="411" height="318"
+              alt="Студенты">
+            <p class="life-in-Israel__features">Обучение современным <br> навыкам и профессиям</p>
+          </li>
+          <li class="swiper-slide life-in-Israel__item">
+            <img class="life-in-Israel__img life-in-Israel__img_specific-position" src="img/4img.png"
+              srcset="img/4img2x.png 2x" width="411" height="318" alt="Студенты">
+            <p class="life-in-Israel__features">Совместные творческие проекты <br> с израильской молодёжью</p>
+          </li>
+          <li class="swiper-slide life-in-Israel__item">
+            <img class="life-in-Israel__img" src="img/5img.png" srcset="img/5img2x.png 2x" width="214" height="318"
+              alt="Человек">
+            <p class="life-in-Israel__features">Развитие лидерства</p>
+          </li>
+        </div>
+        <div class="swiper-pagination life-in-Israel__pagination"></div>
+      </ul>
+    </section>
     <section class="gallery">
       <h2 class="section-titles gallery__title">#masaisrael</h2>
       <p class="gallery__text">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
@@ -203,12 +270,12 @@
           <p class="questions__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus commodi expedita
             eaque ad quaerat possimus! Nostrum possimus totam laborum perspiciatis.</p>
         </li>
-        <li class="questions__item ">
+        <li class="questions__item">
           <p class="questions__text">Что такое грант на обучение?</p>
           <p class="questions__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nihil qui quis
             similique quibusdam nulla reprehenderit eum eaque, blanditiis consequuntur.</p>
         </li>
-        <li class="questions__item questions__item_current">
+        <li class="questions__item">
           <p class="questions__text">Как определяется стоимость программы?</p>
           <p class="questions__answer">Полная стоимость определяется организаторами в зависимости от направления. В
             большинстве случаев грант «Маса» не покрывает полную стоимость программы, и поэтому предусматривается
@@ -236,15 +303,15 @@
       <p class="modal__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
         обязательно поможем найти ответ на ваш вопрос!</p>
       <form class="callback-modal__form" action="#">
-        <input type="text" class="callback-modal__input" name="user-name" id="user-name" placeholder="Имя">
+        <input type="text" class="callback-modal__input" name="user-name" id="user-name" placeholder="Имя" autofocus>
         <input type="tel" class="callback-modal__input" name="user-tel" id="user-tel" placeholder="Телефон">
-        <button class="modal__main-btn" type="submit">Перезвоните мне</button>
+        <button class="modal__main-btn callback--btn" type="submit">Перезвоните мне</button>
         <label class="callback-modal__checkbox-label">
           <input class="visually-hidden" type="checkbox" name="agreement">
           Нажимая на кнопку, вы даёте согласие на обработку персональных данных
         </label>
-        <button class="modal__close">Закрыть</button>
       </form>
+      <button class="modal__close">Закрыть</button>
     </section>
     <section class="success-modal modal hidden">
       <h3 class="section-titles modal__title success-modal__title">Заявка принята</h3>
@@ -282,7 +349,7 @@
     <form action="">
       <input type="text">
       <input type="tel" name="" id="">
-      <button type="submit">Перезвоните мне</button>
+      <button type="submit callback--btn">Перезвоните мне</button>
     </form>
   </section>
   </main>
@@ -290,7 +357,18 @@
     <img src="" alt="" class="main-footer__logo">
     <p class="main-footer__copyright">Copyright someDesignCompany ©2019</p>
   </footer>-->
-
+  <script src="js/modals.js"></script>
+  <script src="js/programs.js"></script>
+  <script src="js/questions.js"></script>
+  <script src="swiper/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
