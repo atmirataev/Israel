@@ -2,6 +2,7 @@
   padding: 216px 60px 112px;
   position: fixed;
 
+
   &::before {
     content: "";
     width: 71px;
@@ -9,7 +10,7 @@
     position: absolute;
     top: 120px;
     left: 206px;
-    background-image: url("../../img/Ok checkmark.svg");
+    background-image: url("../img/Ok checkmark.svg");
   }
 }
 

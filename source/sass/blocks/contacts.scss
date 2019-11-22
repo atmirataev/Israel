@@ -1,0 +1,199 @@
+.contacts {
+  background: url("../img/watercolor_Bg-6.png") no-repeat 0 0;
+  padding-left: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 75px;
+  border-bottom: 1px solid #484848;
+}
+
+.contacts__title {
+  letter-spacing: -0.02em;
+  margin: 0 0 48px 0;
+}
+
+.contacts__top-left {
+  width: 515px;
+}
+
+.contacts__location {
+  font-size: 15px;
+  line-height: 150%;
+  opacity: 0.74;
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 22px;
+
+  &::before {
+    content: "";
+    width: 12px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    background: url("../img/marker.png") no-repeat 0 0;
+  }
+
+  &_city {
+    font-weight: 500;
+    font-variant: small-caps;
+    border-bottom: 1px dashed #1FC0FC;
+    position: relative;
+    margin-left: 12px;
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 15px;
+      position: absolute;
+      top: 3px;
+      right: -28px;
+      background: url("../img/gps.png") no-repeat 0 0;
+    }
+  }
+}
+
+
+.contacts__curator {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.contacts__curator-data {
+  width: 264px;
+  position: relative;
+  padding-left: 24px;
+
+  &_name {
+    margin: 0 0 7px 0;
+    opacity: .74;
+  }
+
+  &_your-curator {
+    color: $blue;
+    margin-right: 5px;
+  }
+
+  &_address {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.74;
+  }
+}
+
+.contacts__curator-data_social {
+  position: absolute;
+  bottom: 2px;
+  left: 19px;
+  width: 96px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__curator-data_social-fb {
+  opacity: .16;
+}
+
+
+.contacts__text {
+  width: 486px;
+  font-size: 17px;
+  line-height: 170%;
+  opacity: 0.87;
+  margin: 0;
+}
+
+.contats-us__consultation {
+  width: 328px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+  opacity: 0.87;
+  margin: 0 0 14px 0;
+}
+
+
+.contacts__non-disclosure {
+  width: 364px;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.contacts__top-right {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 28px;
+    position: absolute;
+    bottom: 192px;
+    right: 165px;
+    background: url("../img/Marker-map.svg") no-repeat 0 0;
+  }
+}
+
+.contacts__bottom-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 72px;
+}
+
+.contacts__user-name {
+  width: 250px;
+  padding: 20px 10px 20px 40px;
+  box-sizing: border-box;
+  border: 2px solid #E3E3E3;
+  border-radius: 80px;
+  margin-right: 18px;
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    font-variant: small-caps;
+    opacity: 0.5;
+  }
+}
+
+.contacts__user-tel {
+  width: 250px;
+  padding: 20px 10px 20px 40px;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  opacity: 0.87;
+  box-sizing: border-box;
+  border: 2px solid $yellow;
+  border-radius: 80px;
+}
+
+.contacts__submit {
+  width: 216px;
+  padding: 20px 0;
+  background: $gradient;
+  border-radius: 80px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.contacts__form {
+  width: 877px;
+  padding-top: 66px;
+}

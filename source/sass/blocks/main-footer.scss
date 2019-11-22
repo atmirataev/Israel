@@ -1,0 +1,27 @@
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 23px 112px;
+}
+
+.main-footer__social {
+  width: 112px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  opacity: .3;
+  padding: 0;
+  margin: 0;
+}
+
+.main-footer__copyright {
+  width: 209px;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}

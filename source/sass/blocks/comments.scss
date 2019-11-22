@@ -1,6 +1,17 @@
 .comments {
   position: relative;
-  background: url("../img/img_Testimonials.png") no-repeat 98px 58px;
+  background: url("../img/watercolor_bg-5.png") no-repeat right 0;
+  margin-bottom: 105px;
+
+  &::before {
+    content: "";
+    width: 364px;
+    height: 480px;
+    position: absolute;
+    top: 57px;
+    left: 98px;
+    background: url("../img/img_Testimonials.png") no-repeat 0 0;
+  }
 
   &::after {
     content: "";
@@ -98,7 +109,12 @@
 
 @media (max-width: $tablet-width-max) {
   .comments {
-    background-position-x: 0;
+
+    &::before {
+      width: 300px;
+      height: 400px;
+      background-size: 300px 400px;
+    }
 
     &::after {
       top: 200px;
@@ -129,8 +145,15 @@
 
 @media (max-width: $mobile-width-max) {
   .comments {
-    background-size: 240px 320px;
-    background-position: center 64px;
+    background: none;
+
+    &::before {
+      width: 240px;
+      height: 320px;
+      left: 41px;
+      top: 64px;
+      background-size: 240px 320px;
+    }
 
     &::after {
       width: 100%;
