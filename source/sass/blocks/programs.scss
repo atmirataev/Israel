@@ -39,48 +39,77 @@
   border: none;
   background-color: transparent;
   text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    z-index: 100;
+  }
+
+  &_common::before {
+    width: 28px;
+    height: 33px;
+    background: url("../img/1_b.png");
+  }
+
+  &_common:focus::before {
+    background: url("../img/1_w.png");
+  }
+
+  &_academic::before {
+    width: 36px;
+    height: 35px;
+    background: url("../img/noun_582688_c.png");
+  }
+
+  &_academic:focus::before {
+    background: url("../img/noun_582688_cc.png");
+  }
+
+  &_internship::before {
+    width: 32px;
+    height: 25px;
+    background: url("../img/3_b.png");
+  }
+
+  &_internship:focus::before {
+    background: url("../img/3_w.png");
+  }
+
+  &_volunteering::before {
+    width: 32px;
+    height: 29px;
+    background: url("../img/4_b.png");
+  }
+
+  &_volunteering:focus::before {
+    background: url("../img/4_w.png");
+  }
+
+  &_religious::before {
+    width: 23px;
+    height: 25px;
+    background: url("../img/5_b.png");
+  }
+
+  &_religious:focus::before {
+    background: url("../img/5_w.png");
+  }
 }
 
-.programs__control svg {
-  position: absolute;
-  top: 8px;
-  left: 20px;
-  fill: #fff;
-}
 
 .programs__current-btn {
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
-  background: $gradient;
-  z-index: 0;
+  background: url("../img/Rectangle.png") no-repeat;
   position: relative;
 
 
   &:focus {
     outline: none;
-  }
-
-  &::before {
-    content: "";
-    width: 23px;
-    height: 50px;
-    position: absolute;
-    right: -7px;
-    top: 30px;
-    background-color: #fff;
-    transform: rotate(40deg);
-  }
-
-  &::after {
-    content: "";
-    width: 23px;
-    height: 50px;
-    position: absolute;
-    right: -5px;
-    top: -18px;
-    background-color: #fff;
-    transform: rotate(140deg);
   }
 }
 
@@ -181,14 +210,50 @@
     font-size: 15px;
     line-height: 18px;
     margin: 0;
-    padding: 15px 0 14px 0;
-    margin-right: 12px;
+    padding: 18px 0 14px 24px;
+    margin-right: 17px;
     opacity: 0.87;
     vertical-align: middle;
     box-sizing: content-box;
 
-    &_common {
-      padding-left: 9px;
+    &::before {
+      top: 11px;
+      left: -8px;
+    }
+
+    &_common::before,
+    &_common:focus::before {
+      width: 24px;
+      height: 29px;
+      background-size: 24px 29px;
+    }
+
+    &_academic::before,
+    &_academic:focus::before {
+      width: 32px;
+      height: 31px;
+      background-size: 32px 31px;
+    }
+
+    &_internship::before,
+    &_internship:focus::before {
+      width: 28px;
+      height: 21px;
+      background-size: 28px 21px;
+    }
+
+    &_volunteering::before,
+    &_volunteering:focus::before {
+      width: 28px;
+      height: 25px;
+      background-size: 28px 25px;
+    }
+
+    &_religious::before,
+    &_religious:focus::before {
+      width: 19px;
+      height: 21px;
+      background-size: 19px 21px;
     }
   }
 
@@ -199,14 +264,15 @@
     font-weight: 500;
     font-size: 16.1788px;
     line-height: 19px;
+    font-variant: normal;
     font-variant: small-caps;
     border-radius: 60px;
-    padding: 15px 12px 14px 52px;
+    font-weight: 500;
+    padding: 15px 31px 14px 45px;
 
-    &::before,
-    &::after {
-      width: 0;
-      height: 0;
+    &::before {
+      top: 11px;
+      left: 8px;
     }
   }
 

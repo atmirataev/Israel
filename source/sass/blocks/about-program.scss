@@ -32,22 +32,13 @@
   display: block;
 }
 
-.about-program__img-mob {
-  display: none;
-}
-
 .about-program__play-btn {
   content: "";
-  width: 96px;
-  height: 96px;
   position: absolute;
   top: 38%;
   left: 50%;
   margin-left: -48px;
-}
-
-.about-program__play-btn-mob {
-  display: none;
+  fill: #fff;
 }
 
 @media(max-width: $tablet-width-max) {
@@ -95,23 +86,14 @@
   }
 
   .about-program__img {
-    display: none;
-  }
-
-  .about-program__img-mob {
     display: block;
     text-align: center;
     margin: 0 auto;
   }
 
   .about-program__play-btn {
-    display: none;
-  }
-
-  .about-program__play-btn-mob {
-    content: "";
-    display: block;
-    position: absolute;
+    width: 80px;
+    height: 80px;
     top: 51.5%;
     left: 50%;
     margin-left: -40px;
