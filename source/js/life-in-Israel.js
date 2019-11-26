@@ -1,36 +1,30 @@
-// 'use strict';
-// var TABLET_WIDTH = 768;
+'use strict';
 
-// var israelLifeContainer = document.querySelector('.life-in-Israel__container');
-// var israelLifeList = israelLifeContainer.querySelector('.life-in-Israel__list');
-// var israelLifeItems = israelLifeContainer.querySelectorAll('.life-in-Israel__item');
+var breakpoint = window.matchMedia('(min-width:768px)');
+var lifeInIsraelSwiper;
 
-// function doBlockAsSwiper() {
-//   var viewportWidth = document.body.clientWidth;
-//   console.log(viewportWidth);
+var breakpointChecker = function () {
+  if (breakpoint.matches === true) {
 
-//   if (viewportWidth < TABLET_WIDTH) {
-//     israelLifeContainer.classList.add('swiper-container');
-//     console.log(israelLifeContainer);
-//     israelLifeList.classList.add('swiper-wrapper');
-//     israelLifeItems.forEach(function (item) {
-//       item.classList.add('swiper-slide');
-//     });
+    if (lifeInIsraelSwiper !== undefined) {
+      lifeInIsraelSwiper.destroy(true, true);
+    }
 
-//     var swiper = new Swiper('.swiper-container', {
-//       scrollbar: {
-//         el: '.swiper-scrollbar',
-//         hide: true,
-//       },
-//     });
-//   } else {
-//     israelLifeContainer.classList.remove('swiper-container');
-//     console.log(israelLifeContainer);
-//     israelLifeList.classList.remove('swiper-wrapper');
-//     israelLifeItems.forEach(function (item) {
-//       item.classList.remove('swiper-slide');
-//     });
-//   }
-// }
+    return;
+  } else if (breakpoint.matches === false) {
+    return enableSwiper();
+  }
+};
 
-// window.addEventListener('resize', doBlockAsSwiper);
+var enableSwiper = function () {
+  lifeInIsraelSwiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+};
+
+
+breakpoint.addListener(breakpointChecker);
+
+breakpointChecker();

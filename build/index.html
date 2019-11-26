@@ -166,31 +166,34 @@
       <h2 class="section-titles life-in-Israel__title">Жизнь в израиле</h2>
       <p class="life-in-Israel__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
         стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
-      <div class="life-in-Israel__container">
-        <div class="life-in-Israel__left-side">
-          <div class="life-in-Israel__item">
+      <div class="life-in-Israel__container swiper-container">
+        <div class="life-in-Israel__wrapper swiper-wrapper">
+          <!-- <div class="life-in-Israel__left-side"> -->
+          <div class="life-in-Israel__item swiper-slide">
             <img class="life-in-Israel__img" src="img/1img.png" srcset="img/1img2x.png 2x" width="482" height="732" alt="Здание синагоги">
             <p class="life-in-Israel__features">Экскурсии по Израилю <br> и знакомство с его историей</p>
           </div>
-        </div>
-        <div class="life-in-Israel__right-side">
-          <div class="life-in-Israel__item">
+          <!-- </div> -->
+          <!-- <div class="life-in-Israel__right-side"> -->
+          <div class="life-in-Israel__item swiper-slide">
             <img class="life-in-Israel__img" src="img/2img.png" srcset="img/2img2x.png 2x" width="211" height="318" alt="Студент">
             <p class="life-in-Israel__features">Изучение иврита</p>
           </div>
-          <div class="life-in-Israel__item">
+          <div class="life-in-Israel__item swiper-slide">
             <img class="life-in-Israel__img" src="img/3img.png" srcset="img/3img2x.png 2x" width="411" height="318" alt="Студенты">
             <p class="life-in-Israel__features">Обучение современным <br> навыкам и профессиям</p>
           </div>
-          <div class="life-in-Israel__item">
+          <div class="life-in-Israel__item swiper-slide">
             <img class="life-in-Israel__img" src="img/4img.png" srcset="img/4img2x.png 2x" width="411" height="318" alt="Студенты">
             <p class="life-in-Israel__features">Совместные творческие проекты <br> с израильской молодёжью</p>
           </div>
-          <div class="life-in-Israel__item">
+          <div class="life-in-Israel__item swiper-slide">
             <img class="life-in-Israel__img" src="img/5img.png" srcset="img/5img2x.png 2x" width="214" height="318" alt="Человек">
             <p class="life-in-Israel__features">Развитие лидерства</p>
           </div>
+          <!-- </div> -->
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section class="gallery">
@@ -567,27 +570,12 @@
       </li>
     </ul>
   </footer>
+  <script src="swiper/js/swiper.min.js"></script>
   <script src="js/modals.js"></script>
   <script src="js/programs.js"></script>
   <script src="js/questions.js"></script>
   <script src="js/life-in-Israel.js"></script>
-  <!-- <script src="masonry-layout/dist/masonry.pkgd.min.js"></script> -->
-  <script src="swiper/js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: true,
-      },
-    });
-  </script>
-  <script>
-    var elem = document.querySelector('.life-in-Israel__container');
-    // var msnry = new Masonry(elem, {
-    //   // options
-    //   itemSelector: '.life-in-Israel__item',
-    //   columnWidth: 200
-    // });</script>
+  
 </body>
 
 </html>
