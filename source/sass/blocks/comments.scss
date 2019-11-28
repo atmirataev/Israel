@@ -1,17 +1,9 @@
 .comments {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   background: url("../img/watercolor_bg-5.png") no-repeat right 0;
   margin-bottom: 105px;
-
-  &::before {
-    content: "";
-    width: 364px;
-    height: 480px;
-    position: absolute;
-    top: 57px;
-    left: 98px;
-    background: url("../img/img_Testimonials.png") no-repeat 0 0;
-  }
 
   &::after {
     content: "";
@@ -27,12 +19,23 @@
 .comments__list {
   width: 680px;
   margin: 0 183px 0 auto;
+  padding-top: 40px;
 }
 
 .comments__title {
-  width: 194px;
-  margin: 0 auto 48px;
+  width: 100%;
+  margin: 0 0 5px;
   letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.comments__user-info {
+  display: flex;
+  padding-left: 98px;
+}
+
+.comments__user-photo {
+  object-fit: contain;
 }
 
 .comments__user-name {
@@ -57,7 +60,6 @@
   margin: 0;
   margin-top: 9px;
   margin-bottom: 33px;
-  // margin: 9px 0 33px;
 }
 
 .comments__user-text {
@@ -108,18 +110,9 @@
 }
 
 @media (max-width: $tablet-width-max) {
-  .comments {
-
-    &::before {
-      width: 300px;
-      height: 400px;
-      background-size: 300px 400px;
-    }
-
-    &::after {
-      top: 200px;
-      background-position: 0 0;
-    }
+  .comments::after {
+    top: 200px;
+    background-position: 0 0;
   }
 
   .comments__user-text {
@@ -147,14 +140,6 @@
   .comments {
     background: none;
 
-    &::before {
-      width: 240px;
-      height: 320px;
-      left: 41px;
-      top: 64px;
-      background-size: 240px 320px;
-    }
-
     &::after {
       width: 100%;
       height: 261px;
@@ -169,11 +154,24 @@
     text-align: center;
     font-size: 32px;
     line-height: 39px;
+    margin-bottom: 25px;
+  }
+
+  .comments__user-info {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .comments__user-photo {
+    width: 240px;
+    height: 320px;
+    margin: 0 auto;
   }
 
   .comments__list {
     width: 100%;
-    padding: 353px 15px 0;
+    padding: 59px 15px 0;
     box-sizing: border-box;
   }
 
