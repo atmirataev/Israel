@@ -1,5 +1,8 @@
 .about-program {
   margin-bottom: 65px;
+  padding-bottom: 93px;
+  background: url("../img/watercolor_Bg.png") no-repeat center bottom;
+  position: relative;
 }
 
 .about-program__title {
@@ -9,7 +12,7 @@
 
 .about-program__description {
   width: 720px;
-  margin: 0 auto;
+  margin: 0 auto 52px;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -17,13 +20,6 @@
   line-height: 170%;
   color: $black;
   text-align: center;
-}
-
-.about-program__wrapper {
-  padding: 48px 0 96px;
-  background: url("../img/watercolor_Bg.png") no-repeat;
-  background-position: center 0;
-  position: relative;
 }
 
 .about-program__img {
@@ -57,7 +53,10 @@
 
 @media(max-width: $mobile-width-max) {
   .about-program {
-    min-width: $mobile-width;
+    width: 100%;
+    background-size: 420px 186px;
+    background-position: center;
+    overflow: hidden;
   }
 
   .about-program__title {
@@ -79,16 +78,8 @@
     margin-bottom: 55px;
   }
 
-  .about-program__wrapper {
-    padding: 78px 0 0;
-    margin-top: -78px;
-    background-size: contain;
-  }
-
   .about-program__img {
-    display: block;
-    text-align: center;
-    margin: 0 auto;
+    width: 100%;
   }
 
   .about-program__play-btn {
@@ -98,4 +89,5 @@
     left: 50%;
     margin-left: -40px;
   }
+
 }
