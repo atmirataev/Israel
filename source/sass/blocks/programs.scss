@@ -144,7 +144,7 @@
 
 @media (max-width: $tablet-width-max) {
   .programs__list {
-    width: 438px;
+    width: 415px;
   }
 
   .programs__title {
@@ -153,12 +153,13 @@
 
   .programs__item_description {
     font-size: 15px;
-    width: 438px;
+    width: 100%;
   }
 
   .programs__control {
     padding: 0;
     margin: 0;
+    margin-right: 20px;
   }
 
   .programs__current-btn {
@@ -290,7 +291,7 @@
 
   .programs__item {
     width: 100%;
-    padding: 20px 1em 0 1em;
+    padding: 20px 5vw 0;
     box-sizing: border-box;
 
     &_title {

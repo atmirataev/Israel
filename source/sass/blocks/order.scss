@@ -1,7 +1,9 @@
 .order {
   position: relative;
   padding-top: 219px;
+  padding-left: 15vw;
   margin-bottom: 290px;
+
 
   &::before {
     content: "";
@@ -15,31 +17,31 @@
 
   &::after {
     content: "";
-    width: 818px;
+    width: 60%;
     height: 594px;
     position: absolute;
     right: 0px;
     top: 10px;
     background: url("../img/girl-flag-bg.png") no-repeat;
+    background-size: cover;
     z-index: -1;
   }
 }
 
 .order__title {
-  margin: 0 0 23px 210px;
+  margin: 0 0 23px;
   letter-spacing: -0.02em;
 }
 
 .order__text {
   width: 400px;
-  margin: 0 0 65px 210px;
+  margin: 0 0 65px;
   font-size: 17px;
   line-height: 170%;
 }
 
 .order__user-tel {
   width: 312px;
-  margin-left: 210px;
   padding: 20px 145px 20px 38px;
   border: 2px solid #E3E3E3;
   box-sizing: border-box;
@@ -74,6 +76,7 @@
 
 @media (max-width: $tablet-width-max) {
   .order {
+    padding-left: 0;
     margin-bottom: 115px;
   }
 
@@ -113,7 +116,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-top: 80px;
+    padding: 80px 0 0;
     margin-bottom: 387px;
 
     &::before {
@@ -125,13 +128,11 @@
     }
 
     &::after {
-      width: 320px;
+      width: 100%;
       height: 308px;
       top: 370px;
-      left: 50%;
-      margin-left: -160px;
-      background-size: auto;
-      background-image: url("../img/girl-flag-bg\ copy.png");
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -144,7 +145,7 @@
   .order__text {
     width: 100%;
     margin: 0 0 28px;
-    padding: 0 1em;
+    padding: 0 5vw;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
@@ -164,5 +165,11 @@
     position: static;
     margin: 0 auto;
     flex-grow: 0;
+  }
+
+  .order__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }

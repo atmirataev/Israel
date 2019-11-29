@@ -115,6 +115,11 @@
     background-position: 0 0;
   }
 
+  .comments__user-info {
+    width: 100%;
+    padding-left: 0;
+  }
+
   .comments__user-text {
     width: 350px;
     font-size: 15px;
@@ -158,9 +163,7 @@
   }
 
   .comments__user-info {
-    width: 100%;
     flex-direction: column;
-    padding: 0;
   }
 
   .comments__user-photo {

@@ -5,16 +5,6 @@
   position: relative;
   margin-bottom: 190px;
 
-  &::before {
-    content: "";
-    width: 581px;
-    height: 707px;
-    position: absolute;
-    left: 12px;
-    top: 0;
-    background: url("../img/img_как-поехать.png") no-repeat;
-    background-position-x: left;
-  }
 
   &::after {
     content: "";
@@ -28,16 +18,17 @@
   }
 }
 
+.conditions__img {
+  width: 43%;
+  margin-left: 12px;
+  object-fit: contain;
+}
+
 .conditions__container {
   width: 532px;
-  padding-left: 106px;
   margin-left: auto;
   margin-right: 135px;
   position: relative;
-}
-
-.conditions__img {
-  margin-left: 12px;
 }
 
 .conditions__title {
@@ -113,26 +104,12 @@
   padding-left: 12px;
   opacity: 0.5;
   position: relative;
-
-  &::before {
-    content: "";
-    width: 5px;
-    height: 42px;
-    position: absolute;
-    left: -3px;
-    top: 2px;
-    background: $gradient;
-  }
+  border-left: 4px solid yellow;
 }
 
 @media (max-width: $tablet-width-max) {
   .conditions {
     background-size: 768px 514px;
-
-    &::before {
-      background-size: 290px 348px;
-      top: 100px;
-    }
 
     &::after {
       background-size: 168px 177px;
@@ -143,14 +120,20 @@
     font-size: 30px;
   }
 
+  .conditions__img {
+    width: 40%;
+  }
+
+  .conditions__container {
+    width: 58%;
+  }
+
   .conditions__details,
   .conditions__list,
   .conditions__ps {
+    width: 100%;
     font-size: 13px;
-  }
-
-  .conditions__text {
-    font-size: 15px;
+    box-sizing: border-box;
   }
 
   .conditions__details {
@@ -158,19 +141,24 @@
   }
 
   .conditions__text {
+    width: 100%;
     margin-bottom: 17px;
-    padding-left: 66px;
+    padding-left: 20px;
+    font-size: 15px;
+    box-sizing: border-box;
   }
 
   .conditions__list {
-    padding-left: 112px;
+    padding-left: 65px;
   }
 
   .conditions__item {
     margin-bottom: 30px;
+    position: relative;
 
     &::before {
-      left: 60px;
+      left: -52px;
+      top: -9px;
     }
 
     &:last-of-type {
@@ -185,19 +173,19 @@
     width: 100%;
     background-image: none;
     margin-bottom: 65px;
-
-    &::before {
-      background: none;
-      width: 0;
-      height: 0;
-    }
+    padding: 0 5vw;
+    box-sizing: border-box;
 
     &::after {
       width: 264px;
       height: 199px;
       top: 277px;
-      right: 47px;
+      right: 0;
     }
+  }
+
+  .conditions__img {
+    display: none;
   }
 
   .conditions__title {
@@ -214,7 +202,6 @@
   .conditions__list,
   .conditions__ps {
     width: 100%;
-    padding: 0 17px;
     box-sizing: border-box;
     font-size: 14px;
     line-height: 160%;
@@ -223,36 +210,36 @@
 
   .conditions__text {
     width: 100%;
-    padding: 0 17px;
+    padding: 0;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 160%;
     margin-bottom: 22px;
   }
 
-  .conditions__container {
-    width: 100%;
+  .conditions__list {
     padding: 0;
   }
 
+  .conditions__container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
   .conditions__item {
+    width: 100%;
     padding-left: 43px;
-    margin-bottom: 38px;
+    margin-bottom: 60px;
 
     &::before {
-      left: 8px;
+      top: -4px;
+      left: -8px;
     }
   }
 
   .conditions__ps {
-    width: 320px;
-    padding-left: 24px;
-
-    &::before {
-      width: 4px;
-      height: 85px;
-      left: 9px;
-      top: 0px;
-    }
+    width: 100%;
+    padding-left: 5px;
   }
 }
