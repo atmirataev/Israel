@@ -82,11 +82,16 @@
 
 @media(max-width: $mobile-width-max) {
   .life-in-Israel {
+    margin-bottom: 106px;
     background: none;
 
     &::after {
       background: none;
     }
+  }
+
+  .life-in-Israel__container {
+    padding-bottom: 33px;
   }
 
   .life-in-Israel__title {
@@ -133,8 +138,7 @@
   }
 
   .life-in-Israel__pagination {
-    width: 64px;
-    height: 8px;
+    position: absolute;
     bottom: 0;
   }
 }

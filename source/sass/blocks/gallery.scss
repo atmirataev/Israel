@@ -1,5 +1,6 @@
 .gallery {
   background: url("../img/cynthia-magana-138943-unsplash.png") no-repeat 0 0;
+  background-size: contain;
   padding: 88px 0 265px;
 }
 
@@ -53,36 +54,63 @@
 
 @media (max-width: $tablet-width-max) {
   .gallery {
-    background-image: url("../img/cynthia-magana-138943-unsplash copy.png");
-    padding: 0;
-    padding-top: 1px;
+    padding: 1px 0 65px;
     margin-bottom: 80px;
+    background-size: cover;
   }
 
   .gallery__title {
-    width: 100%;
     text-align: center;
-    margin-top: -43px;
-    margin-bottom: 96px;
+    margin: 80px 75px 24px auto;
+
   }
 
   .gallery__text {
-    width: 100%;
     padding: 0 24px;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 160%;
     text-align: left;
-    margin-bottom: 60px;
+    margin: 19px 0 48px auto;
   }
 
   .gallery__button {
     width: 264px;
-    margin: 0 auto;
+    margin: 0 113px 0 auto;
     padding-left: 89px;
 
     &::before {
       left: 57px;
     }
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .gallery {
+    width: 100%;
+    background-size: 632px 272px;
+    background-position: -69px 44px;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .gallery__title {
+    width: 100%;
+    margin: 0 auto 95px;
+
+  }
+
+  .gallery__text {
+    width: 100%;
+    padding: 0 7vw;
+    margin-bottom: 63px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    opacity: 0.87;
+  }
+
+  .gallery__button {
+    margin: 0 auto;
   }
 }
