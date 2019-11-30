@@ -266,11 +266,12 @@
 
   .contacts__location {
     padding-left: 38px;
+
+    &::before {
+      left: 20px;
+    }
   }
 
-  &::before {
-    left: 18px;
-  }
 
   .contacts__curator_img {
     padding-left: 17px;
@@ -312,7 +313,7 @@
   }
 
   .contacts__top-left {
-    margin-bottom: 38px;
+    margin-bottom: 45px;
   }
 
   .contacts__top-right {
@@ -323,8 +324,12 @@
   }
 
   .contacts__map {
-    max-width: none;
+    width: auto;
     height: 420px;
+    max-width: none;
+    display: block;
+    margin: 0 auto;
+    object-position: -221px;
   }
 
   .contacts__bottom-left {
