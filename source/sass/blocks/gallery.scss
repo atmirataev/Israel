@@ -88,8 +88,7 @@
 @media (max-width: $mobile-width-max) {
   .gallery {
     width: 100%;
-    background-size: 632px 272px;
-    background-position: -69px 44px;
+    background-size: cover;
     padding: 0;
     margin-bottom: 50px;
   }
