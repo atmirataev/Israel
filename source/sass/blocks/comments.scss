@@ -17,9 +17,36 @@
 }
 
 .comments__list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.comments__btn-prev {
+  width: 15px;
+  height: 19px;
+  position: absolute;
+  bottom: 6px;
+  left: 560px;
+  background: url("../img/Vector.svg") no-repeat 0 0;
+}
+
+.comments__btn-next {
+  width: 15px;
+  height: 19px;
+  position: absolute;
+  bottom: 6px;
+  left: 588px;
+  background: url("../img/Vector-2.svg") no-repeat 0 0;
+}
+
+.comments__item_wrapper {
   width: 680px;
-  margin: 0 183px 0 auto;
-  padding-top: 40px;
+  margin: 0 0 0 40px;
+  padding-top: 42px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .comments__title {
@@ -29,13 +56,9 @@
   text-align: center;
 }
 
-.comments__user-info {
-  display: flex;
-  padding-left: 98px;
-}
-
 .comments__user-photo {
   object-fit: contain;
+  padding: 4px 0 0 17px;
 }
 
 .comments__user-name {
@@ -74,7 +97,7 @@
   line-height: 150%;
   text-decoration-line: underline;
   color: $blue;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 .comments__social {
@@ -87,7 +110,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-
 }
 
 .coments__social-btn {
@@ -100,13 +122,10 @@
 }
 
 .comments__item {
-  display: none;
+  width: 100%;
+  display: flex;
+  padding-left: 6vw;
   position: relative;
-  padding-bottom: 30px;
-
-  &_current {
-    display: block;
-  }
 }
 
 @media (max-width: $tablet-width-max) {
@@ -115,24 +134,21 @@
     background-position: 0 0;
   }
 
-  .comments__user-info {
-    width: 100%;
-    padding-left: 0;
-  }
-
   .comments__user-text {
-    width: 350px;
+    width: 100%;
     font-size: 15px;
     line-height: 130%;
   }
 
-  .comments__item {
-    width: 350px;
+  .comments__item_wrapper {
+    width: 100%;
+    margin: 0;
+    padding-right: 3vw;
     margin-left: auto;
   }
 
   .comments__user-program {
-    width: 350px;
+    width: 100%;
   }
 
   .comments__more {
@@ -144,6 +160,7 @@
 @media (max-width: $mobile-width-max) {
   .comments {
     background: none;
+    margin-bottom: 69px;
 
     &::after {
       width: 100%;
@@ -162,20 +179,17 @@
     margin-bottom: 25px;
   }
 
-  .comments__user-info {
-    flex-direction: column;
-  }
-
   .comments__user-photo {
     width: 240px;
     height: 320px;
-    margin: 0 auto;
+    margin: 0 auto 58px;
+    padding: 0;
   }
 
-  .comments__list {
+  .comments__item {
     width: 100%;
-    padding: 59px 15px 0;
     box-sizing: border-box;
+    flex-direction: column;
   }
 
   .comments__user-text {
@@ -212,12 +226,13 @@
     margin-bottom: 25px;
   }
 
-  .comments__item {
+  .comments__item_wrapper {
     width: 100%;
+    padding: 0 5vw 9vw;
   }
 
   .comments__social {
     bottom: 0;
-    left: 0;
+    left: 13px;
   }
 }
