@@ -18,9 +18,9 @@
   };
 
   var enableSwiper = function () {
-    lifeInIsraelSwiper = new Swiper('.swiper-container', {
+    lifeInIsraelSwiper = new Swiper('.life-in-Israel .swiper-container', {
       pagination: {
-        el: '.swiper-pagination',
+        el: '.life-in-Israel .swiper-pagination',
       },
     });
   };
