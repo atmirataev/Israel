@@ -60,10 +60,7 @@
       <p class="about-program__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства
         Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения
         программ предусмотрен грант от 4200 до 8400$.</p>
-      <picture>
-        <source media="(max-width: 767px)" srcset="img/photo-m.png">
-        <img class="about-program__img" src="img/photo.png" srcset="img/photo2x.png" width="870" height="460" alt="О программе">
-      </picture>
+      <img class="about-program__img" src="img/photo.png" srcset="img/photo2x.png" width="870" height="460" alt="О программе">
       <svg class="about-program__play-btn" width="96" height="96">
         <use xlink:href="#play-btn"></use>
       </svg>
@@ -396,7 +393,10 @@
             Свяжитесь с куратором, узнайте подробнее о программах и выберите свою !</p>
         </div>
         <div class="contacts__top-right">
-          <img class="contacts__map" src="img/Group 1 copy.png" width="702" height="448" alt="Местоположение офиса">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/map_mob.png">
+            <img class="contacts__map" src="img/map-desktop.png" width="702" height="448" alt="Местоположение офиса">
+          </picture>
         </div>
       </div>
       <div class="contacts__bottom">
@@ -468,6 +468,7 @@
     </ul>
   </footer>
   <script src="js/swiper.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
   <script src="js/programs.js"></script>
   <script src="js/questions.js"></script>
   <script src="js/modals.js"></script>

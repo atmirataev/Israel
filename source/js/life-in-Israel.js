@@ -11,7 +11,6 @@
         lifeInIsraelSwiper.destroy(true, true);
       }
 
-      return;
     } else if (breakpoint.matches === false) {
       return enableSwiper();
     }
@@ -24,7 +23,6 @@
       },
     });
   };
-
 
   breakpoint.addListener(breakpointChecker);
 

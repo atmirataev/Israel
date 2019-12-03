@@ -46,7 +46,17 @@
   background: url("../img/Vector-2.svg") no-repeat 0 0;
 }
 
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+
+  .comments__btn-prev,
+  .comments__btn-next {
+    top: 462px;
+  }
+}
+
 .comments__pagination {
+  width: auto;
   text-align-last: left;
   bottom: 0;
   left: 504px;

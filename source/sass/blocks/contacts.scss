@@ -21,7 +21,7 @@
 }
 
 .contacts__top-left {
-  width: 515px;
+  width: 517px;
 }
 
 .contacts__location {
@@ -60,7 +60,6 @@
     }
   }
 }
-
 
 .contacts__curator {
   display: flex;
@@ -218,7 +217,7 @@
   }
 
   .contacts__text {
-    width: 100%;
+    width: 50%;
   }
 
   .contacts__top-right {
@@ -242,6 +241,8 @@
     width: 100%;
     display: flex;
     padding-top: 30px;
+    padding-right: 3vw;
+    box-sizing: border-box;
     justify-content: space-between;
   }
 
@@ -302,6 +303,7 @@
   }
 
   .contacts__text {
+    width: 100%;
     font-size: 16px;
     line-height: 160%;
     padding: 0 5vw;
@@ -324,12 +326,10 @@
   }
 
   .contacts__map {
+    display: block;
     width: auto;
     height: 420px;
-    max-width: none;
-    display: block;
     margin: 0 auto;
-    object-position: -221px;
   }
 
   .contacts__bottom-left {
