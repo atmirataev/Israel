@@ -39,78 +39,29 @@
   border: none;
   background-color: transparent;
   text-align: left;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 23px;
-    z-index: 100;
-  }
-
-  &_common::before {
-    width: 28px;
-    height: 33px;
-    background: url("../img/1_b.png");
-  }
-
-  &_common:focus::before {
-    background: url("../img/1_w.png");
-  }
-
-  &_academic::before {
-    width: 36px;
-    height: 35px;
-    background: url("../img/noun_582688_c.png");
-  }
-
-  &_academic:focus::before {
-    background: url("../img/noun_582688_cc.png");
-  }
-
-  &_internship::before {
-    width: 32px;
-    height: 25px;
-    background: url("../img/3_b.png");
-  }
-
-  &_internship:focus::before {
-    background: url("../img/3_w.png");
-  }
-
-  &_volunteering::before {
-    width: 32px;
-    height: 29px;
-    background: url("../img/4_b.png");
-  }
-
-  &_volunteering:focus::before {
-    background: url("../img/4_w.png");
-  }
-
-  &_religious::before {
-    width: 23px;
-    height: 25px;
-    background: url("../img/5_b.png");
-  }
-
-  &_religious:focus::before {
-    background: url("../img/5_w.png");
-  }
 }
 
+.programs__btn svg {
+  position: absolute;
+  top: 15px;
+  left: 23px;
+  z-index: 100;
+}
 
 .programs__current-btn {
+  position: relative;
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
   background: url("../img/Rectangle.png") no-repeat;
-  position: relative;
-
 
   &:focus {
     outline: none;
   }
+}
+
+.programs__current-btn svg {
+  fill: #ffffff;
 }
 
 .programs__list {
