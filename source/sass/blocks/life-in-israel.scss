@@ -26,7 +26,7 @@
 
 .life-in-Israel__text {
   width: 725px;
-  margin: 0 auto -19px;
+  margin: 0 auto;
   font-weight: normal;
   font-size: 17px;
   line-height: 170%;
@@ -45,11 +45,11 @@
 }
 
 .life-in-Israel__left-side {
-  width: 482px;
+  width: 36%;
 }
 
 .life-in-Israel__right-side {
-  width: 657px;
+  width: 49%;
   display: flex;
   flex-wrap: wrap;
   padding-top: 66px;
@@ -57,8 +57,44 @@
   margin-left: 13px;
 }
 
-.life-in-Israel__item {
+.life-in-Israel__wrapper {
   position: relative;
+  padding-bottom: 53%;
+}
+
+.life-in-Israel__item {
+  position: absolute;
+  height: auto;
+
+  &:first-of-type {
+    width: 36%;
+    top: -2%;
+    left: 7.7%;
+  }
+
+  &:nth-of-type(2) {
+    width: 15%;
+    top: 7%;
+    left: 44%;
+  }
+
+  &:nth-of-type(3) {
+    width: 30%;
+    top: 7%;
+    left: 61.8%;
+  }
+
+  &:nth-of-type(4) {
+    width: 30%;
+    top: 55%;
+    left: 44%;
+  }
+
+  &:last-of-type {
+    width: 16%;
+    top: 55%;
+    left: 76.3%
+  }
 }
 
 .life-in-Israel__features {
@@ -75,14 +111,25 @@
 }
 
 @media(max-width: $tablet-width-max) {
-  .life-in-Israel__container img {
-    width: auto;
+  .life-in-Israel {
+    margin-bottom: 70px;
+  }
+
+  .life-in-Israel__wrapper {
+    padding-bottom: 55%;
+  }
+
+  .life-in-Israel__features {
+    font-size: 15px;
+    line-height: 19px;
+    bottom: 20px;
+    left: 15px;
   }
 }
 
 @media(max-width: $mobile-width-max) {
   .life-in-Israel {
-    margin-bottom: 72px;
+    margin-bottom: 65px;
     background: none;
 
     &::after {
@@ -90,8 +137,16 @@
     }
   }
 
+  .life-in-Israel__pagination .swiper-pagination-bullet-active {
+    background: $gradient;
+  }
+
+  .life-in-Israel__wrapper {
+    padding: 0;
+  }
+
   .life-in-Israel__container {
-    padding-bottom: 33px;
+    padding-bottom: 43px;
   }
 
   .life-in-Israel__title {
@@ -135,6 +190,10 @@
 
   .life-in-Israel__img_specific-position {
     object-position: -96px;
+  }
+
+  .life-in-Israel__item {
+    position: static;
   }
 
   .life-in-Israel__pagination {
