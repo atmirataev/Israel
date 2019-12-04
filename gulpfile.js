@@ -103,7 +103,6 @@ gulp.task("copy", function () {
       "source/js/**",
       "source/css/**",
       "source//*.ico",
-      "source/swiper/**"
     ], {
       base: "source"
     })
