@@ -7,7 +7,7 @@
   programBtns[0].classList.add('programs__current-btn');
   programsItems[0].classList.add('programs__item_current');
 
-  programBtns.forEach(function (item, index) {
+  [].forEach.call(programBtns, function (item, index) {
     item.addEventListener('click', function () {
       var chosenBtn = document.querySelector('.programs__current-btn');
       var chosenItem = document.querySelector('.programs__item_current');

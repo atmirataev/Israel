@@ -12,7 +12,7 @@
 
   // Обработчики
   callbackModalOpenBtn.addEventListener('click', openCallbackModal);
-  successModalOpenBtn.forEach(function (item) {
+  [].forEach.call(successModalOpenBtn, function (item) {
     item.addEventListener('click', openSuccessModal);
   });
 

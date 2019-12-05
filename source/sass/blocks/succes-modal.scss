@@ -1,7 +1,10 @@
 .success-modal {
   padding: 216px 60px 112px;
   position: fixed;
+}
 
+.success-modal__title {
+  margin: 0 auto 17px;
 
   &::before {
     content: "";
@@ -12,10 +15,6 @@
     left: 206px;
     background-image: url("../img/Ok checkmark.svg");
   }
-}
-
-.success-modal__title {
-  margin: 0 auto 17px;
 }
 
 .success-modal__text {

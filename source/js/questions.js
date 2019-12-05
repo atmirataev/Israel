@@ -3,7 +3,7 @@
 (function () {
   var questionsItems = document.querySelectorAll('.questions__item');
 
-  questionsItems.forEach(function (item) {
+  [].forEach.call(questionsItems, function (item) {
     var infoOpenBtn = item.querySelector('.questions__text');
     infoOpenBtn.addEventListener('click', function () {
       if (item.classList.contains('questions__item_current')) {
