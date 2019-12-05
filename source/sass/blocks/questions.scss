@@ -1,11 +1,16 @@
 .questions {
-  background: url("../img/watercolor_Bg2x-4.png") no-repeat 0 0;
+  background: url("../img/watercolor_Bg-4.png") no-repeat 0 0;
   background-size: 1366px auto;
   position: relative;
   padding: 35px 0 96px 110px;
   margin-bottom: 7px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/watercolor_Bg2x-4.png");
+  }
 
   &::before {
     content: "";
@@ -16,6 +21,11 @@
     left: 0;
     background: url("../img/bag.png") no-repeat 0 0;
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/bag2x.png");
+    }
   }
 }
 
@@ -57,6 +67,11 @@
 
   &_current .questions__text::after {
     background: url("../img/Vector-2.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/Vector-2-2x.png");
+    }
   }
 }
 
@@ -104,6 +119,11 @@
     margin-top: -7px;
     right: 87px;
     background: url("../img/Vector.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/Vector2x.png");
+    }
   }
 }
 

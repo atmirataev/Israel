@@ -9,6 +9,19 @@
   var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
   var successModalOpenBtn = document.querySelectorAll('.callback--btn');
   var successModalCloseBtn = successModal.querySelector('.modal__close');
+  var nameInputEl = callbackModal.querySelector('[name=user-name]');
+  var telInputEl = callbackModal.querySelector('[name=user-tel]');
+  var agreementInputEl = callbackModal.querySelector('[name=agreement]');
+  var isStorageSupport = true;
+  var nameStorage = '';
+  var telStorage = '';
+
+  try {
+    nameStorage = localStorage.getItem('nameInputEl');
+    telStorage = localStorage.getItem('telInputEl');
+  } catch (err) {
+    isStorageSupport = false;
+  }
 
   // Обработчики
   callbackModalOpenBtn.addEventListener('click', openCallbackModal);
@@ -22,6 +35,17 @@
    */
   function openCallbackModal() {
     callbackModal.classList.remove('hidden');
+
+    if (nameStorage) {
+      nameInputEl.value = nameStorage;
+      telInputEl.focus();
+    } else if (telStorage) {
+      telInputEl.value = telStorage;
+      agreementInputEl.focus();
+    } else {
+      nameInputEl.focus();
+    }
+
     callbackModalCloseBtn.addEventListener('click', closeCallbackModal);
     document.addEventListener('keydown', function (evt) {
       isEscEvent(evt, closeCallbackModal);

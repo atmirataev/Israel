@@ -5,6 +5,11 @@
   background: url("../img/watercolor_bg-5.png") no-repeat right 0;
   margin-bottom: 105px;
 
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/watercolor_bg2x-5.png");
+  }
+
   &::after {
     content: "";
     width: 535px;
@@ -13,6 +18,11 @@
     right: 0;
     top: 0;
     background: url("../img/sketch.png") no-repeat 12px 58px;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/sketch2x.png");
+    }
   }
 }
 
@@ -136,7 +146,7 @@ screen and (-ms-high-contrast: none) {
   right: 0;
 }
 
-.coments__social-btn {
+.comments__social-btn {
   vertical-align: middle;
   opacity: .3;
 

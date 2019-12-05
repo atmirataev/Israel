@@ -13,6 +13,11 @@
     top: 158px;
     left: 0px;
     background: url("../img/backpack.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/backpack2x.png");
+    }
   }
 
   &::after {
@@ -25,6 +30,11 @@
     background: url("../img/girl-flag-bg.png") no-repeat;
     background-size: cover;
     z-index: -1;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/girl-flag-bg2x.png");
+    }
   }
 }
 

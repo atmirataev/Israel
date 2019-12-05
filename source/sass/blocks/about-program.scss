@@ -3,6 +3,11 @@
   padding-bottom: 93px;
   background: url("../img/watercolor_Bg.png") no-repeat center bottom;
   position: relative;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/watercolor_Bg2x.png");
+  }
 }
 
 .about-program__title {

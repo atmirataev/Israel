@@ -2,6 +2,11 @@
   background: url("../img/cynthia-magana-138943-unsplash.png") no-repeat 0 0;
   background-size: contain;
   padding: 88px 0 265px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
+  }
 }
 
 .gallery__title {
@@ -49,6 +54,11 @@
     top: 18px;
     left: 41px;
     background: url("../img/003-instagram.png") no-repeat 0 0;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/003-instagram2x.png");
+    }
   }
 }
 
@@ -108,6 +118,11 @@
     opacity: 0.87;
     background: url("../img/cynthia-magana-138943-unsplash.png") no-repeat 0 0;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
+    }
   }
 
   .gallery__button {

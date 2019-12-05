@@ -1,9 +1,14 @@
 .conditions {
   display: flex;
-  background: url("../img/watercolor_Bg2x-2.png") no-repeat 0;
+  background: url("../img/watercolor_Bg-2.png") no-repeat 0;
   background-size: 1366px 1028px;
   position: relative;
   margin-bottom: 154px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/watercolor_Bg2x-2.png");
+  }
 
 
   &::after {
@@ -15,6 +20,11 @@
     top: 214px;
     background: url("../img/stamp.png") no-repeat;
     background-position-x: right;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/stamp2x.png");
+    }
   }
 }
 
