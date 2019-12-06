@@ -156,7 +156,7 @@
 //   justify-content: space-between;
 // }
 
-.contacts__user-name {
+.contacts__form input[type="text"] {
   width: 250px;
   padding: 20px 10px 20px 40px;
   box-sizing: border-box;
@@ -174,7 +174,7 @@
   }
 }
 
-.contacts__user-tel {
+.contacts__form input[type="tel"] {
   width: 250px;
   padding: 20px 10px 20px 40px;
   margin-right: 20px;
@@ -252,8 +252,8 @@
     justify-content: space-between;
   }
 
-  .contacts__user-name,
-  .contacts__user-tel,
+  .contacts__form input[type="text"],
+  .contacts__form input[type="tel"],
   .contacts__submit {
     margin: 0;
   }
@@ -363,13 +363,13 @@
 
   }
 
-  .contacts__user-name,
-  .contacts__user-tel {
+  .contacts__form input[type="text"],
+  .contacts__form input[type="tel"] {
     width: 288px;
     margin: 0 auto 8px;
   }
 
-  .contacts__user-tel {
+  .contacts__form input[type="tel"] {
     padding: 24px 10px 13px 40px;
   }
 
