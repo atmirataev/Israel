@@ -174,44 +174,9 @@
     vertical-align: middle;
     box-sizing: content-box;
 
-    &::before {
+    & svg {
       top: 11px;
       left: -8px;
-    }
-
-    &_common::before,
-    &_common:focus::before {
-      width: 24px;
-      height: 29px;
-      background-size: 24px 29px;
-    }
-
-    &_academic::before,
-    &_academic:focus::before {
-      width: 32px;
-      height: 31px;
-      background-size: 32px 31px;
-    }
-
-    &_internship::before,
-    &_internship:focus::before {
-      width: 28px;
-      height: 21px;
-      background-size: 28px 21px;
-    }
-
-    &_volunteering::before,
-    &_volunteering:focus::before {
-      width: 28px;
-      height: 25px;
-      background-size: 28px 25px;
-    }
-
-    &_religious::before,
-    &_religious:focus::before {
-      width: 19px;
-      height: 21px;
-      background-size: 19px 21px;
     }
   }
 
@@ -228,7 +193,7 @@
     font-weight: 500;
     padding: 15px 31px 14px 45px;
 
-    &::before {
+    & svg {
       top: 11px;
       left: 8px;
     }

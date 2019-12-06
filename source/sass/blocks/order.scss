@@ -59,10 +59,10 @@
   border-radius: 80px;
 }
 
-input:focus .order__user-tel,
-.order__user-tel:active {
-  background-image: $gradient;
-}
+// input:focus .order__user-tel,
+// .order__user-tel:active {
+//   background-image: $gradient;
+// }
 
 .order__form input {
   background-clip: padding-box;
@@ -189,8 +189,10 @@ input:focus .order__user-tel,
   .order__user-tel {
     width: 287px;
     margin: 0 auto 9px;
-    padding: 20px 145px 18px 38px;
-    flex-grow: 1;
+  }
+
+  .order__user-tel input {
+    padding: 0 145px 0 38px;
   }
 
   .order__submit {
