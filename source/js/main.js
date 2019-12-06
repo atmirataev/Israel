@@ -1,6 +1,37 @@
 'use strict';
 
 (function () {
+  var programBtns = document.querySelectorAll('.programs__btn');
+  var programsItems = document.querySelectorAll('.programs__item');
+
+  programBtns[0].classList.add('programs__current-btn');
+  programsItems[0].classList.add('programs__item_current');
+
+  [].forEach.call(programBtns, function (item, index) {
+    item.addEventListener('click', function () {
+      var chosenBtn = document.querySelector('.programs__current-btn');
+      var chosenItem = document.querySelector('.programs__item_current');
+
+      chosenBtn.classList.remove('programs__current-btn');
+      chosenItem.classList.remove('programs__item_current');
+      item.classList.add('programs__current-btn');
+      programsItems[index].classList.add('programs__item_current');
+    });
+  });
+
+  var questionsItems = document.querySelectorAll('.questions__item');
+
+  [].forEach.call(questionsItems, function (item) {
+    var infoOpenBtn = item.querySelector('.questions__text');
+    infoOpenBtn.addEventListener('click', function () {
+      if (item.classList.contains('questions__item_current')) {
+        item.classList.remove('questions__item_current');
+      } else {
+        item.classList.add('questions__item_current');
+      }
+    });
+  });
+
   var ESC_KEYCODE = 27;
 
   var callbackModal = document.querySelector('.callback-modal');
@@ -104,4 +135,47 @@
       func();
     }
   };
+
+  var breakpoint = window.matchMedia('(min-width:768px)');
+  var lifeInIsraelSwiper;
+
+  var breakpointChecker = function () {
+    if (breakpoint.matches === true) {
+
+      if (lifeInIsraelSwiper !== undefined) {
+        lifeInIsraelSwiper.destroy(true, true);
+      }
+
+    } else if (breakpoint.matches === false) {
+      return enableSwiper();
+    }
+  };
+
+  var enableSwiper = function () {
+    lifeInIsraelSwiper = new Swiper('.life-in-Israel .swiper-container', {
+      pagination: {
+        el: '.life-in-Israel .swiper-pagination',
+      },
+    });
+  };
+
+  breakpoint.addListener(breakpointChecker);
+
+  breakpointChecker();
+
+  var enableCommentsSwiper = function () {
+    var commentsSwiper = new Swiper('.comments .swiper-container', {
+      pagination: {
+        el: '.comments .swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.comments .swiper-button-next',
+        prevEl: '.comments .swiper-button-prev',
+      },
+    });
+    return commentsSwiper;
+  };
+
+  enableCommentsSwiper();
 })();
