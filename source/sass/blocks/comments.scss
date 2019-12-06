@@ -91,7 +91,7 @@ screen and (-ms-high-contrast: none) {
   text-align: center;
 }
 
-.comments__user-photo {
+.comments__item img {
   object-fit: contain;
   padding: 4px 0 0 17px;
 }
@@ -230,7 +230,7 @@ screen and (-ms-high-contrast: none) {
     margin-bottom: 25px;
   }
 
-  .comments__user-photo {
+  .comments__item img {
     width: 240px;
     height: 320px;
     margin: 0 auto 58px;
