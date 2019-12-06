@@ -4,10 +4,10 @@
   position: relative;
   margin-bottom: 152px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_Bg2x-3.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/watercolor_Bg2x-3.png");
+  // }
 
   &::after {
     content: "";
@@ -19,10 +19,10 @@
     background: url("../img/watch.png") no-repeat;
     background-position-x: right;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/watch2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/watch2x.png");
+    // }
   }
 }
 

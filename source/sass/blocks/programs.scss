@@ -5,10 +5,10 @@
   background: url("../img/sketch_Bg.png") no-repeat;
   background-position: top right;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/sketch2x.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/sketch2x.png");
+  // }
 }
 
 .programs__container {
@@ -44,6 +44,7 @@
   border: none;
   background-color: transparent;
   text-align: left;
+  cursor: pointer;
 }
 
 .programs__btn svg {
@@ -58,12 +59,7 @@
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
-  background: url("../img/Rectangle.png") no-repeat;
-
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/Rectangle2x.png");
-  }
+  background: url("../img/icon-rectangle.svg") no-repeat;
 
   &:focus {
     outline: none;

@@ -5,10 +5,10 @@
   position: relative;
   margin-bottom: 154px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_Bg2x-2.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/watercolor_Bg2x-2.png");
+  // }
 
 
   &::after {
@@ -21,10 +21,10 @@
     background: url("../img/stamp.png") no-repeat;
     background-position-x: right;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/stamp2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/stamp2x.png");
+    // }
   }
 }
 

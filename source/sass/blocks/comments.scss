@@ -5,10 +5,10 @@
   background: url("../img/watercolor_bg-5.png") no-repeat right 0;
   margin-bottom: 105px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_bg2x-5.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/comments-bg2x.png");
+  // }
 
   &::after {
     content: "";
@@ -19,10 +19,10 @@
     top: 0;
     background: url("../img/sketch.png") no-repeat 12px 58px;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/sketch2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/sketch2x.png");
+    // }
   }
 }
 

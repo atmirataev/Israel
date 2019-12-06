@@ -7,10 +7,10 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_Bg2x-4.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/watercolor_Bg2x-4.png");
+  // }
 
   &::before {
     content: "";
@@ -22,10 +22,10 @@
     background: url("../img/bag.png") no-repeat 0 0;
     z-index: -1;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/bag2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/bag2x.png");
+    // }
   }
 }
 
@@ -66,12 +66,7 @@
   }
 
   &_current .questions__text::after {
-    background: url("../img/Vector-2.png") no-repeat;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/Vector-2-2x.png");
-    }
+    background: url("../img/icon-up.svg") no-repeat;
   }
 }
 
@@ -118,12 +113,7 @@
     top: 50%;
     margin-top: -7px;
     right: 87px;
-    background: url("../img/Vector.png") no-repeat;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/Vector2x.png");
-    }
+    background: url("../img/icon-down.svg") no-repeat;
   }
 }
 

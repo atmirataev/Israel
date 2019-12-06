@@ -3,10 +3,10 @@
   background-size: contain;
   padding: 88px 0 265px;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
+  // }
 }
 
 .gallery__title {
@@ -46,6 +46,11 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   border: none;
 
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+    ;
+  }
+
   &::before {
     content: "";
     width: 23px;
@@ -53,12 +58,7 @@
     position: absolute;
     top: 18px;
     left: 41px;
-    background: url("../img/003-instagram.png") no-repeat 0 0;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/003-instagram2x.png");
-    }
+    background: url("../img/icon-insta.svg") no-repeat 0 0;
   }
 }
 
@@ -119,10 +119,10 @@
     background: url("../img/cynthia-magana-138943-unsplash.png") no-repeat 0 0;
     background-size: cover;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/cynthia-magana-138943-unsplash2x.png");
+    // }
   }
 
   .gallery__button {

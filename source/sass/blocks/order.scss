@@ -14,10 +14,10 @@
     left: 0px;
     background: url("../img/backpack.png") no-repeat;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/backpack2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/backpack2x.png");
+    // }
   }
 
   &::after {
@@ -31,10 +31,10 @@
     background-size: cover;
     z-index: -1;
 
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/girl-flag-bg2x.png");
-    }
+    // @media (min-resolution: $retina-dpi),
+    // (min-resolution: $retina-dppx) {
+    //   background-image: url("../img/girl-flag-bg2x.png");
+    // }
   }
 }
 
@@ -51,10 +51,26 @@
 }
 
 .order__user-tel {
+  background-color: #E3E3E3;
+  display: flex;
+  align-items: flex-start;
   width: 312px;
-  padding: 20px 145px 20px 38px;
-  border: 2px solid #E3E3E3;
   box-sizing: border-box;
+  border-radius: 80px;
+}
+
+input:focus .order__user-tel,
+.order__user-tel:active {
+  background-image: $gradient;
+}
+
+.order__form input {
+  background-clip: padding-box;
+  border-color: transparent;
+  padding: 0 50px 0 38px;
+  margin: 0;
+  height: 54px;
+  width: 100%;
   border-radius: 80px;
 
   &::placeholder {
@@ -83,6 +99,12 @@
   color: #ffffff;
   z-index: 5;
   border: none;
+  cursor: pointer;
+
+  &:active {
+    background: radial-gradient(150% 119.49% at 50% 50.85%, rgba(0, 0, 0, 0) 30.67%, rgba(3, 3, 3, 0.24) 100%), linear-gradient(143.55deg, #FFC341 -50.3%, #FFD701 63.1%);
+    ;
+  }
 }
 
 @media (max-width: $tablet-width-max) {

@@ -8,10 +8,10 @@
   padding-bottom: 75px;
   border-bottom: 1px solid #484848;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_Bg2x-6.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/watercolor_Bg2x-6.png");
+  // }
 }
 
 .contacts__top,
@@ -45,12 +45,7 @@
     position: absolute;
     top: 0;
     left: 3px;
-    background: url("../img/marker.png") no-repeat 0 0;
-
-    @media (min-resolution: $retina-dpi),
-    (min-resolution: $retina-dppx) {
-      background-image: url("../img/marker2x.png");
-    }
+    background: url("../img/icon-marker.svg") no-repeat 0 0;
   }
 
   &_city {
@@ -67,12 +62,7 @@
       position: absolute;
       top: 3px;
       right: -28px;
-      background: url("../img/gps.png") no-repeat 0 0;
-
-      @media (min-resolution: $retina-dpi),
-      (min-resolution: $retina-dppx) {
-        background-image: url("../img/gps2x.png");
-      }
+      background: url("../img/icon-gps.svg") no-repeat 0 0;
     }
   }
 }

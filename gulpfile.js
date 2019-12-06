@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable quotes */
+/* eslint-disable indent */
 "use strict";
 
 var gulp = require("gulp");

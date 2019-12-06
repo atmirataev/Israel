@@ -4,10 +4,10 @@
   background: url("../img/watercolor_Bg.png") no-repeat center bottom;
   position: relative;
 
-  @media (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
-    background-image: url("../img/watercolor_Bg2x.png");
-  }
+  // @media (min-resolution: $retina-dpi),
+  // (min-resolution: $retina-dppx) {
+  //   background-image: url("../img/watercolor_Bg2x.png");
+  // }
 }
 
 .about-program__title {
@@ -40,6 +40,11 @@
   left: 50%;
   margin-left: -48px;
   fill: #fff;
+  cursor: pointer;
+
+  &:active {
+    opacity: .5;
+  }
 }
 
 @media(max-width: $tablet-width-max) {

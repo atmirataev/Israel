@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Учёба, путешествие и карьера для еврейской молодёжи">
   <title>Проект "Израиль"</title>
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -36,8 +37,11 @@
       <p class="about-program__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства
         Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения
         программ предусмотрен грант от 4200 до 8400$.</p>
-      <img class="about-program__img" src="img/photo.png" srcset="img/photo2x.png" width="870" height="460"
-        alt="О программе">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/photo-m.png" srcset="img/photo2x.png 2x">
+        <img class="about-program__img" src="img/photo.png" srcset="img/photo2x.png" width="870" height="460"
+          alt="О программе">
+      </picture>
       <svg class="about-program__play-btn" width="96" height="96">
         <use xlink:href="#icon-play-btn"></use>
       </svg>
@@ -138,7 +142,9 @@
       <p class="order__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
       <form class="order__form" action="#">
-        <input type="tel" class="order__user-tel" placeholder="телефон">
+        <label class="order__user-tel">
+          <input type="tel" placeholder="телефон">
+        </label>
         <button class="order__submit callback-btn" type="submit">перезвоните мне</button>
       </form>
     </section>
@@ -437,6 +443,7 @@
         </label>
       </form>
       <button class="modal__close">Закрыть</button>
+      <div class="modal__overlay"></div>
     </section>
     <section class="success-modal modal hidden">
       <h3 class="section-titles modal__title success-modal__title">Заявка принята</h3>
@@ -444,6 +451,7 @@
         деталей!</p>
       <button class="modal__main-btn success-modal__main-btn">Понятно</button>
       <button class="modal__close success-modal__close">Закрыть</button>
+      <div class="modal__overlay"></div>
     </section>
   </main>
   <footer class="main-footer">
