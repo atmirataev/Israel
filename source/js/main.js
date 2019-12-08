@@ -41,7 +41,7 @@
 
   var callbackModal = document.querySelector('.callback-modal');
   var successModal = document.querySelector('.success-modal');
-  var callbackModalOpenBtn = document.querySelector('.page-header__item_call');
+  var callbackModalOpenBtn = document.querySelector('.page-header__nav_call');
   var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
   var successModalOpenBtn = document.querySelectorAll('.callback-btn');
   var successModalCloseBtn = successModal.querySelector('.modal__close');

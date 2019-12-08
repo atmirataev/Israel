@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 
-.callback-modal__form label {
+.callback-modal__form label:not(.callback-modal__checkbox-label) {
   width: 360px;
   background-image: $gradient;
   display: flex;
