@@ -1,38 +1,43 @@
 'use strict';
 
 (function () {
+  var ESC_KEYCODE = 27;
+
   var programBtns = document.querySelectorAll('.programs__btn');
   var programsItems = document.querySelectorAll('.programs__item');
 
-  programBtns[0].classList.add('programs__current-btn');
-  programsItems[0].classList.add('programs__item_current');
+  if (programBtns && programsItems) {
+    programBtns[0].classList.add('programs__current-btn');
+    programsItems[0].classList.add('programs__item_current');
 
-  [].forEach.call(programBtns, function (item, index) {
-    item.addEventListener('click', function () {
-      var chosenBtn = document.querySelector('.programs__current-btn');
-      var chosenItem = document.querySelector('.programs__item_current');
+    [].forEach.call(programBtns, function (item, index) {
+      item.addEventListener('click', function () {
+        var chosenBtn = document.querySelector('.programs__current-btn');
+        var chosenItem = document.querySelector('.programs__item_current');
 
-      chosenBtn.classList.remove('programs__current-btn');
-      chosenItem.classList.remove('programs__item_current');
-      item.classList.add('programs__current-btn');
-      programsItems[index].classList.add('programs__item_current');
+        chosenBtn.classList.remove('programs__current-btn');
+        chosenItem.classList.remove('programs__item_current');
+        item.classList.add('programs__current-btn');
+        programsItems[index].classList.add('programs__item_current');
+      });
     });
-  });
+  }
+
 
   var questionsItems = document.querySelectorAll('.questions__item');
 
-  [].forEach.call(questionsItems, function (item) {
-    var infoOpenBtn = item.querySelector('.questions__text');
-    infoOpenBtn.addEventListener('click', function () {
-      if (item.classList.contains('questions__item_current')) {
-        item.classList.remove('questions__item_current');
-      } else {
-        item.classList.add('questions__item_current');
-      }
+  if (questionsItems) {
+    [].forEach.call(questionsItems, function (item) {
+      var infoOpenBtn = item.querySelector('.questions__text');
+      infoOpenBtn.addEventListener('click', function () {
+        if (item.classList.contains('questions__item_current')) {
+          item.classList.remove('questions__item_current');
+        } else {
+          item.classList.add('questions__item_current');
+        }
+      });
     });
-  });
-
-  var ESC_KEYCODE = 27;
+  }
 
   var callbackModal = document.querySelector('.callback-modal');
   var successModal = document.querySelector('.success-modal');
@@ -54,11 +59,15 @@
     isStorageSupport = false;
   }
 
-  // Обработчики
-  callbackModalOpenBtn.addEventListener('click', openCallbackModal);
-  [].forEach.call(successModalOpenBtn, function (item) {
-    item.addEventListener('click', openSuccessModal);
-  });
+  if (callbackModalOpenBtn && openCallbackModal) {
+    callbackModalOpenBtn.addEventListener('click', openCallbackModal);
+  }
+
+  if (successModalOpenBtn && openSuccessModal) {
+    [].forEach.call(successModalOpenBtn, function (item) {
+      item.addEventListener('click', openSuccessModal);
+    });
+  }
 
   /**
    *  Показывает модальное окно "Перезвоните мне"
