@@ -51,27 +51,33 @@
 }
 
 .order__user-tel {
-  background-color: #E3E3E3;
+  background-image: $gradient;
   display: flex;
   align-items: flex-start;
   width: 312px;
-  box-sizing: border-box;
   border-radius: 80px;
 }
 
-// input:focus .order__user-tel,
-// .order__user-tel:active {
-//   background-image: $gradient;
-// }
-
 .order__form input {
-  background-clip: padding-box;
-  border-color: transparent;
+  border: 2px solid #E3E3E3;
   padding: 0 50px 0 38px;
   margin: 0;
   height: 54px;
   width: 100%;
   border-radius: 80px;
+
+  &:focus {
+    background-clip: padding-box;
+    border-color: transparent;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: 2px solid #FF0000;
+  }
+
+  &:valid:not(:placeholder-shown) {
+    border: 2px solid #484848;
+  }
 
   &::placeholder {
     font-weight: normal;

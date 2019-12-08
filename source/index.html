@@ -142,7 +142,7 @@
       </p>
       <form class="order__form" action="#">
         <label class="order__user-tel">
-          <input type="tel" placeholder="телефон">
+          <input type="tel" placeholder="телефон" minlength="18" maxlength="18" required>
         </label>
         <button class="order__submit callback-btn" type="submit">перезвоните мне</button>
       </form>
@@ -415,9 +415,13 @@
             не придёт спам от нас!</p>
         </div>
         <form action="#" class="contacts__form">
-          <input type="text" placeholder="имя">
-          <input type="tel" placeholder="____ ___ __ __">
-          <button type="submit" class="contacts__submit callback-btn">Перезвоните мне</button>
+          <label class="contacts__user-name">
+            <input type="text" placeholder="имя" required>
+          </label>
+          <label class="contacts__user-tel">
+            <input type="tel" placeholder="____ ___ __ __" minlength="18" maxlength="18" required>
+          </label>
+          <button type="submit" class="contacts__submit callback-btn">перезвоните мне</button>
         </form>
       </div>
     </section>
