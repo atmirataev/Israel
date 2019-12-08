@@ -2,7 +2,6 @@
   margin-bottom: 65px;
   padding-bottom: 93px;
   background: url("../img/watercolor_Bg.png") no-repeat center bottom;
-  position: relative;
 
   // @media (min-resolution: $retina-dpi),
   // (min-resolution: $retina-dppx) {
@@ -10,12 +9,16 @@
   // }
 }
 
-.about-program__title {
+.about-program__img {
+  position: relative;
+}
+
+.about-program h2 {
   width: 330px;
   margin: 0 auto 24px;
 }
 
-.about-program__description {
+.about-program p {
   width: 720px;
   margin: 0 auto 52px;
   font-family: "Fira Sans", "Arial", sans-serif;
@@ -27,16 +30,16 @@
   text-align: center;
 }
 
-.about-program img {
+.about-program__img img {
   margin: 0 auto;
   text-align: center;
   display: block;
 }
 
-.about-program__play-btn {
+.about-program__img svg {
   content: "";
   position: absolute;
-  top: 51%;
+  top: 37%;
   left: 50%;
   margin-left: -48px;
   fill: #fff;
@@ -52,11 +55,11 @@
     padding: 48px 124px 96px 124px;
   }
 
-  .about-program__title {
+  .about-program h2 {
     width: 247px;
   }
 
-  .about-program__play-btn {
+  .about-program__img svg {
     top: 47%;
   }
 }
@@ -70,7 +73,7 @@
     padding-bottom: 0;
   }
 
-  .about-program__title {
+  .about-program h2 {
     width: 288px;
     font-size: 32px;
     line-height: 39px;
@@ -78,7 +81,7 @@
     letter-spacing: -0.02em;
   }
 
-  .about-program__description {
+  .about-program p {
     width: 100%;
     padding: 0 5vw;
     box-sizing: border-box;
@@ -93,7 +96,7 @@
     width: 100%;
   }
 
-  .about-program__play-btn {
+  .about-program__img svg {
     width: 80px;
     height: 80px;
     top: 373px;

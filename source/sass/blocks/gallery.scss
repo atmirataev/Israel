@@ -2,6 +2,7 @@
   background: url("../img/cynthia-magana-138943-unsplash.png") no-repeat 0 0;
   background-size: contain;
   padding: 88px 0 265px;
+  margin-bottom: 32px;
 
   // @media (min-resolution: $retina-dpi),
   // (min-resolution: $retina-dppx) {
@@ -9,15 +10,15 @@
   // }
 }
 
-.gallery__title {
+.gallery h2 {
   width: 296px;
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.02em;
-  margin: 35px 275px 24px auto;
+  margin: 35px 275px 20px auto;
 }
 
-.gallery__text {
+.gallery p {
   width: 396px;
   font-weight: normal;
   font-size: 17px;
@@ -26,7 +27,7 @@
   opacity: 0.87;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   padding-left: 4px;
-  margin: 19px 173px 48px auto;
+  margin: 0 170px 20px auto;
 }
 
 .gallery__button {
@@ -69,13 +70,13 @@
     background-size: cover;
   }
 
-  .gallery__title {
+  .gallery h2 {
     text-align: center;
     margin: 80px 75px 24px auto;
 
   }
 
-  .gallery__text {
+  .gallery p {
     padding: 0 24px;
     box-sizing: border-box;
     font-size: 16px;
@@ -103,12 +104,12 @@
     margin-bottom: 50px;
   }
 
-  .gallery__title {
+  .gallery h2 {
     width: 100%;
     margin: 0 auto;
   }
 
-  .gallery__text {
+  .gallery p {
     width: 100%;
     padding: 30vw 7vw 8vh;
     margin: 0 0 10px;

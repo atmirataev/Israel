@@ -5,7 +5,7 @@
   padding: 23px 112px;
 }
 
-.main-footer__social {
+.main-footer ul {
   width: 112px;
   display: flex;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
   margin: 0;
 }
 
-.main-footer__copyright {
+.main-footer p {
   width: 209px;
   font-size: 12px;
   line-height: 150%;
@@ -35,7 +35,7 @@
     margin: 0 auto 28px;
   }
 
-  .main-footer__copyright {
+  .main-footer p {
     width: 100%;
     font-size: 12px;
     line-height: 150%;
@@ -43,12 +43,12 @@
     opacity: 0.5;
   }
 
-  .main-footer__social {
+  .main-footer ul {
     width: 136px;
     margin: 32px auto 0;
   }
 
-  .main-footer__social svg {
+  .main-footer ul svg {
     width: 32px;
     height: 32px;
   }

@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 
-.contacts__title {
+.contacts h2 {
   letter-spacing: -0.02em;
   margin: 0 0 48px 0;
 }
@@ -30,7 +30,7 @@
   width: 517px;
 }
 
-.contacts__location {
+.contacts__location p {
   font-size: 15px;
   line-height: 150%;
   opacity: 0.74;
@@ -47,23 +47,23 @@
     left: 3px;
     background: url("../img/icon-marker.svg") no-repeat 0 0;
   }
+}
 
-  &_city {
-    font-weight: 500;
-    font-variant: small-caps;
-    border-bottom: 1px dashed #1FC0FC;
-    position: relative;
-    margin-left: 12px;
+.contacts__location span {
+  font-weight: 500;
+  font-variant: small-caps;
+  border-bottom: 1px dashed #1FC0FC;
+  position: relative;
+  margin-left: 12px;
 
-    &::after {
-      content: "";
-      width: 16px;
-      height: 15px;
-      position: absolute;
-      top: 3px;
-      right: -28px;
-      background: url("../img/icon-gps.svg") no-repeat 0 0;
-    }
+  &::after {
+    content: "";
+    width: 16px;
+    height: 15px;
+    position: absolute;
+    top: 3px;
+    right: -28px;
+    background: url("../img/icon-gps.svg") no-repeat 0 0;
   }
 }
 
@@ -77,25 +77,26 @@
   width: 264px;
   position: relative;
   padding-left: 24px;
-
-  &_name {
-    margin: 0 0 7px 0;
-    opacity: .74;
-  }
-
-  &_your-curator {
-    color: $blue;
-    margin-right: 5px;
-  }
-
-  &_address {
-    margin: 0;
-    font-size: 13px;
-    opacity: 0.74;
-  }
 }
 
-.contacts__curator-data_social {
+.contacts__curator-data p {
+  margin: 0 0 7px 0;
+  opacity: .74;
+}
+
+.contacts__curator-data span {
+  color: $blue;
+  margin-right: 5px;
+}
+
+.contacts__curator-data address {
+  margin: 0;
+  font-style: normal;
+  font-size: 13px;
+  opacity: 0.74;
+}
+
+.contacts__curator-data ul {
   position: absolute;
   bottom: 2px;
   left: 19px;
@@ -151,8 +152,7 @@
   padding-top: 72px;
 }
 
-.contacts__user-name,
-.contacts__user-tel {
+.contacts__form label {
   display: inline-block;
   vertical-align: top;
   background-image: $gradient;
@@ -219,7 +219,7 @@
   }
 }
 
-.contacts__submit {
+.contacts__form button {
   width: 216px;
   padding: 20px 0;
   background: $gradient;
@@ -283,9 +283,9 @@
     justify-content: space-between;
   }
 
-  .contacts__form input[type="text"],
-  .contacts__form input[type="tel"],
-  .contacts__submit {
+  .contacts__form input[type=text],
+  .contacts__form input[type=tel],
+  .contacts__form button {
     margin: 0;
   }
 }
@@ -296,13 +296,13 @@
     padding: 0 0 48px;
   }
 
-  .contacts__title {
+  .contacts h2 {
     width: 100%;
     text-align: center;
     margin-bottom: 27px;
   }
 
-  .contacts__location {
+  .contacts__top-left p {
     padding-left: 38px;
 
     &::before {
@@ -320,15 +320,15 @@
     padding-left: 17px;
     font-size: 13px;
     line-height: 150%;
-
-    &_name {
-      font-size: 15px;
-      line-height: 150%;
-      margin-bottom: 12px;
-    }
   }
 
-  .contacts__curator-data_social {
+  .contacts__curator-data p {
+    font-size: 15px;
+    line-height: 150%;
+    margin-bottom: 12px;
+  }
+
+  .contacts__curator-data ul {
     left: 13px;
     bottom: -40px;
   }
@@ -392,8 +392,7 @@
 
   }
 
-  .contacts__user-name,
-  .contacts__user-tel {
+  .contacts__form label {
     width: 288px;
     margin: 0 auto 8px;
   }
@@ -402,7 +401,7 @@
     padding: 24px 10px 13px 40px;
   }
 
-  .contacts__submit {
+  .contacts__form button {
     width: 264px;
     margin: 15px auto;
   }

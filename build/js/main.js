@@ -4,36 +4,36 @@
   var ESC_KEYCODE = 27;
 
   var programBtns = document.querySelectorAll('.programs__btn');
-  var programsItems = document.querySelectorAll('.programs__item');
+  var programsItems = document.querySelectorAll('.programs li');
 
   if (programBtns && programsItems) {
     programBtns[0].classList.add('programs__current-btn');
-    programsItems[0].classList.add('programs__item_current');
+    programsItems[0].classList.add('programs__current-item');
 
     [].forEach.call(programBtns, function (item, index) {
       item.addEventListener('click', function () {
         var chosenBtn = document.querySelector('.programs__current-btn');
-        var chosenItem = document.querySelector('.programs__item_current');
+        var chosenItem = document.querySelector('.programs__current-item');
 
         chosenBtn.classList.remove('programs__current-btn');
-        chosenItem.classList.remove('programs__item_current');
+        chosenItem.classList.remove('programs__current-item');
         item.classList.add('programs__current-btn');
-        programsItems[index].classList.add('programs__item_current');
+        programsItems[index].classList.add('programs__current-item');
       });
     });
   }
 
 
-  var questionsItems = document.querySelectorAll('.questions__item');
+  var questionsItems = document.querySelectorAll('.questions ');
 
   if (questionsItems) {
     [].forEach.call(questionsItems, function (item) {
       var infoOpenBtn = item.querySelector('.questions__text');
       infoOpenBtn.addEventListener('click', function () {
-        if (item.classList.contains('questions__item_current')) {
-          item.classList.remove('questions__item_current');
+        if (item.classList.contains('questions__current-item')) {
+          item.classList.remove('questions__current-item');
         } else {
-          item.classList.add('questions__item_current');
+          item.classList.add('questions__current-item');
         }
       });
     });

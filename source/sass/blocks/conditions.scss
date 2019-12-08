@@ -41,7 +41,7 @@
   position: relative;
 }
 
-.conditions__title {
+.conditions h2 {
   font-size: 40px;
   line-height: 49px;
   letter-spacing: -0.02em;
@@ -66,7 +66,7 @@
   margin-bottom: 22px;
 }
 
-.conditions__list {
+.conditions ol {
   list-style: none;
   padding-left: 44px;
   font-weight: normal;
@@ -80,7 +80,7 @@
   position: relative;
 }
 
-.conditions__item {
+.conditions li {
   width: 414px;
   margin-bottom: 45px;
 
@@ -126,7 +126,7 @@
     }
   }
 
-  .conditions__title {
+  .conditions h2 {
     font-size: 30px;
   }
 
@@ -139,7 +139,7 @@
   }
 
   .conditions__details,
-  .conditions__list,
+  .conditions ol,
   .conditions__ps {
     width: 100%;
     font-size: 13px;
@@ -158,11 +158,11 @@
     box-sizing: border-box;
   }
 
-  .conditions__list {
+  .conditions ol {
     padding-left: 65px;
   }
 
-  .conditions__item {
+  .conditions li {
     margin-bottom: 30px;
     position: relative;
 
@@ -176,7 +176,6 @@
     }
   }
 }
-
 
 @media (max-width: $mobile-width-max) {
   .conditions {
@@ -198,7 +197,7 @@
     display: none;
   }
 
-  .conditions__title {
+  .conditions h2 {
     width: 288px;
     margin: 0 auto 26px;
     text-align: center;
@@ -209,7 +208,7 @@
   }
 
   .conditions__details,
-  .conditions__list,
+  .conditions ol,
   .conditions__ps {
     width: 100%;
     box-sizing: border-box;
@@ -227,7 +226,7 @@
     margin-bottom: 22px;
   }
 
-  .conditions__list {
+  .conditions ol {
     padding: 0;
   }
 
@@ -237,7 +236,7 @@
     margin: 0;
   }
 
-  .conditions__item {
+  .conditions li {
     width: 100%;
     padding-left: 43px;
     margin-bottom: 60px;

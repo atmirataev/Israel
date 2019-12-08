@@ -38,19 +38,19 @@
   }
 }
 
-.order__title {
+.order h2 {
   margin: 0 0 23px;
   letter-spacing: -0.02em;
 }
 
-.order__text {
+.order p {
   width: 400px;
   margin: 0 0 65px;
   font-size: 17px;
   line-height: 170%;
 }
 
-.order__user-tel {
+.order__form label {
   background-image: $gradient;
   display: flex;
   align-items: flex-start;
@@ -88,7 +88,7 @@
   }
 }
 
-.order__submit {
+.order__form button {
   position: absolute;
   padding: 19px 38px 20px;
   width: 221px;
@@ -119,17 +119,17 @@
     margin-bottom: 115px;
   }
 
-  .order__title,
-  .order__text,
-  .order__user-tel {
+  .order h2,
+  .order p,
+  .order__form label {
     margin-left: 110px;
   }
 
-  .order__text {
+  .order p {
     margin-bottom: 125px;
   }
 
-  .order__submit {
+  .order__form button {
     left: 370px;
   }
 
@@ -175,13 +175,13 @@
     }
   }
 
-  .order__title {
+  .order h2 {
     width: 286px;
     margin: 0 auto 23px;
     text-align: center;
   }
 
-  .order__text {
+  .order p {
     width: 100%;
     margin: 0 0 28px;
     padding: 0 5vw;
@@ -192,16 +192,16 @@
     box-sizing: border-box;
   }
 
-  .order__user-tel {
+  .order__form label {
     width: 287px;
     margin: 0 auto 9px;
   }
 
-  .order__user-tel input {
+  .order__form label input {
     padding: 0 145px 0 38px;
   }
 
-  .order__submit {
+  .order__form button {
     width: 264px;
     position: static;
     margin: 0 auto;

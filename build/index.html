@@ -117,11 +117,11 @@
   </div>
   <header class="page-header">
     <nav class="page-header__nav">
-      <ul class="page-header__list">
-        <li class="page-header__item page-header__item_tel">
+      <ul>
+        <li class="page-header__nav_tel">
           <a href="tel:(972)2–621–6581">+ (972) 2 – 621 – 6581</a>
         </li>
-        <li class="page-header__item page-header__item_call">
+        <li class="pagepage-header__nav_call">
           <a href="#">Заказать звонок</a>
         </li>
       </ul>
@@ -133,21 +133,20 @@
   <main>
     <h1 class="site-title">Учёба, путешествие и карьера для еврейской молодёжи</h1>
     <section class="about-program">
-      <h2 class="section-titles about-program__title">О программе</h2>
-      <p class="about-program__description">«Маса» — совместный проект правительства Израиля и Еврейского агентства
+      <h2 class="section-titles">О программе</h2>
+      <p>«Маса» — совместный проект правительства Израиля и Еврейского агентства
         Сохнут. Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения
         программ предусмотрен грант от 4200 до 8400$.</p>
-      <picture>
-        <source media="(max-width: 767px)" srcset="img/photo-m.png">
+      <div class="about-program__img">
         <img src="img/photo.png" srcset="img/photo2x.png" width="870" height="460" alt="О программе">
-      </picture>
-      <svg class="about-program__play-btn" width="96" height="96">
-        <use xlink:href="#icon-play-btn"></use>
-      </svg>
+        <svg width="96" height="96">
+          <use xlink:href="#icon-play-btn"></use>
+        </svg>
+      </div>
     </section>
     <section class="programs">
       <div class="container programs__container">
-        <h2 class="section-titles programs__title">Программы</h2>
+        <h2 class="section-titles">Программы</h2>
         <div class="programs__control">
           <button class="programs__btn programs__btn_common">
             <svg width="28" height="33">
@@ -180,24 +179,24 @@
             Религиозные
           </button>
         </div>
-        <ul class="programs__list">
-          <li class="programs__item">
-            <h3 class="section-titles programs__item_title">Общие</h3>
-            <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+        <ul>
+          <li>
+            <h3 class="section-titles">Общие</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
               voluptates assumenda consectetur ex dolores consequatur obcaecati tempore laudantium nisi reiciendis
               optio,
               ut dolorum, vitae odio ipsa laboriosam! Quia nisi quam ex reiciendis eaque? Vel voluptate eos id quo
               quos
               fugiat ut. Suscipit perferendis quos, molestiae exercitationem ad unde voluptas. Explicabo.</p>
           </li>
-          <li class="programs__item">
-            <h3 class="section-titles programs__item_title">Академические</h3>
-            <p class="programs__item_description">Провести семестр или год за рубежом, знакомясь с различными
+          <li>
+            <h3 class="section-titles">Академические</h3>
+            <p>Провести семестр или год за рубежом, знакомясь с различными
               культурами
               и идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
               религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.
             </p>
-            <p class="programs__item_description">
+            <p>
               Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной
               религии,
               законодательного и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все
@@ -205,18 +204,18 @@
               в
               удивительной университетской среде.</p>
           </li>
-          <li class="programs__item">
-            <h3 class="section-titles programs__item_title">Стажировки</h3>
-            <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
+          <li>
+            <h3 class="section-titles">Стажировки</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem eos
               dolore
               fuga, distinctio repudiandae harum quia optio maiores, soluta ad tempora alias a suscipit quas est,
               assumenda non iste quae? Cum ullam architecto pariatur dicta aspernatur laboriosam ipsam est porro
               corporis,
               voluptatem, illo iste, corrupti soluta quisquam iusto! Cumque, reiciendis.</p>
           </li>
-          <li class="programs__item">
-            <h3 class="section-titles programs__item_title">Волонтерство</h3>
-            <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          <li>
+            <h3 class="section-titles">Волонтерство</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
               culpa optio, repellendus ullam tempora vel repellat! Similique quisquam consequuntur, sapiente officiis
               eligendi ducimus nostrum inventore, consequatur nam molestiae ratione assumenda suscipit ullam, quam
               vitae
@@ -224,9 +223,9 @@
               sapiente
               aliquid id nemo quae.</p>
           </li>
-          <li class="programs__item">
-            <h3 class="section-titles programs__item_title">Религиозные</h3>
-            <p class="programs__item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+          <li>
+            <h3 class="section-titles">Религиозные</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
               voluptatem
               velit in minima! Ducimus numquam officiis, similique quidem ipsum autem voluptatibus et maiores earum
               tempore temporibus ratione voluptas praesentium animi laboriosam explicabo ea sequi reiciendis totam
@@ -237,29 +236,29 @@
       </div>
     </section>
     <section class="order">
-      <h2 class="section-titles order__title">Хочу поехать!</h2>
-      <p class="order__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
+      <h2 class="section-titles">Хочу поехать!</h2>
+      <p>Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
       <form class="order__form" action="#">
-        <label class="order__user-tel">
+        <label>
           <input type="tel" placeholder="телефон" minlength="18" maxlength="18" required="">
         </label>
-        <button class="order__submit callback-btn" type="submit">перезвоните мне</button>
+        <button class="callback-btn" type="submit">перезвоните мне</button>
       </form>
     </section>
     <section class="conditions">
       <img src="img/img_как-поехать.png" srcset="img/img_как-поехать2x.png 2x" width="581" height="707" alt="Молодая пара">
       <div class="conditions__container">
-        <h2 class="section-titles conditions__title">Как поехать</h2>
+        <h2 class="section-titles">Как поехать</h2>
         <p class="conditions__details">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
           получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
         <p class="conditions__text">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:</p>
-        <ol class="conditions__list">
-          <li class="conditions__item">Быть в возрасте от 16 до 30 лет</li>
-          <li class="conditions__item">Иметь оконченное среднее образование</li>
-          <li class="conditions__item">Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
+        <ol>
+          <li>Быть в возрасте от 16 до 30 лет</li>
+          <li>Иметь оконченное среднее образование</li>
+          <li>Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
           </li>
-          <li class="conditions__item">За последние 2 года быть не больше 3х месяцев
+          <li>За последние 2 года быть не больше 3х месяцев
             подряд непрерывно в Израиле.</li>
         </ol>
         <p class="conditions__ps">Если вы не подходите по этим правилам, вы всё равно можете
@@ -267,46 +266,46 @@
       </div>
     </section>
     <section class="life-in-Israel">
-      <h2 class="section-titles life-in-Israel__title">Жизнь в израиле</h2>
-      <p class="life-in-Israel__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
+      <h2 class="section-titles">Жизнь в израиле</h2>
+      <p>Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
         стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
       <div class="life-in-Israel__container swiper-container">
         <div class="life-in-Israel__wrapper swiper-wrapper">
           <div class="life-in-Israel__item swiper-slide">
             <img src="img/1img.png" srcset="img/1img2x.png 2x" width="482" height="732" alt="Здание синагоги">
-            <p class="life-in-Israel__features">Экскурсии по Израилю <br> и знакомство с его историей</p>
+            <p>Экскурсии по Израилю <br> и знакомство с его историей</p>
           </div>
           <div class="life-in-Israel__item swiper-slide">
             <img src="img/2img.png" srcset="img/2img2x.png 2x" width="211" height="318" alt="Студент">
-            <p class="life-in-Israel__features">Изучение иврита</p>
+            <p>Изучение иврита</p>
           </div>
           <div class="life-in-Israel__item swiper-slide">
             <img src="img/3img.png" srcset="img/3img2x.png 2x" width="411" height="318" alt="Студенты">
-            <p class="life-in-Israel__features">Обучение современным <br> навыкам и профессиям</p>
+            <p>Обучение современным <br> навыкам и профессиям</p>
           </div>
           <div class="life-in-Israel__item swiper-slide">
             <img src="img/4img.png" srcset="img/4img2x.png 2x" width="411" height="318" alt="Студенты">
-            <p class="life-in-Israel__features">Совместные творческие проекты <br> с израильской молодёжью</p>
+            <p>Совместные творческие проекты <br> с израильской молодёжью</p>
           </div>
           <div class="life-in-Israel__item swiper-slide">
             <img src="img/5img.png" srcset="img/5img2x.png 2x" width="214" height="318" alt="Человек">
-            <p class="life-in-Israel__features">Развитие лидерства</p>
+            <p>Развитие лидерства</p>
           </div>
         </div>
         <div class="life-in-Israel__pagination swiper-pagination"></div>
       </div>
     </section>
     <section class="gallery">
-      <h2 class="section-titles gallery__title">#masaisrael</h2>
-      <p class="gallery__text">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
+      <h2 class="section-titles">#masaisrael</h2>
+      <p>Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
         жизни, учёбе и путешествиях в Израиле.</p>
       <a href="#" class="gallery__button">cмотреть фото</a>
     </section>
     <section class="questions">
       <div class="questions__wrapper-left">
-        <h2 class="section-titles questions__title">Частые вопросы</h2>
-        <ol class="questions__list">
-          <li class="questions__item">
+        <h2 class="section-titles">Частые вопросы</h2>
+        <ol>
+          <li>
             <p class="questions__text">Кто организатор? Какие сроки у программы?</p>
             <p class="questions__answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus commodi expedita
               eaque ad quaerat possimus! Nostrum possimus totam laborum perspiciatis.</p>
@@ -340,18 +339,20 @@
           </li>
         </ol>
       </div>
-      <img src="img/img.png" srcset="img/img2x.png 2x" width="645" height="803" alt=" Молодая пара">
+      <div class="questions__wrapper-right">
+        <img src="img/img.png" srcset="img/img2x.png 2x" width="645" height="803" alt="Молодая пара">
+      </div>
     </section>
     <section class="comments">
-      <h2 class="section-titles comments__title">Отзывы</h2>
+      <h2 class="section-titles">Отзывы</h2>
       <div class="comments__container swiper-container">
         <ul class="comments__list swiper-wrapper">
           <li class="comments__item swiper-slide">
             <img width="364" height="480" src="img/img_Testimonials.png" alt="Фотография пользователя">
             <div class="comments__item_wrapper">
-              <b class="comments__user-name">Ольга Михайлова</b>
+              <b>Ольга Михайлова</b>
               <p class="comments__user-program">
-                <span class="comments__user-program_name">Программа:</span>
+                <span>Программа:</span>
                 Арт-Тель, февраль-сетнябрь 2017</p>
               <p class="comments__user-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
                 месяцев «иврит как культура». Мне
@@ -397,9 +398,9 @@
           <li class="comments__item swiper-slide">
             <img width="364" height="480" src="img/img_Testimonials.png" srcset="img/img_Testimonials2x.png 2x" alt="Фотография пользователя">
             <div class="comments__item_wrapper">
-              <b class="comments__user-name">Ольга Михайлова</b>
+              <b>Ольга Михайлова</b>
               <p class="comments__user-program">
-                <span class="comments__user-program_name">Программа:</span>
+                <span>Программа:</span>
                 Арт-Тель, февраль-сетнябрь 2017</p>
               <p class="comments__user-text">Долго выбирая программу, на которую ехать - я определилась, взяла на 5
                 месяцев «иврит как культура». Мне
@@ -451,20 +452,19 @@
     <section class="contacts">
       <div class="contacts__top">
         <div class="contacts__top-left">
-          <h2 class="section-titles contacts__title">Узнать подробности</h2>
-          <p class="contacts__location">Ваш город: <span class="contacts__location_city">новосибирск</span></p>
+          <h2 class="section-titles">Узнать подробности</h2>
+          <div class="contacts__location">
+            <p>Ваш город: <span>новосибирск</span></p>
+          </div>
           <div class="contacts__curator">
             <div class="contacts__curator_img">
               <img src="img/куратор.png" srcset="img/куратор2x.png 2x" alt="Фотография куратора">
             </div>
             <div class="contacts__curator-data">
-              <p class="contacts__curator-data_name">
-                <span class="contacts__curator-data_your-curator">Ваш куратор:
-                </span>Анна Горелик
-              </p>
-              <p class="contacts__curator-data_address">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
-              </p>
-              <ul class="contacts__curator-data_social">
+              <p><span>Ваш куратор:</span>Анна Горелик</p>
+              <address>Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
+              </address>
+              <ul>
                 <li>
                   <a href="#" class="contacts__curator-data_social-fb">
                     <span class="visually-hidden">Фейсбук</span>
@@ -512,35 +512,39 @@
             не придёт спам от нас!</p>
         </div>
         <form action="#" class="contacts__form">
-          <label class="contacts__user-name">
+          <label>
             <input type="text" placeholder="имя" required="">
           </label>
-          <label class="contacts__user-tel">
+          <label>
             <input type="tel" placeholder="____ ___ __ __" minlength="18" maxlength="18" required="">
           </label>
-          <button type="submit" class="contacts__submit callback-btn">перезвоните мне</button>
+          <button type="submit" class="callback-btn">перезвоните мне</button>
         </form>
       </div>
     </section>
-    <section class="callback-modal modal hidden">
-      <h3 class="section-titles modal__title">Заказать звонок</h3>
-      <p class="modal__text">Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
+    <section class="modal callback-modal hidden">
+      <h3 class="section-titles">Заказать звонок</h3>
+      <p>Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
         обязательно поможем найти ответ на ваш вопрос!</p>
       <form class="callback-modal__form" action="#">
-        <input type="text" name="user-name" id="user-name" placeholder="Имя">
-        <input type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+        <label>
+          <input type="text" name="user-name" placeholder="Имя" required="">
+        </label>
+        <label>
+          <input type="tel" name="user-tel" placeholder="Телефон" minlength="18" maxlength="18" required="">
+        </label>
         <button class="modal__main-btn callback-btn" type="submit">перезвоните мне</button>
         <label class="callback-modal__checkbox-label">
-          <input class="visually-hidden" type="checkbox" name="agreement">
+          <input class="visually-hidden" type="checkbox" name="text">
           Нажимая на кнопку, вы даёте согласие на обработку персональных данных
         </label>
       </form>
       <button class="modal__close">Закрыть</button>
       <div class="modal__overlay"></div>
     </section>
-    <section class="success-modal modal hidden">
-      <h3 class="section-titles modal__title success-modal__title">Заявка принята</h3>
-      <p class="modal__text success-modal__text">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения
+    <section class="modal success-modal hidden">
+      <h3 class="section-titles">Заявка принята</h3>
+      <p>Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения
         деталей!</p>
       <button class="modal__main-btn success-modal__main-btn">Понятно</button>
       <button class="modal__close success-modal__close">Закрыть</button>
@@ -549,8 +553,8 @@
   </main>
   <footer class="main-footer">
     <img src="img/masa-bw.png" srcset="img/masa-bw2x.png 2x" width="85" height="27" alt="Логотип компании">
-    <p class="main-footer__copyright">Copyright someDesignCompany ©2019</p>
-    <ul class="main-footer__social">
+    <p>Copyright someDesignCompany ©2019</p>
+    <ul>
       <li>
         <a href="#">
           <span class="visually-hidden">Фейсбук</span>

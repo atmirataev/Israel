@@ -16,7 +16,7 @@
   flex-wrap: wrap;
 }
 
-.programs__title {
+.programs h2 {
   width: 100%;
   margin: 0 0 75px;
   padding-left: 36px;
@@ -25,6 +25,7 @@
 
 .programs__control {
   width: 230px;
+  height: fit-content;
   margin-right: 64px;
   padding-left: 39px;
   display: flex;
@@ -70,21 +71,21 @@
   fill: #ffffff;
 }
 
-.programs__list {
+.programs ul {
   width: 600px;
   margin: 0;
   padding: 12px 0 0;
 }
 
-.programs__item {
+.programs li {
   display: none;
-
-  &_current {
-    display: block;
-  }
 }
 
-.programs__item_title {
+.programs li.programs__current-item {
+  display: block;
+}
+
+.programs h3 {
   text-transform: none;
   font-size: 28px;
   line-height: 34px;
@@ -92,7 +93,7 @@
   margin-bottom: 24px;
 }
 
-.programs__item_description {
+.programs p {
   width: 550px;
   font-weight: normal;
   font-size: 15px;
@@ -100,15 +101,15 @@
 }
 
 @media (max-width: $tablet-width-max) {
-  .programs__list {
+  .programs ul {
     width: 415px;
   }
 
-  .programs__title {
+  .programs h2 {
     margin-bottom: 45px;
   }
 
-  .programs__item_description {
+  .programs p {
     font-size: 15px;
     width: 100%;
   }
@@ -133,7 +134,7 @@
     width: 100%;
   }
 
-  .programs__item_description {
+  .programs p {
     width: 100%;
     font-size: 14px;
     line-height: 160%;
@@ -144,7 +145,7 @@
     }
   }
 
-  .programs__item_title {
+  .programs h3 {
     width: 205px;
     font-size: 24px;
     line-height: 29px;
@@ -156,6 +157,7 @@
 
   .programs__control {
     width: 100%;
+    height: auto;
     flex-wrap: nowrap;
     margin-bottom: 20px;
     overflow-x: scroll;
@@ -199,7 +201,7 @@
     }
   }
 
-  .programs__title {
+  .programs h2 {
     width: 288px;
     padding: 0;
     text-align: center;
@@ -207,11 +209,11 @@
     margin-bottom: 16px;
   }
 
-  .programs__list {
+  .programs ul {
     width: 100%;
   }
 
-  .programs__item {
+  .programs li {
     width: 100%;
     padding: 20px 5vw 0;
     box-sizing: border-box;
