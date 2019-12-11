@@ -1,7 +1,6 @@
 .order {
   position: relative;
   padding-top: 219px;
-  padding-left: 15vw;
   margin-bottom: 290px;
 
 
@@ -14,28 +13,32 @@
     left: 0px;
     background: url("../img/backpack.png") no-repeat;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/backpack2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/backpack2x.png");
+    }
   }
 
   &::after {
     content: "";
-    width: 60%;
+    width: 818px;
     height: 594px;
     position: absolute;
     right: 0px;
     top: 10px;
     background: url("../img/girl-flag-bg.png") no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     z-index: -1;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/girl-flag-bg2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/girl-flag-bg2x.png");
+    }
   }
+}
+
+.order__container {
+  padding-left: 15%;
 }
 
 .order h2 {
@@ -88,12 +91,16 @@
   }
 }
 
+.order__form {
+  position: relative;
+}
+
 .order__form button {
   position: absolute;
   padding: 19px 38px 20px;
   width: 221px;
   box-sizing: border-box;
-  left: 470px;
+  left: 267px;
   bottom: 0px;
   background: $gradient;
   border-radius: 80px;
@@ -117,6 +124,10 @@
   .order {
     padding-left: 0;
     margin-bottom: 115px;
+  }
+
+  .order__container {
+    padding: 0;
   }
 
   .order h2,

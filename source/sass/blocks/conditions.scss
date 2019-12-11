@@ -1,14 +1,14 @@
 .conditions {
   display: flex;
-  background: url("../img/watercolor_Bg-2.png") no-repeat 0;
+  background: url("../img/conditions-bg.png") no-repeat 0;
   background-size: 1366px 1028px;
   position: relative;
   margin-bottom: 154px;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/watercolor_Bg2x-2.png");
-  // }
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/conditions-bg2x.png");
+  }
 
 
   &::after {
@@ -21,14 +21,14 @@
     background: url("../img/stamp.png") no-repeat;
     background-position-x: right;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/stamp2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/stamp2x.png");
+    }
   }
 }
 
-.conditions img {
+.conditions__img {
   width: 43%;
   margin-left: 12px;
   object-fit: contain;
@@ -126,11 +126,15 @@
     }
   }
 
+  .conditions__container {
+    margin-top: 0;
+  }
+
   .conditions h2 {
     font-size: 30px;
   }
 
-  .conditions img {
+  .conditions__img {
     width: 40%;
   }
 
@@ -193,7 +197,7 @@
     }
   }
 
-  .conditions img {
+  .conditions__img {
     display: none;
   }
 

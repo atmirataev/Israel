@@ -24,7 +24,7 @@
   }
 
 
-  var questionsItems = document.querySelectorAll('.questions ');
+  var questionsItems = document.querySelectorAll('.questions li');
 
   if (questionsItems) {
     [].forEach.call(questionsItems, function (item) {

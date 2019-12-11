@@ -1,14 +1,13 @@
 .comments {
-  display: flex;
-  flex-wrap: wrap;
+  background: url("../img/comments-bg.png") no-repeat right 0;
   position: relative;
-  background: url("../img/watercolor_bg-5.png") no-repeat right 0;
+  background-size: 100% auto;
   margin-bottom: 105px;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/comments-bg2x.png");
-  // }
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/comments-bg2x.png");
+  }
 
   &::after {
     content: "";
@@ -17,13 +16,18 @@
     position: absolute;
     right: 0;
     top: 0;
-    background: url("../img/sketch.png") no-repeat 12px 58px;
+    background: url("../img/comments-2bg.png") no-repeat 12px 58px;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/sketch2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/comments-2bg2x.png");
+    }
   }
+}
+
+.comments__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .comments__list {
@@ -48,12 +52,12 @@
 
 .comments__btn-prev {
   left: 560px;
-  background: url("../img/Vector.svg") no-repeat 0 0;
+  background: url("../img/arrow-left.svg") no-repeat 0 0;
 }
 
 .comments__btn-next {
   left: 588px;
-  background: url("../img/Vector-2.svg") no-repeat 0 0;
+  background: url("../img/arrow-right.svg") no-repeat 0 0;
 }
 
 @media screen and (-ms-high-contrast: active),
@@ -167,6 +171,10 @@ screen and (-ms-high-contrast: none) {
   .comments::after {
     top: 200px;
     background-position: 0 0;
+  }
+
+  .comments__item {
+    padding-left: 0;
   }
 
   .comments__pagination {

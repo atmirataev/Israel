@@ -1,12 +1,13 @@
 .about-program {
   margin-bottom: 65px;
-  padding-bottom: 93px;
-  background: url("../img/watercolor_Bg.png") no-repeat center bottom;
+  padding-bottom: 7%;
+  background: url("../img/about-program-bg.png") no-repeat center bottom;
+  background-size: 100% auto;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/watercolor_Bg2x.png");
-  // }
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/about-program-bg2x.png");
+  }
 }
 
 .about-program__img {
@@ -60,7 +61,7 @@
   }
 
   .about-program__img svg {
-    top: 47%;
+    top: 35%;
   }
 }
 

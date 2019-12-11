@@ -1,17 +1,20 @@
 .contacts {
-  background: url("../img/watercolor_Bg-6.png") no-repeat 0 0;
-  background-size: cover;
-  padding-left: 110px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  background: url("../img/contacts-bg.png") no-repeat 0 0;
+  background-size: 100% auto;
   padding-bottom: 75px;
   border-bottom: 1px solid #484848;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/watercolor_Bg2x-6.png");
-  // }
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/contacts-bg2x.png");
+  }
+}
+
+.contacts__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 110px;
 }
 
 .contacts__top,
@@ -243,6 +246,11 @@
 @media (max-width: $tablet-width-max) {
   .contacts {
     padding-left: 3vw;
+  }
+
+  .contacts__container {
+    width: 100%;
+    padding-left: 0;
   }
 
   .contacts__top {

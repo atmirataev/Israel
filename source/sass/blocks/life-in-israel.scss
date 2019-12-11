@@ -1,13 +1,13 @@
 .life-in-Israel {
-  background: url("../img/watercolor_Bg-3.png") no-repeat 0 0;
-  background-size: 1366px auto;
+  background: url("../img/life-in-Israel-bg.png") no-repeat 0 0;
+  background-size: 100% auto;
   position: relative;
   margin-bottom: 152px;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/watercolor_Bg2x-3.png");
-  // }
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/life-in-Israel-bg2x.png");
+  }
 
   &::after {
     content: "";
@@ -19,10 +19,10 @@
     background: url("../img/watch.png") no-repeat;
     background-position-x: right;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/watch2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/watch2x.png");
+    }
   }
 }
 
@@ -46,6 +46,7 @@
 
 .life-in-Israel__container {
   width: 100%;
+  max-width: 1366px;
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
@@ -108,6 +109,7 @@
 }
 
 .life-in-Israel__item p {
+  width: auto;
   margin: 0;
   font-family: "Raleway", "Arial", sans-serif;
   font-size: 21px;

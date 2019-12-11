@@ -1,16 +1,15 @@
 .questions {
-  background: url("../img/watercolor_Bg-4.png") no-repeat 0 0;
-  background-size: 1366px auto;
+  background: url("../img/questions-bg.png") no-repeat 0 0;
+  background-size: 100% auto;
   position: relative;
   padding: 35px 0 96px 110px;
   margin-bottom: 7px;
-  display: flex;
-  justify-content: space-between;
 
-  // @media (min-resolution: $retina-dpi),
-  // (min-resolution: $retina-dppx) {
-  //   background-image: url("../img/watercolor_Bg2x-4.png");
-  // }
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../img/questions-bg2x.png");
+  }
 
   &::before {
     content: "";
@@ -22,11 +21,16 @@
     background: url("../img/bag.png") no-repeat 0 0;
     z-index: -1;
 
-    // @media (min-resolution: $retina-dpi),
-    // (min-resolution: $retina-dppx) {
-    //   background-image: url("../img/bag2x.png");
-    // }
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/bag2x.png");
+    }
   }
+}
+
+.questions__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .questions h2 {
@@ -134,6 +138,10 @@
     padding-bottom: 20px;
   }
 
+  .questions__container {
+    width: 100%;
+  }
+
   .questions__text {
     font-size: 15px;
     line-height: 140%;
@@ -168,7 +176,7 @@
     }
   }
 
-  .questions img {
+  .questions__wrapper-right {
     display: none;
   }
 
