@@ -221,6 +221,17 @@
   }
 }
 
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+
+  .contacts__form input::-ms-clear,
+  .contacts__form input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
 .contacts__form button {
   width: 216px;
   padding: 20px 0;
