@@ -43,6 +43,13 @@ body {
   line-height: 24px;
   color: $black;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+html {
+  height: 100%;
 }
 
 a {

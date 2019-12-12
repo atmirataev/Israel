@@ -2,11 +2,10 @@
     padding-top: 45px;
     padding-bottom: 60%;
     position: relative;
-    background-image: url("../img/header-bg.png");
+    background: url("../img/header-bg.png") no-repeat 0 0;
     background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center 0;
     box-sizing: border-box;
+    flex-grow: 1;
   }
 
   .page-header__logo {

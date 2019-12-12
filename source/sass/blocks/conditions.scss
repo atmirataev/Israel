@@ -1,5 +1,4 @@
 .conditions {
-  display: flex;
   background: url("../img/conditions-bg.png") no-repeat 0;
   background-size: 1366px 1028px;
   position: relative;
@@ -26,6 +25,11 @@
       background-image: url("../img/stamp2x.png");
     }
   }
+}
+
+.conditions__wrapper {
+  display: flex;
+  position: relative;
 }
 
 .conditions__img {

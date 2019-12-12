@@ -259,33 +259,41 @@
           </label>
           <button class="callback-btn" type="submit">перезвоните мне</button>
         </form>
+        <div class="order__img">
+          <picture>
+            <source srcset="img/girl-flag-bg.webp 1x, img/girl-flag-bg2x.webp 2x" type="image/webp">
+            <img src="img/gallery-bg.png" srcset="img/girl-flag-bg2x.png 2x" width="818" height="594" alt="Девушка с флагом Израиля">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="conditions">
-      <div class="conditions__img">
-        <!-- 1х: 581px; 2x: 1162px -->
-        <picture>
-          <source srcset="img/conditions-img.webp 1x, img/conditions-img2x.webp 2x" type="image/webp">
-          <img src="img/conditions-img.png" srcset="img/conditions-img2x.png 2x" width="581" height="707" alt="Молодая пара">
-        </picture>
-      </div>
-      <div class="conditions__container">
-        <h2>Как поехать</h2>
-        <p class="conditions__details">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
-          Вы
-          получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
-        <p class="conditions__text">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:
-        </p>
-        <ol>
-          <li>Быть в возрасте от 16 до 30 лет</li>
-          <li>Иметь оконченное среднее образование</li>
-          <li>Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
-          </li>
-          <li>За последние 2 года быть не больше 3х месяцев
-            подряд непрерывно в Израиле.</li>
-        </ol>
-        <p class="conditions__ps">Если вы не подходите по этим правилам, вы всё равно можете
-          принять участие в программе «Маса», оплатив её полную стоимость.</p>
+      <div class="container conditions__wrapper">
+        <div class="conditions__img">
+          <!-- 1х: 581px; 2x: 1162px -->
+          <picture>
+            <source srcset="img/conditions-img.webp 1x, img/conditions-img2x.webp 2x" type="image/webp">
+            <img src="img/conditions-img.png" srcset="img/conditions-img2x.png 2x" width="581" height="707" alt="Молодая пара">
+          </picture>
+        </div>
+        <div class="conditions__container">
+          <h2>Как поехать</h2>
+          <p class="conditions__details">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе.
+            Вы
+            получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
+          <p class="conditions__text">Чтобы иметь возможность получить грант на обучение  от 4200 до 8400$, вы должны:
+          </p>
+          <ol>
+            <li>Быть в возрасте от 16 до 30 лет</li>
+            <li>Иметь оконченное среднее образование</li>
+            <li>Иметь документально подтверждённые еврейские корни и пройти консульскую проверку
+            </li>
+            <li>За последние 2 года быть не больше 3х месяцев
+              подряд непрерывно в Израиле.</li>
+          </ol>
+          <p class="conditions__ps">Если вы не подходите по этим правилам, вы всё равно можете
+            принять участие в программе «Маса», оплатив её полную стоимость.</p>
+        </div>
       </div>
     </section>
     <section class="life-in-Israel">
@@ -339,10 +347,12 @@
       </div>
     </section>
     <section class="gallery">
-      <h2>#masaisrael</h2>
-      <p>Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
-        жизни, учёбе и путешествиях в Израиле.</p>
-      <a href="#" class="gallery__button" type="button">cмотреть фото</a>
+      <div class="container">
+        <h2>#masaisrael</h2>
+        <p>Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
+          жизни, учёбе и путешествиях в Израиле.</p>
+        <a href="#" class="gallery__button" type="button">cмотреть фото</a>
+      </div>
     </section>
     <section class="questions">
       <div class="container questions__container">
@@ -630,39 +640,41 @@
       <div class="modal__overlay"></div>
     </section>
   </main>
-  <footer class="container main-footer">
-    <!-- 1х: 99px; 2x: 198px -->
-    <picture>
-      <source srcset="img/footer-logo.webp 1x, img/footer-logo2x.webp 2x" type="image/webp">
-      <img src="img/footer-logo.png" srcset="img/footer-logo2x.png 2x" width="85" height="27" alt="Логотип компании">
-    </picture>
-    <p>Copyright someDesignCompany ©2019</p>
-    <ul>
-      <li>
-        <a href="#">
-          <span class="visually-hidden">Фейсбук</span>
-          <svg width="24" height="24">
-            <use xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="visually-hidden">Твитер</span>
-          <svg width="24" height="24">
-            <use xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span class="visually-hidden">Инстаграм</span>
-          <svg width="24" height="24">
-            <use xlink:href="#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+  <footer class="main-footer">
+    <div class="container main-footer__container">
+      <!-- 1х: 99px; 2x: 198px -->
+      <picture>
+        <source srcset="img/footer-logo.webp 1x, img/footer-logo2x.webp 2x" type="image/webp">
+        <img src="img/footer-logo.png" srcset="img/footer-logo2x.png 2x" width="85" height="27" alt="Логотип компании">
+      </picture>
+      <p>Copyright someDesignCompany ©2019</p>
+      <ul>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg width="24" height="24">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Твитер</span>
+            <svg width="24" height="24">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Инстаграм</span>
+            <svg width="24" height="24">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>

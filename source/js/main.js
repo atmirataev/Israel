@@ -43,7 +43,9 @@
   var successModal = document.querySelector('.success-modal');
   var callbackModalOpenBtn = document.querySelector('.page-header__nav_call');
   var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
-  var successModalOpenBtn = document.querySelectorAll('.callback-btn');
+  // var successModalOpenBtn = document.querySelectorAll('.callback-btn');
+  var orderForm = document.querySelector('.order__form');
+  var contactsForm = document.querySelector('.contacts__form');
   var successModalCloseBtn = successModal.querySelector('.modal__close');
   var nameInputEl = callbackModal.querySelector('[name=user-name]');
   var telInputEl = callbackModal.querySelector('[name=user-tel]');
@@ -63,10 +65,15 @@
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
 
-  if (successModalOpenBtn && openSuccessModal) {
-    [].forEach.call(successModalOpenBtn, function (item) {
-      item.addEventListener('click', openSuccessModal);
-    });
+  // if (successModalOpenBtn && openSuccessModal) {
+  //   [].forEach.call(successModalOpenBtn, function (item) {
+  //     item.addEventListener('click', openSuccessModal);
+  //   });
+  // }
+
+  if (openSuccessModal && orderForm || contactsForm) {
+    orderForm.addEventListener('submit', openSuccessModal);
+    contactsForm.addEventListener('submit', openSuccessModal);
   }
 
   /**
@@ -110,9 +117,9 @@
    * @param {Object} evt - Объект "event"
    */
   function openSuccessModal(evt) {
+    evt.preventDefault();
     var modalOverlay = successModal.querySelector('.modal__overlay');
 
-    evt.preventDefault();
     if (!(callbackModal.classList.contains('hidden'))) {
       callbackModal.classList.add('hidden');
     }
