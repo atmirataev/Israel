@@ -171,7 +171,7 @@ screen and (-ms-high-contrast: none) {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 80px 0 0;
-    margin-bottom: 387px;
+    margin-bottom: 87px;
 
     &::before {
       width: 120px;
@@ -180,6 +180,19 @@ screen and (-ms-high-contrast: none) {
       left: -12px;
       background-size: 120px 162px;
     }
+  }
+
+  .order__img {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    position: relative;
+  }
+
+  .order img {
+    width: 424px;
+    height: 308px;
+    object-fit: cover;
   }
 
   .order h2 {
@@ -204,7 +217,7 @@ screen and (-ms-high-contrast: none) {
     margin: 0 auto 9px;
   }
 
-  .order__form label input {
+  .order__form input {
     padding: 0 145px 0 38px;
   }
 

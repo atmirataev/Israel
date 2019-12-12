@@ -3,15 +3,3 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-@media (max-width: $tablet-width-max) {
-  .container {
-    width: $tablet-width;
-  }
-}
-
-@media (max-width: $mobile-width-max) {
-  .container {
-    width: $mobile-width;
-  }
-}

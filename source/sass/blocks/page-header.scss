@@ -78,8 +78,8 @@
       width: 100%;
       padding: 20px 0 570px;
       background-image: url("../img/header-bg-mob.png");
-      background-size: auto;
-      background-position-y: 30px;
+      background-size: cover;
+      background-position-x: center;
     }
 
     .page-header__logo {
@@ -96,6 +96,7 @@
 
       &_tel {
         margin-bottom: 8px;
+        white-space: nowrap;
       }
 
       &_call {
