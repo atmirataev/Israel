@@ -101,7 +101,7 @@
     width: 100%;
     background-image: none;
     padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 79px;
   }
 
   .gallery h2 {
@@ -111,14 +111,15 @@
 
   .gallery p {
     width: 100%;
-    padding: 30vw 7vw 8vh;
-    margin: 0 0 10px;
+    padding: 32% 7% 16%;
+    margin: -6px 0 10px;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
     opacity: 0.87;
     background: url("../img/gallery-bg.png") no-repeat 0 0;
     background-size: cover;
+    background-position: 22% 0;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

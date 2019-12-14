@@ -58,7 +58,7 @@
   border: 2px solid #E3E3E3;
   padding: 0 50px 0 38px;
   margin: 0;
-  height: 54px;
+  height: 55px;
   width: 100%;
   border-radius: 80px;
 
@@ -171,7 +171,7 @@ screen and (-ms-high-contrast: none) {
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 80px 0 0;
-    margin-bottom: 87px;
+    margin-bottom: 73px;
 
     &::before {
       width: 120px;
@@ -197,14 +197,14 @@ screen and (-ms-high-contrast: none) {
 
   .order h2 {
     width: 286px;
-    margin: 0 auto 23px;
+    margin: 0 auto 22px;
     text-align: center;
   }
 
   .order p {
     width: 100%;
-    margin: 0 0 28px;
-    padding: 0 5vw;
+    margin: 0 0 27px;
+    padding: 0 5%;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
@@ -214,18 +214,17 @@ screen and (-ms-high-contrast: none) {
 
   .order__form label {
     width: 287px;
-    margin: 0 auto 9px;
+    margin: 0 auto 8px;
   }
 
   .order__form input {
-    padding: 0 145px 0 38px;
+    padding: 0 39px;
   }
 
   .order__form button {
     width: 264px;
     position: static;
     margin: 0 auto;
-    flex-grow: 0;
   }
 
   .order__form {

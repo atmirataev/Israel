@@ -76,10 +76,11 @@
   @media (max-width: $mobile-width-max) {
     .page-header {
       width: 100%;
-      padding: 20px 0 570px;
+      padding: 20px 0 546px;
       background-image: url("../img/header-bg-mob.png");
       background-size: cover;
-      background-position-x: center;
+      background-position: center 30px;
+      margin-bottom: 24px;
     }
 
     .page-header__logo {
@@ -95,7 +96,7 @@
       padding-right: 9px;
 
       &_tel {
-        margin-bottom: 8px;
+        margin-bottom: 9px;
         white-space: nowrap;
       }
 

@@ -314,6 +314,10 @@ screen and (-ms-high-contrast: none) {
     padding: 0 0 48px;
   }
 
+  .contacts__location p {
+    padding-left: 38px;
+  }
+
   .contacts h2 {
     width: 100%;
     text-align: center;
@@ -321,7 +325,6 @@ screen and (-ms-high-contrast: none) {
   }
 
   .contacts__top-left p {
-    padding-left: 38px;
 
     &::before {
       left: 20px;
@@ -383,6 +386,8 @@ screen and (-ms-high-contrast: none) {
     width: auto;
     height: 420px;
     margin: 0 auto;
+    object-fit: cover;
+    object-position: right;
   }
 
   .contacts__bottom-left {

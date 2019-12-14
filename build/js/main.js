@@ -43,7 +43,6 @@
   var successModal = document.querySelector('.success-modal');
   var callbackModalOpenBtn = document.querySelector('.page-header__nav_call');
   var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
-  // var successModalOpenBtn = document.querySelectorAll('.callback-btn');
   var orderForm = document.querySelector('.order__form');
   var contactsForm = document.querySelector('.contacts__form');
   var successModalCloseBtn = successModal.querySelector('.modal__close');

@@ -16,7 +16,7 @@
 
 .about-program h2 {
   width: 330px;
-  margin: 0 auto 24px;
+  margin: 0 auto 23px;
 }
 
 .about-program p {
@@ -94,13 +94,14 @@
   }
 
   .about-program img {
-    width: 100%;
+    width: auto;
+    height: 224px;
   }
 
   .about-program__img svg {
     width: 80px;
     height: 80px;
-    top: 44px;
+    top: 80px;
     left: 50%;
     margin-left: -40px;
   }

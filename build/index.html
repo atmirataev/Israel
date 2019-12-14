@@ -148,8 +148,10 @@
         <div class="about-program__img">
           <!-- 1х: 870px; 2x: 1740px -->
           <picture>
-            <source srcset="img/programs-img.webp 1x, img/programs-img2x.webp 2x" type="image/webp">
-            <img src="img/programs-img.png" srcset="img/programs-img2x.png 2x" width="870" height="460" alt="О программе">
+            <source srcset="img/about-program-img-mob.webp 1x, img/about-program-img-mob.webp 2x" type="image/webp">
+            <source srcset="img/about-program-img.webp 1x, img/about-program-img2x.webp 2x" type="image/webp">
+            <source media="(max-width: 767px)" srcset="img/about-program-img-mob.png 1x, img/about-program-img-mob.png 2x">
+            <img src="img/about-program-img.png" srcset="img/about-program-img2x.png 2x" width="870" height="460" alt="О программе">
           </picture>
           <svg width="96" height="96">
             <use xlink:href="#icon-play-btn"></use>
@@ -257,7 +259,7 @@
           <label>
             <input type="tel" placeholder="телефон" minlength="18" maxlength="18" required="" autocomplete="tel">
           </label>
-          <button class="callback-btn" type="submit">перезвоните мне</button>
+          <button type="submit">перезвоните мне</button>
         </form>
         <div class="order__img">
           <picture>
@@ -606,7 +608,7 @@
             <label>
               <input type="tel" placeholder="____ ___ __ __" minlength="18" maxlength="18" required="" autocomplete="tel">
             </label>
-            <button type="submit" class="callback-btn">перезвоните мне</button>
+            <button type="submit">перезвоните мне</button>
           </form>
         </div>
       </div>
@@ -622,7 +624,7 @@
         <label>
           <input type="tel" name="user-tel" placeholder="Телефон" minlength="18" maxlength="18" required="">
         </label>
-        <button class="modal__main-btn callback-btn" type="submit">перезвоните мне</button>
+        <button class="modal__main-btn" type="submit">перезвоните мне</button>
         <label class="callback-modal__checkbox-label">
           <input class="visually-hidden" type="checkbox" name="text">
           Нажимая на кнопку, вы даёте согласие на обработку персональных данных
@@ -642,11 +644,13 @@
   </main>
   <footer class="main-footer">
     <div class="container main-footer__container">
-      <!-- 1х: 99px; 2x: 198px -->
-      <picture>
-        <source srcset="img/footer-logo.webp 1x, img/footer-logo2x.webp 2x" type="image/webp">
-        <img src="img/footer-logo.png" srcset="img/footer-logo2x.png 2x" width="85" height="27" alt="Логотип компании">
-      </picture>
+      <div class="main-footer__img">
+        <!-- 1х: 99px; 2x: 198px -->
+        <picture>
+          <source srcset="img/footer-logo.webp 1x, img/footer-logo2x.webp 2x" type="image/webp">
+          <img src="img/footer-logo.png" srcset="img/footer-logo2x.png 2x" width="85" height="27" alt="Логотип компании">
+        </picture>
+      </div>
       <p>Copyright someDesignCompany ©2019</p>
       <ul>
         <li>
