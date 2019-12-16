@@ -1,5 +1,5 @@
 .life-in-Israel {
-  background: url("../img/life-in-Israel-bg.png") no-repeat 0 0;
+  background: url("../img/life-in-Israel-bg.png") no-repeat 0 -44px;
   background-size: 100% auto;
   position: relative;
   margin-bottom: 152px;
@@ -73,41 +73,6 @@
   padding-bottom: 53%;
 }
 
-.life-in-Israel__item {
-  position: absolute;
-  height: auto;
-
-  &:first-of-type {
-    width: 36%;
-    top: -2%;
-    left: 7.7%;
-  }
-
-  &:nth-of-type(2) {
-    width: 15%;
-    top: 7%;
-    left: 44%;
-  }
-
-  &:nth-of-type(3) {
-    width: 30%;
-    top: 7%;
-    left: 61.8%;
-  }
-
-  &:nth-of-type(4) {
-    width: 30%;
-    top: 55%;
-    left: 44%;
-  }
-
-  &:last-of-type {
-    width: 16%;
-    top: 55%;
-    left: 76.3%
-  }
-}
-
 .life-in-Israel__item p {
   width: auto;
   margin: 0;
@@ -118,8 +83,67 @@
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   text-align: left;
   position: absolute;
-  bottom: 45px;
-  left: 35px;
+}
+
+.life-in-Israel__item {
+  position: absolute;
+  height: auto;
+
+  &_first {
+    width: 36%;
+    top: -2.9%;
+    left: 7.7%;
+  }
+
+  &_second {
+    width: 15.6%;
+    top: 6.6%;
+    left: 44%;
+  }
+
+  &_third {
+    width: 30%;
+    top: 6.6%;
+    left: 61.8%;
+  }
+
+  &_fourth {
+    width: 30%;
+    top: 55%;
+    left: 44%;
+  }
+
+  &_fifth {
+    width: 16%;
+    top: 55%;
+    left: 76.3%
+  }
+
+  &_first p {
+    bottom: 39px;
+    left: 39px;
+  }
+
+  &_second p {
+    width: 10px;
+    bottom: 42px;
+    left: 27px;
+  }
+
+  &_third p {
+    bottom: 40px;
+    left: 30px;
+  }
+
+  &_fourth p {
+    bottom: 42px;
+    left: 32px;
+  }
+
+  &_fifth p {
+    bottom: 43px;
+    left: 24px;
+  }
 }
 
 @media(max-width: $tablet-width-max) {

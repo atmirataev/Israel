@@ -1,8 +1,8 @@
 .gallery {
-  background: url("../img/gallery-bg.png") no-repeat 0 0;
+  background: url("../img/gallery-bg.png") no-repeat 5px -5px;
   background-size: 100% auto;
-  padding: 7% 0 19%;
-  margin-bottom: 32px;
+  padding: 6% 0 19%;
+  margin-bottom: 37px;
 
   @media (min-resolution: $retina-dpi),
   (min-resolution: $retina-dppx) {

@@ -13,11 +13,18 @@
   width: 112px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style: none;
   opacity: .3;
   padding: 0;
   margin: 0;
+}
+
+.main-footer li {
+  margin-right: 17px;
+
+  &:nth-of-type(3n) {
+    margin: 0;
+  }
 }
 
 .main-footer p {

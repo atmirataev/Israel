@@ -1,17 +1,16 @@
   .page-header {
     padding-top: 45px;
-    padding-bottom: 60%;
+    padding-bottom: 59.1%;
     position: relative;
     background: url("../img/header-bg.png") no-repeat 0 0;
     background-size: 100% auto;
     box-sizing: border-box;
     flex-grow: 1;
-  }
 
-  .page-header__logo {
-    position: absolute;
-    top: 32px;
-    left: 44.8%;
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../img/header-bg2x.png");
+    }
   }
 
   .page-header__nav {
@@ -26,13 +25,17 @@
   .page-header__nav ul {
     padding: 0;
     margin: 0;
-    margin-left: auto;
     display: flex;
     justify-content: space-between;
     list-style: none;
     color: $black;
     position: relative;
+  }
 
+  .page-header__nav_logo {
+    order: 2;
+    margin-top: -13px;
+    margin-left: -19px;
   }
 
   .page-header__nav a {
@@ -40,6 +43,10 @@
   }
 
   .page-header__nav_call {
+    order: 3;
+  }
+
+  .page-header__nav_call a {
     border-bottom: 1px dashed $black;
   }
 
@@ -58,10 +65,6 @@
         width: 750px;
         left: 0.5%;
       }
-    }
-
-    .page-header__logo {
-      top: 6px;
     }
 
     .page-header__nav ul::before {
@@ -83,13 +86,6 @@
       margin-bottom: 24px;
     }
 
-    .page-header__logo {
-      width: 120px;
-      height: 42px;
-      top: 20px;
-      left: 16px;
-    }
-
     .page-header__nav {
       min-width: $mobile-width;
       padding: 0;
@@ -98,17 +94,24 @@
       &_tel {
         margin-bottom: 9px;
         white-space: nowrap;
+        order: 2;
       }
 
       &_call {
         width: 108px;
         margin-left: auto;
       }
+
+      &_logo {
+        width: 120px;
+        height: 42px;
+        order: 1;
+      }
     }
 
     .page-header__nav ul {
-      width: 130px;
-      flex-direction: column;
+      width: 100%;
+      // flex-direction: column;
 
       &::before {
         top: 405px;

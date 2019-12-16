@@ -21,7 +21,7 @@
 }
 
 .order__container {
-  padding-left: 212px;
+  padding-left: 210px;
   position: relative;
 }
 
@@ -30,12 +30,12 @@
   height: 594px;
   position: absolute;
   right: 0;
-  bottom: -138px;
+  bottom: -131px;
   z-index: -1;
 }
 
 .order h2 {
-  margin: 0 0 23px;
+  margin: 0 0 25px;
   letter-spacing: -0.02em;
 }
 
@@ -101,10 +101,10 @@ screen and (-ms-high-contrast: none) {
 
 .order__form button {
   position: absolute;
-  padding: 19px 38px 20px;
-  width: 221px;
+  padding: 20px 0;
+  width: 216px;
   box-sizing: border-box;
-  left: 267px;
+  left: 261px;
   bottom: 0px;
   background: $gradient;
   border-radius: 80px;

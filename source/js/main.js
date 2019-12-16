@@ -49,6 +49,7 @@
   var nameInputEl = callbackModal.querySelector('[name=user-name]');
   var telInputEl = callbackModal.querySelector('[name=user-tel]');
   var agreementInputEl = callbackModal.querySelector('[name=agreement]');
+  var siteBody = document.querySelector('body');
   var isStorageSupport = true;
   var nameStorage = '';
   var telStorage = '';
@@ -60,17 +61,11 @@
     isStorageSupport = false;
   }
 
-  if (callbackModalOpenBtn && openCallbackModal) {
+  if (callbackModalOpenBtn) {
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
 
-  // if (successModalOpenBtn && openSuccessModal) {
-  //   [].forEach.call(successModalOpenBtn, function (item) {
-  //     item.addEventListener('click', openSuccessModal);
-  //   });
-  // }
-
-  if (openSuccessModal && orderForm || contactsForm) {
+  if (orderForm || contactsForm) {
     orderForm.addEventListener('submit', openSuccessModal);
     contactsForm.addEventListener('submit', openSuccessModal);
   }
@@ -81,6 +76,7 @@
   function openCallbackModal() {
     var modalOverlay = callbackModal.querySelector('.modal__overlay');
 
+    siteBody.setAttribute('style', 'overflow: hidden');
     callbackModal.classList.remove('hidden');
 
     if (nameStorage) {
@@ -100,6 +96,8 @@
     document.addEventListener('keydown', function (evt) {
       isEscEvent(evt, closeCallbackModal);
     });
+    callbackModal.addEventListener('submit', closeCallbackModal);
+    callbackModal.addEventListener('submit', openSuccessModal);
     callbackModalOpenBtn.removeEventListener('click', openCallbackModal);
   }
 
@@ -108,6 +106,7 @@
    */
   function closeCallbackModal() {
     callbackModal.classList.add('hidden');
+    siteBody.removeAttribute('style');
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
 
@@ -121,15 +120,18 @@
 
     if (!(callbackModal.classList.contains('hidden'))) {
       callbackModal.classList.add('hidden');
+    } else {
+      successModal.classList.remove('hidden');
+      siteBody.setAttribute('style', 'overflow: hidden');
+      successModalCloseBtn.addEventListener('click', closeSuccessModal);
+      modalOverlay.addEventListener('click', closeSuccessModal, {
+        once: true
+      });
+      document.addEventListener('keydown', function (e) {
+        isEscEvent(e, closeSuccessModal);
+      });
     }
-    successModal.classList.remove('hidden');
-    successModalCloseBtn.addEventListener('click', closeSuccessModal);
-    modalOverlay.addEventListener('click', closeSuccessModal, {
-      once: true
-    });
-    document.addEventListener('keydown', function (e) {
-      isEscEvent(e, closeSuccessModal);
-    });
+
   }
 
   /**
@@ -137,6 +139,7 @@
    */
   function closeSuccessModal() {
     successModal.classList.add('hidden');
+    siteBody.removeAttribute('style');
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
 

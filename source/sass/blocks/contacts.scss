@@ -1,5 +1,5 @@
 .contacts {
-  background: url("../img/contacts-bg.png") no-repeat 0 0;
+  background: url("../img/contacts-bg.png") no-repeat 0 -88px;
   background-size: 100% auto;
   padding-bottom: 75px;
 
@@ -25,7 +25,7 @@
 
 .contacts h2 {
   letter-spacing: -0.02em;
-  margin: 0 0 48px 0;
+  margin: 0 0 49px;
 }
 
 .contacts__top-left {
@@ -37,7 +37,7 @@
   line-height: 150%;
   opacity: 0.74;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   padding-left: 22px;
 
   &::before {
@@ -45,10 +45,14 @@
     width: 12px;
     height: 18px;
     position: absolute;
-    top: 0;
-    left: 3px;
+    top: 1px;
+    left: 4px;
     background: url("../img/icon-marker.svg") no-repeat 0 0;
   }
+}
+
+.contacts__curator_img img {
+  border-radius: 50%;
 }
 
 .contacts__location span {
@@ -57,6 +61,7 @@
   border-bottom: 1px dashed #1FC0FC;
   position: relative;
   margin-left: 12px;
+  padding-bottom: 2px;
 
   &::after {
     content: "";
@@ -64,7 +69,7 @@
     height: 15px;
     position: absolute;
     top: 3px;
-    right: -28px;
+    right: -26px;
     background: url("../img/icon-gps.svg") no-repeat 0 0;
   }
 }
@@ -72,23 +77,23 @@
 .contacts__curator {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 }
 
 .contacts__curator-data {
   width: 264px;
   position: relative;
-  padding-left: 24px;
+  padding: 1px 0 0 25px;
 }
 
 .contacts__curator-data p {
-  margin: 0 0 7px 0;
+  margin: 0 0 12px;
   opacity: .74;
 }
 
 .contacts__curator-data span {
   color: $blue;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .contacts__curator-data address {
@@ -96,6 +101,7 @@
   font-style: normal;
   font-size: 13px;
   opacity: 0.74;
+  line-height: 150%;
 }
 
 .contacts__curator-data ul {
@@ -151,7 +157,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding-top: 72px;
+  padding-top: 67px;
 }
 
 .contacts__form label {
@@ -161,7 +167,7 @@
   width: 250px;
   border-radius: 80px;
   margin-bottom: 10px;
-  margin-right: 18px;
+  margin-right: 20px;
 }
 
 .contacts__form input[type=text] {
@@ -198,7 +204,7 @@
 .contacts__form input[type=tel] {
   width: 100%;
   height: 58px;
-  padding: 0 10px 0 37px;
+  padding: 0 10px 0 58px;
   font-weight: 500;
   font-size: 17px;
   line-height: 20px;
@@ -249,7 +255,7 @@ screen and (-ms-high-contrast: none) {
 
 .contacts__form {
   width: 877px;
-  padding-top: 62px;
+  padding-top: 63px;
 }
 
 

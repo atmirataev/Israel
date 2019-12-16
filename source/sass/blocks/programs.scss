@@ -27,7 +27,7 @@
 .programs__control {
   width: 230px;
   height: fit-content;
-  margin-right: 64px;
+  margin-right: 62px;
   padding-left: 39px;
   display: flex;
   flex-wrap: wrap;
@@ -35,8 +35,7 @@
 
 .programs__btn {
   width: 228px;
-  padding: 19px 26px 28px 72px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
   position: relative;
   font-style: normal;
   font-weight: normal;
@@ -47,12 +46,55 @@
   background-color: transparent;
   text-align: left;
   cursor: pointer;
+
+  &_common {
+    padding: 15px 26px 28px 73px;
+
+    & svg {
+      top: 10px;
+      left: 24px;
+    }
+  }
+
+  &_academic {
+    padding: 25px 26px 28px 71px;
+
+    & svg {
+      top: 13px;
+      left: 20px;
+    }
+  }
+
+  &_internship {
+    padding: 21px 26px 28px 71px;
+
+    & svg {
+      top: 14px;
+      left: 21px;
+    }
+  }
+
+  &_volunteering {
+    padding: 23px 26px 28px 71px;
+
+    & svg {
+      top: 19px;
+      left: 21px;
+    }
+  }
+
+  &_religious {
+    padding: 23px 26px 28px 71px;
+
+    & svg {
+      top: 20px;
+      left: 26px;
+    }
+  }
 }
 
 .programs__btn svg {
   position: absolute;
-  top: 15px;
-  left: 23px;
   z-index: 10;
 }
 
@@ -61,6 +103,13 @@
   font-weight: 500;
   color: #ffffff;
   line-height: 19px;
+  font-size: 16px;
+  text-transform: lowercase;
+  font-variant: small-caps;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   background: url("../img/icon-rectangle.svg") no-repeat;
 
   &:focus {
@@ -75,7 +124,7 @@
 .programs ul {
   width: 600px;
   margin: 0;
-  padding: 12px 0 0;
+  padding: 9px 0 0;
 }
 
 .programs li {
@@ -103,6 +152,7 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 170%;
+  margin-bottom: 19px;
 }
 
 @media (max-width: $tablet-width-max) {

@@ -34,7 +34,7 @@
 
 .conditions__img {
   width: 43%;
-  margin-left: 12px;
+  padding: 1px 0 0 12px;
   object-fit: contain;
 }
 
@@ -50,7 +50,7 @@
   line-height: 49px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .conditions__details {
@@ -67,7 +67,7 @@
   font-weight: 500;
   font-size: 17px;
   line-height: 170%;
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 
 .conditions ol {
@@ -84,10 +84,10 @@
   position: relative;
 }
 
-.conditions li {
+.conditions__elem {
   width: 414px;
-  margin-bottom: 45px;
-
+  margin-bottom: 56px;
+  position: relative;
 
   &::before {
     counter-increment: myCounter;
@@ -101,15 +101,39 @@
     padding: 4px 14px;
     border-radius: 50%;
     position: absolute;
-    left: -14px;
+    left: -60px;
   }
 
-  &:first-of-type {
+  &_first {
     margin-top: 10px;
+
+    &::before {
+      top: -8px;
+    }
   }
 
-  &:last-of-type {
+  &_second {
+    margin-bottom: 45px;
+
+    &::before {
+      top: -8px;
+    }
+  }
+
+  &_third {
+    margin-bottom: 38px;
+
+    ::before {
+      top: 2px;
+    }
+  }
+
+  &_fourth {
     margin-bottom: 33px;
+
+    &::before {
+      top: -4px;
+    }
   }
 }
 
@@ -119,6 +143,7 @@
   opacity: 0.5;
   position: relative;
   border-left: 4px solid yellow;
+  line-height: 140%;
 }
 
 @media (max-width: $tablet-width-max) {
