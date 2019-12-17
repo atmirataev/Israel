@@ -41,7 +41,7 @@
 .conditions__container {
   width: 532px;
   margin-left: auto;
-  margin-right: 135px;
+  margin-right: 10%;
   position: relative;
 }
 
@@ -156,7 +156,13 @@
   }
 
   .conditions__container {
+    width: 48%;
     margin-top: 0;
+    margin-right: 15px;
+  }
+
+  .conditions__wrapper {
+    width: 768px;
   }
 
   .conditions h2 {
@@ -164,6 +170,7 @@
   }
 
   .conditions__img {
+    padding-top: 105px;
     width: 40%;
   }
 

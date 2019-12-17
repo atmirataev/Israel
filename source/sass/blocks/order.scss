@@ -131,6 +131,7 @@ screen and (-ms-high-contrast: none) {
   }
 
   .order__container {
+    width: 767px;
     padding: 0;
   }
 
@@ -162,6 +163,12 @@ screen and (-ms-high-contrast: none) {
       top: 68px;
       background-size: 500px;
     }
+  }
+
+  .order__img {
+    width: 508px;
+    height: 397px;
+    bottom: -77px;
   }
 }
 

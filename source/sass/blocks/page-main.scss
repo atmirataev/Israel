@@ -13,16 +13,19 @@
   color: #fff;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
   position: absolute;
-  top: 539px;
   left: 50%;
+  margin-top: -26%;
   margin-left: -171.5px;
   text-align: center;
 }
 
 @media(max-width: $tablet-width-max) {
   .page-main h1 {
-    top: 291px;
-    margin-left: -144px;
+    width: 300px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: -28%;
+    margin-left: -150px;
   }
 }
 

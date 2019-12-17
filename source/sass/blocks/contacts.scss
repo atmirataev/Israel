@@ -265,7 +265,7 @@ screen and (-ms-high-contrast: none) {
   }
 
   .contacts__container {
-    width: 100%;
+    width: 768px;
     padding-left: 0;
   }
 
@@ -298,6 +298,11 @@ screen and (-ms-high-contrast: none) {
     padding-top: 30px;
   }
 
+  .contacts__consultation,
+  .contacts__non-disclosure {
+    width: 100%;
+  }
+
   .contacts__form {
     width: 100%;
     display: flex;
@@ -311,6 +316,7 @@ screen and (-ms-high-contrast: none) {
   .contacts__form input[type=tel],
   .contacts__form button {
     margin: 0;
+    height: 60px;
   }
 }
 
