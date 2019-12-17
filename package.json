@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "del": "^4.1.1",
-    "masonry-layout": "^4.2.2",
+    "imask": "^5.2.1",
     "normalize-scss": "^7.0.1",
     "swiper": "^5.2.0"
   }

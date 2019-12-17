@@ -196,4 +196,10 @@
   };
 
   enableCommentsSwiper();
+
+  var phoneMask = IMask(
+    document.querySelector('.contacts__form input[type=tel]'), {
+      mask: '+{7}(000)000-00-00'
+    });
+
 })();
