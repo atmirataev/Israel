@@ -111,15 +111,16 @@
 
   .gallery p {
     width: 100%;
-    padding: 32% 7% 16%;
-    margin: -6px 0 10px;
+    padding: 31% 7% 16%;
+    margin: -6px 0 11px;
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
     opacity: 0.87;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
     background: url("../img/gallery-bg.png") no-repeat 0 0;
-    background-size: cover;
-    background-position: 22% 0;
+    background-size: 632px 272px;
+    background-position: 22% -2px;
 
     @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {

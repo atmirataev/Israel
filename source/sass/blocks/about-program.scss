@@ -68,10 +68,10 @@
 @media(max-width: $mobile-width-max) {
   .about-program {
     width: 100%;
-    background-size: 420px 186px;
-    background-position: center;
+    background-position: 50% 60%;
     overflow: hidden;
     padding-bottom: 0;
+    margin-bottom: 66px;
   }
 
   .about-program h2 {
@@ -80,6 +80,7 @@
     line-height: 39px;
     text-align: center;
     letter-spacing: -0.02em;
+    margin-bottom: 24px;
   }
 
   .about-program p {

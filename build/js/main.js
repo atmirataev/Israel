@@ -4,6 +4,8 @@
   var ESC_KEYCODE = 27;
 
   var programBtns = document.querySelectorAll('.programs__btn');
+  console.log(programBtns);
+  console.log(programBtns[0]);
   var programsItems = document.querySelectorAll('.programs li');
 
   if (programBtns && programsItems) {
@@ -197,9 +199,12 @@
 
   enableCommentsSwiper();
 
-  var phoneMask = IMask(
-    document.querySelector('.contacts__form input[type=tel]'), {
-      mask: '+{7}(000)000 00 00'
-    });
+  var orderPhoneMask = IMask(document.querySelector('.order__form input[type=tel]'), {
+    mask: '+{7}(000)000 00 00'
+  });
+
+  var contactsPhoneMask = IMask(document.querySelector('.contacts__form input[type=tel]'), {
+    mask: '+{7}(000)000 00 00'
+  });
 
 })();

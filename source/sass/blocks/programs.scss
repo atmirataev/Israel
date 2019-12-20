@@ -254,10 +254,10 @@
     font-variant: small-caps;
     border-radius: 60px;
     font-weight: 500;
-    padding: 15px 31px 14px 45px;
+    padding: 11px 9px 14px 50px;
 
     & svg {
-      top: 11px;
+      top: 4px;
       left: 8px;
     }
   }
@@ -272,6 +272,7 @@
 
   .programs ul {
     width: 100%;
+    padding-top: 10px;
   }
 
   .programs li {

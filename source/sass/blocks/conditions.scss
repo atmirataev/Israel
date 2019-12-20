@@ -202,7 +202,7 @@
     padding-left: 65px;
   }
 
-  .conditions li {
+  .conditions__elem {
     margin-bottom: 30px;
     position: relative;
 
@@ -211,7 +211,7 @@
       top: -9px;
     }
 
-    &:last-of-type {
+    &_fourth {
       margin-bottom: 20px;
     }
   }
@@ -231,6 +231,10 @@
       top: 277px;
       right: 0;
     }
+  }
+
+  .conditions__wrapper {
+    width: 100%;
   }
 
   .conditions__img {
@@ -276,15 +280,45 @@
     margin: 0;
   }
 
-  .conditions li {
+  .conditions__elem {
     width: 100%;
     padding-left: 43px;
     margin-bottom: 60px;
 
-    &::before {
-      top: -4px;
+    &_first::before {
       left: -8px;
+      top: -7px;
     }
+
+    &_second {
+      margin-bottom: 37px;
+
+      &::before {
+        left: -8px;
+        top: 3px;
+      }
+    }
+
+    &_third {
+      margin-bottom: 26px;
+
+      &::before {
+        left: -8px;
+        top: 13px;
+      }
+    }
+
+
+    &_fourth {
+      margin-bottom: 9px;
+
+      &::before {
+        left: -8px;
+        top: 14px;
+      }
+    }
+
+
   }
 
   .conditions__ps {

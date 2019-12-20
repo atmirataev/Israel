@@ -251,6 +251,7 @@ screen and (-ms-high-contrast: none) {
   }
 
   .comments__item img {
+    display: block;
     width: 240px;
     height: 320px;
     margin: 0 auto 58px;
@@ -261,7 +262,7 @@ screen and (-ms-high-contrast: none) {
     width: 100%;
     box-sizing: border-box;
     flex-direction: column;
-    padding-left: 0;
+    padding: 0;
   }
 
   .comments__pagination {
@@ -288,7 +289,7 @@ screen and (-ms-high-contrast: none) {
     font-weight: normal;
     font-size: 16px;
     line-height: 160%;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
 
     &:last-of-type {
       margin-bottom: 34px;
@@ -299,7 +300,7 @@ screen and (-ms-high-contrast: none) {
     width: 100%;
     font-size: 14px;
     line-height: 160%;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .comments__user-program_name {
@@ -325,5 +326,9 @@ screen and (-ms-high-contrast: none) {
   .comments__social {
     bottom: 0;
     left: 13px;
+  }
+
+  .comments__user-program span {
+    display: block;
   }
 }

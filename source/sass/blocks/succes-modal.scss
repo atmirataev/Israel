@@ -27,24 +27,31 @@
 
 @media(max-width: $mobile-width-max) {
   .success-modal {
-    min-width: $mobile-width;
-    padding: 302px 0 200px;
-
-    &::before {
-      top: 206px;
-    }
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 296px 0 200px;
   }
 
   .success-modal h3 {
-    margin-bottom: 12px;
+    margin-bottom: 17px;
+    text-align: center;
+
+    &::before {
+      top: 200px;
+      left: 50%;
+      margin-left: -33px;
+    }
   }
 
   .success-modal p {
     padding: 0;
+    margin-bottom: 31px;
   }
 
   .success-modal__close {
-    top: 31px;
-    right: 104px;
+    top: 24px;
+    right: 24px;
   }
 }

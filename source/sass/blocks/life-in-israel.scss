@@ -173,8 +173,16 @@
     }
   }
 
+  .life-in-Israel__pagination .swiper-pagination-bullet {
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+  }
+
   .life-in-Israel__pagination .swiper-pagination-bullet-active {
     background: $gradient;
+    width: 8px;
+    height: 8px;
   }
 
   .life-in-Israel__wrapper {
@@ -190,7 +198,6 @@
     text-align: center;
     font-size: 32px;
     line-height: 39px;
-    margin-bottom: 23px;
   }
 
   .life-in-Israel p {
@@ -230,6 +237,7 @@
 
   .life-in-Israel__pagination {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
+    left: 11px;
   }
 }

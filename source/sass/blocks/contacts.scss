@@ -53,6 +53,8 @@
 
 .contacts__curator_img img {
   border-radius: 50%;
+  width: 112px;
+  height: 112px;
 }
 
 .contacts__location span {
@@ -326,6 +328,10 @@ screen and (-ms-high-contrast: none) {
     padding: 0 0 48px;
   }
 
+  .contacts__container {
+    width: 100%;
+  }
+
   .contacts__location p {
     padding-left: 38px;
   }
@@ -333,7 +339,7 @@ screen and (-ms-high-contrast: none) {
   .contacts h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
   }
 
   .contacts__top-left p {
@@ -344,8 +350,8 @@ screen and (-ms-high-contrast: none) {
   }
 
   .contacts__curator_img {
-    padding-left: 17px;
-    margin-bottom: 9px;
+    padding-left: 16px;
+    margin-bottom: 8px;
   }
 
   .contacts__curator-data {
@@ -399,11 +405,11 @@ screen and (-ms-high-contrast: none) {
     height: 420px;
     margin: 0 auto;
     object-fit: cover;
-    object-position: right;
+    object-position: 65%;
   }
 
   .contacts__bottom-left {
-    padding: 23px 5vw 0;
+    padding: 25px 5% 0;
     box-sizing: border-box;
   }
 
@@ -423,7 +429,8 @@ screen and (-ms-high-contrast: none) {
 
   .contacts__form {
     flex-direction: column;
-    padding-top: 33px;
+    padding-top: 35px;
+    padding-left: 10px;
 
   }
 
@@ -436,8 +443,12 @@ screen and (-ms-high-contrast: none) {
     padding: 24px 10px 13px 40px;
   }
 
+  .contacts__consultation {
+    margin-bottom: 12px;
+  }
+
   .contacts__form button {
     width: 264px;
-    margin: 15px auto;
+    margin: 14px auto;
   }
 }
