@@ -4,8 +4,6 @@
   var ESC_KEYCODE = 27;
 
   var programBtns = document.querySelectorAll('.programs__btn');
-  console.log(programBtns);
-  console.log(programBtns[0]);
   var programsItems = document.querySelectorAll('.programs li');
 
   if (programBtns && programsItems) {
@@ -207,4 +205,7 @@
     mask: '+{7}(000)000 00 00'
   });
 
+  var callbackPhoneMask = IMask(document.querySelector('.callback-modal__form input[type=tel]'), {
+    mask: '+{7}(000)000 00 00'
+  });
 })();

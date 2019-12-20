@@ -1,11 +1,6 @@
 .callback-modal {
-  width: 480px;
-  padding: 58px 72px 40px 48px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -240px;
-  margin-top: -270px;
+  padding: 56px 72px 42px 48px;
+  position: fixed;
 }
 
 .callback-modal__form {
@@ -19,12 +14,9 @@
   display: flex;
   align-items: flex-start;
   border-radius: 80px;
-  margin-bottom: 8px;
-
-  &:last-of-type {
-    margin-bottom: 24px;
-  }
+  margin-bottom: 9px;
 }
+
 
 .callback-modal__form input {
   border: 2px solid #E3E3E3;
@@ -75,6 +67,10 @@
     left: -24px;
     background-image: url("../img/checkbox-off.svg");
   }
+}
+
+.callback-modal__form button {
+  margin-top: 16px;
 }
 
 @media (max-width: $mobile-width-max) {

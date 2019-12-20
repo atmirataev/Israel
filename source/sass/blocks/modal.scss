@@ -2,7 +2,7 @@
   width: 480px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: -325px;
+  margin-top: -260px;
   margin-left: -240px;
   background-color: #fff;
   border-radius: 8px;
@@ -53,10 +53,11 @@
   width: 359px;
   line-height: 170%;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .modal__main-btn {
+  display: block;
   width: 264px;
   margin: 0 0 16px 61px;
   padding: 18px 0 19px 0;
