@@ -6,7 +6,7 @@
   var programBtns = document.querySelectorAll('.programs__btn');
   var programsItems = document.querySelectorAll('.programs li');
 
-  if (programBtns && programsItems) {
+  if (programBtns[0] && programsItems[0]) {
     programBtns[0].classList.add('programs__current-btn');
     programsItems[0].classList.add('programs__current-item');
 
@@ -42,13 +42,8 @@
   var callbackModal = document.querySelector('.callback-modal');
   var successModal = document.querySelector('.success-modal');
   var callbackModalOpenBtn = document.querySelector('.page-header__nav_call');
-  var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
   var orderForm = document.querySelector('.order__form');
   var contactsForm = document.querySelector('.contacts__form');
-  var successModalCloseBtn = successModal.querySelector('.modal__close');
-  var nameInputEl = callbackModal.querySelector('[name=user-name]');
-  var telInputEl = callbackModal.querySelector('[name=user-tel]');
-  var agreementInputEl = callbackModal.querySelector('[name=agreement]');
   var siteBody = document.querySelector('body');
   var isStorageSupport = true;
   var nameStorage = '';
@@ -61,8 +56,19 @@
     isStorageSupport = false;
   }
 
-  if (callbackModalOpenBtn) {
+  if (callbackModal) {
+    var callbackModalCloseBtn = callbackModal.querySelector('.modal__close');
+    var nameInputEl = callbackModal.querySelector('[name=user-name]');
+    var telInputEl = callbackModal.querySelector('[name=user-tel]');
+    var agreementInputEl = callbackModal.querySelector('[name=agreement]');
+
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
+  }
+
+  if (successModal) {
+    var successModalCloseBtn = successModal.querySelector('.modal__close');
+    var successModalAnotherCloseBtn = successModal.querySelector('.success-modal__main-btn');
+
   }
 
   if (orderForm || contactsForm) {
@@ -124,6 +130,7 @@
       successModal.classList.remove('hidden');
       siteBody.setAttribute('style', 'overflow: hidden');
       successModalCloseBtn.addEventListener('click', closeSuccessModal);
+      successModalAnotherCloseBtn.addEventListener('click', closeSuccessModal);
       modalOverlay.addEventListener('click', closeSuccessModal, {
         once: true
       });
@@ -131,7 +138,6 @@
         isEscEvent(e, closeSuccessModal);
       });
     }
-
   }
 
   /**
@@ -197,15 +203,24 @@
 
   enableCommentsSwiper();
 
-  var orderPhoneMask = IMask(document.querySelector('.order__form input[type=tel]'), {
-    mask: '+{7}(000)000 00 00'
-  });
+  var orderFormTelInput = document.querySelector('.order__form input[type=tel]');
+  if (orderFormTelInput) {
+    var orderPhoneMask = IMask(orderFormTelInput, {
+      mask: '+{7}(000)000 00 00'
+    });
+  }
 
-  var contactsPhoneMask = IMask(document.querySelector('.contacts__form input[type=tel]'), {
-    mask: '+{7}(000)000 00 00'
-  });
+  var contactsFormTelInput = document.querySelector('.contacts__form input[type=tel]');
+  if (contactsFormTelInput) {
+    var contactsPhoneMask = IMask(contactsFormTelInput, {
+      mask: '+{7}(000)000 00 00'
+    });
+  }
 
-  var callbackPhoneMask = IMask(document.querySelector('.callback-modal__form input[type=tel]'), {
-    mask: '+{7}(000)000 00 00'
-  });
+  var callbackFormTelInput = document.querySelector('.callback-modal__form input[type=tel]');
+  if (callbackFormTelInput) {
+    var callbackPhoneMask = IMask(callbackFormTelInput, {
+      mask: '+{7}(000)000 00 00'
+    });
+  }
 })();
