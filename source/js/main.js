@@ -121,8 +121,7 @@
   function closeCallbackModal() {
     callbackModal.classList.add('hidden');
     siteBody.removeAttribute('style');
-    siteBody.removeAttribute('style');
-    siteBody.classList.remover('no-scroll');
+    siteBody.classList.remove('no-scroll');
     window.scrollTo(0, bodyScrollTop);
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
@@ -157,6 +156,8 @@
   function closeSuccessModal() {
     successModal.classList.add('hidden');
     siteBody.removeAttribute('style');
+    siteBody.classList.remove('no-scroll');
+    window.scrollTo(0, bodyScrollTop);
     callbackModalOpenBtn.addEventListener('click', openCallbackModal);
   }
 
