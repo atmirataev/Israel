@@ -33,7 +33,8 @@
 .gallery__button {
   display: block;
   box-sizing: border-box;
-  width: 232px;
+  white-space: nowrap;
+  width: 230px;
   margin: 0 338px 0 auto;
   background: $gradient;
   border-radius: 80px;
