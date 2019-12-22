@@ -48,6 +48,7 @@
   var isStorageSupport = true;
   var nameStorage = '';
   var telStorage = '';
+  var bodyScrollTop = 0;
 
   try {
     nameStorage = localStorage.getItem('nameInputEl');
@@ -82,7 +83,9 @@
   function openCallbackModal() {
     var modalOverlay = callbackModal.querySelector('.modal__overlay');
 
-    siteBody.setAttribute('style', 'overflow: hidden');
+    bodyScrollTop = getBodyScrollTop();
+    siteBody.style.top = '-' + bodyScrollTop + 'px';
+    siteBody.classList.add('no-scroll');
     callbackModal.classList.remove('hidden');
 
     if (nameStorage) {
@@ -106,10 +109,6 @@
     callbackModal.addEventListener('submit', openSuccessModal);
     callbackModalOpenBtn.removeEventListener('click', openCallbackModal);
   }
-
-  var bodyScrollTop = getBodyScrollTop();
-  siteBody.style.top = '-' + bodyScrollTop + 'px';
-  siteBody.classList.add('no-scroll');
 
   function getBodyScrollTop() {
     return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
