@@ -140,6 +140,14 @@ screen and (-ms-high-contrast: none) {
   line-height: 150%;
   text-decoration-line: underline;
   color: $blue;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .5;
+  }
 }
 
 .comments__social {

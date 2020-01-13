@@ -46,6 +46,10 @@
   fill: #fff;
   cursor: pointer;
 
+  &:hover {
+    opacity: .7;
+  }
+
   &:active {
     opacity: .5;
   }

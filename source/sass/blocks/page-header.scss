@@ -25,12 +25,18 @@
   .page-header__btn {
     content: "";
     width: 76px;
-    height: 131.5px;
+    height: 14.7%;
+    max-height: 131.5px;
     position: absolute;
     bottom: 15%;
     left: 50%;
     margin-left: -37px;
     background-image: url("../img/header-scroll-down.png");
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: .7;
+    }
   }
 
   .page-header__nav ul {
@@ -51,6 +57,10 @@
 
   .page-header__nav a {
     color: $black;
+
+    &:hover {
+      color: $yellow;
+    }
   }
 
   .page-header__nav_call {
@@ -60,6 +70,27 @@
 
   .page-header__nav_call a {
     border-bottom: 1px dashed $black;
+
+    &:hover {
+      border-bottom-color: $yellow;
+    }
+  }
+
+  .page-header h1 {
+    width: 345px;
+    margin: 0 auto;
+    font-family: "Fira Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    bottom: 33.1%;
+    left: 50%;
+    margin-left: -171.5px;
+    text-align: center;
   }
 
   @media(max-width: $tablet-width-max) {
@@ -67,6 +98,14 @@
       width: 100%;
       margin: 0 auto;
       padding-top: 23px;
+    }
+
+    .page-header h1 {
+      width: 300px;
+      font-size: 20px;
+      line-height: 25px;
+      margin-left: -150px;
+      bottom: 38%;
     }
 
     .page-header__nav {
@@ -85,6 +124,11 @@
 
     .page-header__nav ul::after {
       left: 44.5%;
+    }
+
+    .page-header__btn {
+      bottom: 12%;
+      height: 25.7%;
     }
   }
 
@@ -109,6 +153,10 @@
       line-height: 17px;
       text-align: right;
       text-align: right;
+    }
+
+    .page-header h1 {
+      bottom: 36.7%;
     }
 
     .page-header__nav {
